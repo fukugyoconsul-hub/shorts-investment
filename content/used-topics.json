@@ -44,5 +44,29 @@
     "videoId": "9OrPAJIIVK0",
     "category": "テクニカル",
     "format": "kaisetsu"
+  },
+  {
+    "title": "政策金利とは?日銀・FRBの金利のからくり",
+    "topics": [
+      "政策金利の対象/公開市場操作の仕組み/中央銀行は金利を誘導しているだけという結論"
+    ],
+    "date": "2026-07-29",
+    "publishedAt": "2026-07-31T23:00:00.000Z",
+    "videoId": "Eq6FBqh1wgU",
+    "category": "金融",
+    "format": "qa"
+  },
+  {
+    "title": "原油マイナス価格の衝撃!商品雑学ベスト3",
+    "topics": [
+      "1980年 銀の買い占め相場(ハント兄弟)",
+      "1971年 ニクソンショックと金・ドル兌換停止",
+      "2020年 原油WTI史上初のマイナス価格"
+    ],
+    "date": "2026-07-29",
+    "publishedAt": "2026-08-01T07:00:00.000Z",
+    "videoId": "3yzldeRHnAU",
+    "category": "コモディティ",
+    "format": "ranking"
   }
 ]
