@@ -94,5 +94,18 @@
     "videoId": "hOhLwdKlRaU",
     "category": "株式",
     "format": "ranking"
+  },
+  {
+    "title": "CPIとは?物価指標で相場が動く仕組み",
+    "topics": [
+      "CPI(消費者物価指数)の基礎知識",
+      "予想との差で相場が動く仕組み",
+      "注意点:数字より予想とのかいりが重要"
+    ],
+    "date": "2026-07-30",
+    "publishedAt": "2026-08-02T23:00:00.000Z",
+    "videoId": "24WK8V4b0dk",
+    "category": "ファンダメンタルズ",
+    "format": "kaisetsu"
   }
 ]
