@@ -45,10 +45,28 @@ const categoryStats = fs.existsSync(categoryStatsPath)
   ? JSON.parse(fs.readFileSync(categoryStatsPath, "utf-8"))
   : {};
 
+const retentionSummaryPath = path.join(root, "content", "retention-summary.json");
+const retentionSummary = fs.existsSync(retentionSummaryPath)
+  ? JSON.parse(fs.readFileSync(retentionSummaryPath, "utf-8"))
+  : { overallRetentionPercentage: null };
+const overallRetention = retentionSummary.overallRetentionPercentage;
+
 // 過去の平均再生数が高いジャンルほど選ばれやすくする(ただし実績が無い/少ないジャンルにも
-// 一定の確率を残し、開拓した新ジャンルが試される機会を確保する)
+// 一定の確率を残し、開拓した新ジャンルが試される機会を確保する)。
+// さらに、視聴維持率がチャンネル平均より高いジャンルは重みを増やし、低いジャンルは減らす
+// (再生数だけだと初期のアルゴリズム的な偏りに引っ張られやすいが、視聴維持率はコンテンツの
+// 質そのものを示すより安定した指標のため)。倍率は0.5〜2.0倍に制限してノイズの影響を抑える。
 const BASELINE_WEIGHT = 30;
-const weights = CATEGORIES.map((c) => (categoryStats[c.name]?.avgViews ?? 0) + BASELINE_WEIGHT);
+const weights = CATEGORIES.map((c) => {
+  const stat = categoryStats[c.name];
+  const avgViews = stat?.avgViews ?? 0;
+  const retention = stat?.avgRetentionPercentage;
+  const retentionMultiplier =
+    retention != null && overallRetention
+      ? Math.min(2, Math.max(0.5, retention / overallRetention))
+      : 1;
+  return avgViews * retentionMultiplier + BASELINE_WEIGHT;
+});
 const totalWeight = weights.reduce((a, b) => a + b, 0);
 let pick = Math.random() * totalWeight;
 let categoryIndex = 0;
@@ -123,6 +141,17 @@ const FORMAT_SPECS = {
 const spec = FORMAT_SPECS[category.format] ?? FORMAT_SPECS.kaisetsu;
 const { formatInstructions, titleInstructions, topicsInstructions, segmentsExample } = spec;
 
+// YouTube Analyticsの実測データ(視聴維持率)を踏まえた指示。維持率が低いほど、
+// フックと情報密度をより強く指示する(track-performance.mjsが週次で更新する)
+const retentionInstructions =
+  overallRetention != null && overallRetention < 40
+    ? `\n# 視聴維持率について(重要・実データに基づく指示)
+直近の動画の平均視聴維持率は${overallRetention}%と低めです。最後まで見てもらえていません。今回は特に以下を徹底すること:
+- フックの最初の1文だけで「え、なに」と思わせる、具体的な数字・意外な事実・断定的な一言を置く。「〜について紹介します」のような前置きは厳禁
+- 各文の間延びを避け、1文ごとに新しい情報を必ず出す(既出情報の言い換え・繰り返しは禁止)
+- rank3→rank2→rank1にかけて、意外性・インパクトが尻すぼみにならず右肩上がりになるようにする`
+    : "";
+
 const prompt = `あなたはYouTubeショート動画の台本作家です。FX・投資・金融の教育系チャンネル用に、新しい1本分の台本をJSON形式だけで出力してください。説明文やコードフェンス(\`\`\`)は一切つけず、JSONのみを出力してください。
 
 # チャンネル設定
@@ -143,6 +172,8 @@ ${category.name}: ${category.brief}
 - 情報密度を高くすること。前置き・相槌・当たり障りのない一般論を削り、具体的な数字・用語・比較を積極的に使って、短い時間により多くの情報を詰め込む
 - 各narrationは1〜2文で簡潔にしつつも、内容が薄くならないよう具体性を重視する
 - 動画の尺は54〜59秒が目標。narration(読み上げ文)の合計文字数が320〜345字程度になるようにすること(目安: hook 50〜55字、rank3/rank2/rank1は各65〜85字、outroは50〜55字)。文字数が少なすぎても多すぎても尺がずれるので、この範囲を必ず守ること
+- (視聴維持率対策・常時適用)フックの最初の1文だけで惹きつけること。「〜について紹介します」のような前置きは厳禁で、具体的な数字・意外な事実・断定的な一言から入る。前半で間延びさせず、後半に行くほど情報の意外性・インパクトが強くなる(尻すぼみにならない)構成にする
+${retentionInstructions}
 
 # 【最重要・絶対禁止事項】投資系チャンネル特有の安全ルール(fictionの有無に関わらず絶対に適用)
 - 「今買うべき」「今が売り時」「そろそろ底値」等、特定の金融商品(通貨ペア・個別銘柄・暗号資産・コモディティ等)の具体的な売買タイミングを示唆・断定する表現は絶対禁止
@@ -164,11 +195,13 @@ ${category.name}: ${category.brief}
 
 # SEO対策のルール(重要)
 - このチャンネルは1日2本の高頻度投稿で本数を稼ぐ運用方針のため、ニッチな専門用語よりも「多くの人が実際に検索・閲覧する、知名度の高い言い回し」を優先すること
-- titleには、検索ボリュームが大きいと想定される具体的なキーワード(専門用語・数字・「〜とは」等の定番の検索意図に合う言い回し)を必ず含めること
+- titleには、検索ボリュームが大きいと想定される具体的なキーワード(専門用語・数字・「〜とは」等の定番の検索意図に合う言い回し)を、できるだけ前方(最初の10〜15字以内)に配置すること
 - tagsには、検索ボリュームが見込める一般的なキーワード(例:FX,投資初心者)と、その動画固有の具体的キーワードを両方含めること。tagsは検索ボリュームが大きいと想定される順に並べること(先頭ほど需要が大きいものにする)
 - tagsの中の最初の数個は概要欄のハッシュタグとしても自動的に使われる。ハッシュタグ化されることを踏まえ、tagsは以下のルールを守ること:
   - 名詞(または名詞の複合語)のみにすること。「とは」「なぜ」「どう」等を含む疑問形・文章のままの語句は一切タグにしない(誤った例:「スプレッドとは」「pipsとは」→ 正しい例:「スプレッド」「pips」)
   - 概要欄に固定で入るハッシュタグ(FX・テクニカル分析・ファンダメンタルズ分析・shorts)と完全に同じ単独語は避け、それらより具体的で、かつ検索需要も見込める複合語にすること(例:単なる「FX」ではなく「FX初心者」「FXレバレッジ」等)
+- descriptionHookは、検索結果・スマホ画面で最初に表示される部分なので、動画の内容とキーワードが一目で伝わる1文にすること(曖昧な要約にしない)
+- outro(締め)のnarrationには、「チャンネル登録」の呼びかけに加えて、無理のない範囲でコメント欄でのやり取りを促す一言(例:「あなたはどう思う?コメントで教えて」)も含めること(エンゲージメントはアルゴリズム評価に直結するため)。文字数上限(50〜55字)に収まらない場合は「チャンネル登録」を優先する
 - seoNotesには、今回のタイトル・タグでどんなSEO対策をしたかを、日本語1〜2文で具体的に説明すること(実際に使った単語を挙げて説明すること)
 
 # JSON出力上の重要な注意
