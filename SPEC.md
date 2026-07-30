@@ -20,7 +20,7 @@
   - `PEXELS_API_KEY`: Pexels動画検索用
   - `CLAUDE_CODE_OAUTH_TOKEN`: 台本・ジャンル生成用(Claude Pro、長期間有効トークン。既存チャンネルと共用可)
   - `GOOGLE_CLIENT_SECRET_JSON`: YouTube OAuthクライアント情報(本チャンネル専用プロジェクト)
-  - `YOUTUBE_TOKEN_JSON`: YouTube認証トークン(TAC_Groupチャンネルで認可。スコープ: `youtube.force-ssl`)
+  - `YOUTUBE_TOKEN_JSON`: YouTube認証トークン(TAC_Groupチャンネルで認可。スコープ: `youtube.force-ssl` + `yt-analytics.readonly`。アップロード・サムネイル・コメント・統計取得・視聴維持率取得すべてに対応。再認証は`scripts/youtube-auth.mjs`をローカルで実行しブラウザ許可)
   - `GOOGLE_SERVICE_ACCOUNT_JSON`: スプレッドシート書き込み用サービスアカウント(本チャンネル専用プロジェクトで作成し、対象スプレッドシートに編集者として共有する)
 
 ## 3. 自動実行スケジュール・バッファ方式
@@ -83,6 +83,24 @@ FX(kaisetsu) / テクニカル(kaisetsu) / ファンダメンタルズ(kaisetsu)
 - 動画の尺は54〜59秒を目標(「ほっと一息チャンネル」と同じ)
 - narration(読み上げ文)の合計文字数が320〜345字程度になるよう台本生成プロンプトで指定
 
+### ジャンル選定ロジック
+- 過去の平均再生数 × 視聴維持率倍率(0.5〜2.0倍)に応じた重み付き抽選(伸びている・最後まで見られているジャンルほど選ばれやすい)
+- 実績の少ない/新しいジャンルにも一定の基礎重みを与え、開拓の機会を残す(コールドスタート対策)
+
+### 4-1. SEO対策・視聴維持率トラッキング(自走PDCAループ)
+「ほっと一息チャンネル」と同じ仕組みを導入。再生数だけでは「①表示されない」「②クリックされない」「③最後まで見られない」のどこがボトルネックか判別できないため、YouTube Analytics APIから**視聴維持率**を取得し、ジャンル選定と台本生成の両方に継続的にフィードバックしている。
+
+- **データ取得**(`scripts/track-performance.mjs`、`weekly-research.yml`で週次実行):
+  - `youtube.videos.list`で各動画の再生数を取得
+  - `youtubeAnalytics.reports.query`で各動画の`averageViewDuration`・`averageViewPercentage`を取得(`dimensions=video`単体は"not supported"エラーになるため、必ず`filters=video==id1,id2,...`と組み合わせる)
+  - インプレッション数・クリック率(CTR)は一般クリエイター向けにはAPIで取得できないため使用していない
+  - 結果を`content/category-stats.json`(ジャンル別平均視聴維持率)と`content/retention-summary.json`(チャンネル全体平均)に保存
+- **台本生成へのフィードバック**(`scripts/generate-script.mjs`):
+  - ジャンル選定の重み = 平均再生数 × min(2.0, max(0.5, ジャンル別視聴維持率 ÷ チャンネル全体平均維持率))
+  - チャンネル全体の平均視聴維持率が40%未満の場合、プロンプトに追加の強化指示(フックの具体性・情報密度・尻すぼみ防止)を自動挿入
+  - 常時適用のルールとして、フック最初の1文の惹きつけ・前置き厳禁を明文化
+  - SEO強化: タイトル冒頭10〜15字以内にキーワード配置、タグは重要度(想定検索ボリューム)順に並べる、descriptionHookは検索結果表示を意識して具体的に、outroにコメント誘導の一言を追加(文字数上限を超える場合はチャンネル登録呼びかけを優先)
+
 ### ナレーター(ランダム、速度統一)
 - 「キャラクター設定:ランダム」の要望に対応するため、Google Cloud TTSの`ja-JP-Chirp3-HD-*`ボイスから動画ごとにランダムに1つを選択する(`scripts/generate-tts.mjs`)
 - ボイスプール(8種、性別・トーンが異なるものを選定): Aoede・Kore・Leda・Autonoe(女性)/ Charon・Fenrir・Puck・Algenib(男性)
@@ -119,7 +137,7 @@ FX(kaisetsu) / テクニカル(kaisetsu) / ファンダメンタルズ(kaisetsu)
 - **公開設定**: 予約公開(`privacyStatus: private` + `publishAt`)
 - **カテゴリ**: エンターテインメント(categoryId: 24)
 - **子ども向け設定**: 否(`selfDeclaredMadeForKids: false`)
-- **概要欄**: 内容要約 + 固定紹介文(投資リテラシー向上目的の説明・メインチャンネル/LINE/ニコニコ/X/Instagram/お問い合わせのリンク・免責事項)+ BGMクレジット + ハッシュタグ(`description-template.txt`)
+- **概要欄**: 内容要約 + 固定紹介文(投資リテラシー向上目的の説明・メインチャンネル/LINE/ニコニコ/X/Instagram/お問い合わせのリンク)+ アフィリエイトリンク(FX会社・バイナリーオプション会社・過去検証ソフト)+ 免責事項 + BGMクレジット + ハッシュタグ(`description-template.txt`)
 - **ハッシュタグ**: 固定4つ(#FX #テクニカル分析 #ファンダメンタルズ分析 #shorts)+ 動画内容に応じた動的5つ
 - **タグ**: 動画ごとに具体的なキーワードを8個程度
 - **SEO対策メモ**: 今回何をSEO対策したかを1〜2文で生成し、管理シートに記録
