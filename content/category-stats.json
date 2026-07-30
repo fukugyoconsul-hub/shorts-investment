@@ -1,1 +1,44 @@
-{}
+{
+  "株式": {
+    "totalViews": 239,
+    "videoCount": 1,
+    "format": "ranking",
+    "avgViews": 239,
+    "avgRetentionPercentage": null
+  },
+  "世界情勢": {
+    "totalViews": 0,
+    "videoCount": 1,
+    "format": "qa",
+    "avgViews": 0,
+    "avgRetentionPercentage": null
+  },
+  "FX": {
+    "totalViews": 0,
+    "videoCount": 2,
+    "format": "kaisetsu",
+    "avgViews": 0,
+    "avgRetentionPercentage": null
+  },
+  "テクニカル": {
+    "totalViews": 0,
+    "videoCount": 1,
+    "format": "kaisetsu",
+    "avgViews": 0,
+    "avgRetentionPercentage": null
+  },
+  "金融": {
+    "totalViews": 0,
+    "videoCount": 1,
+    "format": "qa",
+    "avgViews": 0,
+    "avgRetentionPercentage": null
+  },
+  "コモディティ": {
+    "totalViews": 0,
+    "videoCount": 1,
+    "format": "ranking",
+    "avgViews": 0,
+    "avgRetentionPercentage": null
+  }
+}
