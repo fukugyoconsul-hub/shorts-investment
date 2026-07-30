@@ -81,5 +81,18 @@
     "videoId": "sjqYYG0M6Ys",
     "category": "FX",
     "format": "kaisetsu"
+  },
+  {
+    "title": "株価暴落の歴史ランキングベスト3",
+    "topics": [
+      "ブラックマンデー(1987年 NYダウ-22.6%)",
+      "ITバブル崩壊(2000年代 ナスダック最大-78%)",
+      "リーマンショック(2008年 NYダウ-33%)"
+    ],
+    "date": "2026-07-30",
+    "publishedAt": "2026-08-02T07:00:00.000Z",
+    "videoId": "hOhLwdKlRaU",
+    "category": "株式",
+    "format": "ranking"
   }
 ]
