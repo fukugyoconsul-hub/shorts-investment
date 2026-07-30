@@ -68,5 +68,18 @@
     "videoId": "3yzldeRHnAU",
     "category": "コモディティ",
     "format": "ranking"
+  },
+  {
+    "title": "FXスプレッドとは?買値と売値の差の仕組み",
+    "topics": [
+      "基礎:スプレッドの定義",
+      "仕組み:買値売値の差として反映される",
+      "注意点:原則固定でも急変時は拡大する"
+    ],
+    "date": "2026-07-30",
+    "publishedAt": "2026-08-01T23:00:00.000Z",
+    "videoId": "sjqYYG0M6Ys",
+    "category": "FX",
+    "format": "kaisetsu"
   }
 ]
