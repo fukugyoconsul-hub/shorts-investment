@@ -120,5 +120,18 @@
     "videoId": "1hqKdFfTW5E",
     "category": "テクニカル",
     "format": "kaisetsu"
+  },
+  {
+    "title": "原油・金・銀!コモディティ雑学ベスト3",
+    "topics": [
+      "銅はドクターカッパーと呼ばれる景気の指標",
+      "1973年 第一次オイルショックで原油価格が4倍に高騰",
+      "史上採掘された金の総量は25mプール4杯分"
+    ],
+    "date": "2026-07-31",
+    "publishedAt": "2026-08-03T23:00:00.000Z",
+    "videoId": "-u0LVtll_RA",
+    "category": "コモディティ",
+    "format": "ranking"
   }
 ]
