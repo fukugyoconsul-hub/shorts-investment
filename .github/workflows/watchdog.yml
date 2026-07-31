@@ -9,7 +9,7 @@ name: Schedule Watchdog
 
 on:
   schedule:
-    - cron: "0 22 * * *" # 07:00 JST(1日1回、投稿枠8:00 JSTの直前)
+    - cron: "3 0,8 * * *" # 09:03・17:03 JST(投稿時刻8:00・16:00の約1時間後、1日2回)
   workflow_dispatch: {}
 
 permissions:
