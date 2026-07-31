@@ -107,5 +107,18 @@
     "videoId": "24WK8V4b0dk",
     "category": "ファンダメンタルズ",
     "format": "kaisetsu"
+  },
+  {
+    "title": "ボリンジャーバンドとは?σの仕組み",
+    "topics": [
+      "ボリンジャーバンドの基礎(移動平均+標準偏差)",
+      "±1σ・±2σが示す確率の仕組み",
+      "バンドウォークなど誤解しやすい注意点"
+    ],
+    "date": "2026-07-31",
+    "publishedAt": "2026-08-03T07:00:00.000Z",
+    "videoId": "1hqKdFfTW5E",
+    "category": "テクニカル",
+    "format": "kaisetsu"
   }
 ]
