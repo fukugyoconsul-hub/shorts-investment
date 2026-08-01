@@ -146,5 +146,18 @@
     "videoId": "amvR8YQSvjs",
     "category": "株式",
     "format": "ranking"
+  },
+  {
+    "title": "CFDとは?レバレッジと証拠金の仕組み",
+    "topics": [
+      "CFD(差金決済取引)の基礎知識",
+      "レバレッジと証拠金の仕組み",
+      "スワップポイントとロスカットの注意点"
+    ],
+    "date": "2026-08-01",
+    "publishedAt": "2026-08-04T23:00:00.000Z",
+    "videoId": "JZdaaJuywxM",
+    "category": "CFD",
+    "format": "kaisetsu"
   }
 ]
