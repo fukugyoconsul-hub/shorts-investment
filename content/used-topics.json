@@ -185,5 +185,18 @@
     "videoId": "YbVSKKt9vVA",
     "category": "株式",
     "format": "ranking"
+  },
+  {
+    "title": "FX注文方法とは？成行・指値・逆指値の違い",
+    "topics": [
+      "成行・指値・逆指値の基礎知識",
+      "有利な価格と不利な価格で自動発注される仕組み",
+      "指定価格でも約定しないスリッページの注意点"
+    ],
+    "date": "2026-08-03",
+    "publishedAt": "2026-08-06T07:00:00.000Z",
+    "videoId": "VydcU23gGo4",
+    "category": "FX",
+    "format": "kaisetsu"
   }
 ]
