@@ -52,6 +52,20 @@ function runClaude(promptText) {
   });
 }
 
+// プロンプト指示だけでは半角!/?が紛れ込むことがあるため、コード側で確実に全角へ変換する
+function normalizePunctuation(value) {
+  if (typeof value === "string") {
+    return value.replace(/!/g, "！").replace(/\?/g, "？");
+  }
+  if (Array.isArray(value)) {
+    return value.map(normalizePunctuation);
+  }
+  if (value && typeof value === "object") {
+    return Object.fromEntries(Object.entries(value).map(([k, v]) => [k, normalizePunctuation(v)]));
+  }
+  return value;
+}
+
 function extractJson(text) {
   const start = text.indexOf("{");
   const end = text.lastIndexOf("}");
@@ -126,7 +140,7 @@ ${oldSnippet.title}
 }`;
 
   const raw = await runClaude(prompt);
-  const result = extractJson(raw);
+  const result = normalizePunctuation(extractJson(raw));
 
   // 概要欄の固定部分(SNSリンク・免責事項・アフィリエイト・BGMクレジット等)はそのまま維持し、
   // 冒頭のhookと末尾のハッシュタグ行だけ差し替える

@@ -253,9 +253,24 @@ function extractJson(text) {
   return JSON.parse(text.slice(start, end + 1));
 }
 
+// プロンプト指示だけでは半角!/?が紛れ込むことがあるため、生成結果の全テキストに対して
+// コード側で確実に全角へ変換する(タイトル・テロップ・ナレーション等すべてに再帰的に適用)
+function normalizePunctuation(value) {
+  if (typeof value === "string") {
+    return value.replace(/!/g, "！").replace(/\?/g, "？");
+  }
+  if (Array.isArray(value)) {
+    return value.map(normalizePunctuation);
+  }
+  if (value && typeof value === "object") {
+    return Object.fromEntries(Object.entries(value).map(([k, v]) => [k, normalizePunctuation(v)]));
+  }
+  return value;
+}
+
 console.log(`claude -p で新しい台本を生成中...(ジャンル: ${category.name})`);
 const raw = await runClaude(prompt);
-const script = extractJson(raw);
+const script = normalizePunctuation(extractJson(raw));
 script.category = category.name;
 script.format = category.format;
 script.displayGenre = category.displayGenre ?? category.name;
