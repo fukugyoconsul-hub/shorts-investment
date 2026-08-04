@@ -51,6 +51,18 @@ const retentionSummary = fs.existsSync(retentionSummaryPath)
   : { overallRetentionPercentage: null };
 const overallRetention = retentionSummary.overallRetentionPercentage;
 
+// 週次のトレンド調査結果(scripts/research-trends.mjs)。存在すればランダムに1パターンだけ
+// プロンプトに混ぜる(毎回同じパターンに偏らないように)。構造パターン(patterns)と
+// テーマ・内容の傾向(themes)の両方を持つ
+const trendInsightsPath = path.join(root, "content", "trend-insights.json");
+const trendInsights = fs.existsSync(trendInsightsPath)
+  ? JSON.parse(fs.readFileSync(trendInsightsPath, "utf-8"))
+  : { patterns: [], themes: [] };
+const trendPatterns = trendInsights.patterns ?? [];
+const trendThemes = trendInsights.themes ?? [];
+const trendPattern =
+  trendPatterns.length > 0 ? trendPatterns[Math.floor(Math.random() * trendPatterns.length)] : null;
+
 // 過去の平均再生数が高いジャンルほど選ばれやすくする(ただし実績が無い/少ないジャンルにも
 // 一定の確率を残し、開拓した新ジャンルが試される機会を確保する)。
 // さらに、視聴維持率がチャンネル平均より高いジャンルは重みを増やし、低いジャンルは減らす
@@ -78,6 +90,11 @@ for (let i = 0; i < weights.length; i++) {
   }
 }
 const category = CATEGORIES[categoryIndex];
+
+// 選ばれたジャンルに関連するテーマ傾向があれば優先し、無ければランダムに1件だけ採用する
+const matchingThemes = trendThemes.filter((t) => t.relatedGenre === category.name);
+const themePool = matchingThemes.length > 0 ? matchingThemes : trendThemes;
+const trendTheme = themePool.length > 0 ? themePool[Math.floor(Math.random() * themePool.length)] : null;
 
 const FORMAT_SPECS = {
   kaisetsu: {
@@ -173,7 +190,22 @@ ${category.name}: ${category.brief}
 - 各narrationは1〜2文で簡潔にしつつも、内容が薄くならないよう具体性を重視する
 - 動画の尺は54〜59秒が目標。narration(読み上げ文)の合計文字数が320〜345字程度になるようにすること(目安: hook 50〜55字、rank3/rank2/rank1は各65〜85字、outroは50〜55字)。文字数が少なすぎても多すぎても尺がずれるので、この範囲を必ず守ること
 - (視聴維持率対策・常時適用)フックの最初の1文だけで惹きつけること。「〜について紹介します」のような前置きは厳禁で、具体的な数字・意外な事実・断定的な一言から入る。前半で間延びさせず、後半に行くほど情報の意外性・インパクトが強くなる(尻すぼみにならない)構成にする
+- (視聴維持率対策・常時適用)タイトルだけでなく、可能な場面ではnarrationの構成自体も「核心を先に明かさず、少し焦らしてから明かす」形にする(例:「実は〜」のように、結論を保留してから見せる)。ランキング形式であっても、各順位の紹介文の冒頭で結論を言い切らず、一言タメを作ってから核心に入るとよい
 ${retentionInstructions}
+${
+  trendPattern
+    ? `- (今週のトレンド調査より)可能であれば次のパターンを今回の台本に取り入れてみること: 『${trendPattern.pattern}』── ${trendPattern.description}(参考例: ${trendPattern.example})。無理に当てはめて不自然にならない場合のみ採用すること`
+    : ""
+}
+${
+  trendTheme
+    ? `- (今週のトレンド調査より)可能であれば次のテーマ・切り口を今回のトピック選定に取り入れてみること: 『${trendTheme.theme}』── ${trendTheme.description}。このジャンル(${category.name})の内容として不自然にならない場合、かつ投資系の安全ルールに抵触しない場合のみ採用すること`
+    : ""
+}
+
+# テロップ(caption)のルール(重要)
+- captionは画面に大きく表示される文字情報であり、音声を聞かなくても内容が伝わる密度にすること。narrationの単なる短縮ではなく、そのシーンの核心となる数字・専門用語を必ず含めること
+- 各captionは2行、1行あたり10〜16字程度を目安にする(短すぎる相槌的な文言は避ける。例:「衝撃の事実」のような中身のない見出しではなく、「レバレッジ最大25倍」のように具体的にする)
 
 # 【最重要・絶対禁止事項】投資系チャンネル特有の安全ルール(fictionの有無に関わらず絶対に適用)
 - 「今買うべき」「今が売り時」「そろそろ底値」等、特定の金融商品(通貨ペア・個別銘柄・暗号資産・コモディティ等)の具体的な売買タイミングを示唆・断定する表現は絶対禁止
@@ -195,7 +227,7 @@ ${retentionInstructions}
 
 # SEO対策のルール(重要)
 - このチャンネルは1日2本の高頻度投稿で本数を稼ぐ運用方針のため、ニッチな専門用語よりも「多くの人が実際に検索・閲覧する、知名度の高い言い回し」を優先すること
-- titleには、検索ボリュームが大きいと想定される具体的なキーワード(専門用語・数字・「〜とは」等の定番の検索意図に合う言い回し)を、できるだけ前方(最初の10〜15字以内)に配置すること
+- titleには、検索ボリュームが大きいと想定される具体的なキーワード(専門用語・数字・「〜とは」等の定番の検索意図に合う言い回し)を、できるだけ前方(最初の10〜15字以内)に配置すること。「〜ベスト3」のような、他の同ジャンル動画と矛盾しない範囲での定番の検索意図に合う言い回しにする(ジャンルのbriefに矛盾回避の指示がある場合はそちらに従う)
 - tagsには、検索ボリュームが見込める一般的なキーワード(例:FX,投資初心者)と、その動画固有の具体的キーワードを両方含めること。tagsは検索ボリュームが大きいと想定される順に並べること(先頭ほど需要が大きいものにする)
 - tagsの中の最初の数個は概要欄のハッシュタグとしても自動的に使われる。ハッシュタグ化されることを踏まえ、tagsは以下のルールを守ること:
   - 名詞(または名詞の複合語)のみにすること。「とは」「なぜ」「どう」等を含む疑問形・文章のままの語句は一切タグにしない(誤った例:「スプレッドとは」「pipsとは」→ 正しい例:「スプレッド」「pips」)
