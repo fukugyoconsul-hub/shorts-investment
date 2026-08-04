@@ -30,7 +30,7 @@ const categoriesPath = path.join(root, "scripts", "categories.json");
 const categories = JSON.parse(fs.readFileSync(categoriesPath, "utf-8"));
 const genreNames = categories.map((c) => c.name).join("、");
 
-const prompt = `あなたはYouTube Shorts市場調査の専門家です。Web検索を使って、直近1〜2週間で日本語圏で伸びているFX・投資・金融教育系YouTube Shortsに共通する「構造的なパターン」と「よく伸びているテーマ・切り口の傾向」を調査してください。
+const prompt = `あなたはYouTube Shorts市場調査の専門家です。Web検索が使えるなら、直近1〜2週間で日本語圏で伸びているFX・投資・金融教育系YouTube Shortsに共通する「構造的なパターン」と「よく伸びているテーマ・切り口の傾向」を調査してください。Web検索が使えない場合は、確認を求めたり途中で止まったりせず、あなたの知識に基づく一般的な傾向として同じ形式で出力してください(必ず有効なJSONのみを出力すること)。
 
 # 調査対象の絞り込み
 うちのチャンネルは顔出し・声出しなしで、相場初心者向けの金融・投資リテラシー教育を目的とし、FX・テクニカル分析・ファンダメンタルズ分析・CFD取引をメイン、株式・コモディティ・債券・金融・日本経済・世界情勢をサブに扱っています(現在の全ジャンル: ${genreNames})。これに近い、ナレーション+シンプルな背景映像だけで成立する教育系動画を対象に調査してください。
@@ -66,11 +66,15 @@ const prompt = `あなたはYouTube Shorts市場調査の専門家です。Web�
 
 function runClaude(promptText) {
   return new Promise((resolve, reject) => {
-    const child = spawn("claude", ["-p", "--output-format", "text"], {
-      shell: true,
-      stdio: ["pipe", "pipe", "pipe"],
-      env,
-    });
+    const child = spawn(
+      "claude",
+      ["-p", "--output-format", "text", "--allowedTools", "WebSearch"],
+      {
+        shell: true,
+        stdio: ["pipe", "pipe", "pipe"],
+        env,
+      }
+    );
     let stdout = "";
     let stderr = "";
     child.stdout.on("data", (d) => (stdout += d.toString()));
