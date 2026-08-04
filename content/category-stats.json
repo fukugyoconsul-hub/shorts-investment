@@ -1,9 +1,9 @@
 {
   "株式": {
-    "totalViews": 610,
-    "videoCount": 5,
+    "totalViews": 612,
+    "videoCount": 6,
     "format": "ranking",
-    "avgViews": 122,
+    "avgViews": 102,
     "avgRetentionPercentage": 41.8
   },
   "世界情勢": {
@@ -25,7 +25,7 @@
     "videoCount": 2,
     "format": "kaisetsu",
     "avgViews": 1,
-    "avgRetentionPercentage": null
+    "avgRetentionPercentage": 29.9
   },
   "金融": {
     "totalViews": 0,
@@ -35,17 +35,17 @@
     "avgRetentionPercentage": null
   },
   "コモディティ": {
-    "totalViews": 217,
+    "totalViews": 964,
     "videoCount": 2,
     "format": "ranking",
-    "avgViews": 109,
+    "avgViews": 482,
     "avgRetentionPercentage": null
   },
   "ファンダメンタルズ": {
-    "totalViews": 196,
+    "totalViews": 198,
     "videoCount": 1,
     "format": "kaisetsu",
-    "avgViews": 196,
+    "avgViews": 198,
     "avgRetentionPercentage": null
   },
   "CFD": {

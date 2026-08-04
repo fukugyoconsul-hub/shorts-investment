@@ -24,7 +24,7 @@
     "format": "qa"
   },
   {
-    "title": "FXレバレッジ25倍とは？追証・ロスカット解説",
+    "title": "FXレバレッジ25倍とは？証拠金4万で100万取引",
     "topics": [
       "レバレッジは証拠金を担保に国内では最大25倍まで/証拠金4万円で理論上100万円分の取引が可能に/倍率が高いほど追証・強制ロスカットのリスクが増大"
     ],
@@ -32,10 +32,13 @@
     "publishedAt": "2026-07-30T23:00:00.000Z",
     "videoId": "pC43VX_N26k",
     "category": "FX",
-    "format": "kaisetsu"
+    "format": "kaisetsu",
+    "seoRetriedAt": "2026-08-04T11:57:17.566Z",
+    "seoRetryCount": 1,
+    "viewsAtRetry": 0
   },
   {
-    "title": "RSI70・30とは？買われすぎ売られすぎの意味",
+    "title": "RSI70・30とは？買われすぎ売られすぎの計算式",
     "topics": [
       "RSIは0〜100で示す相対力指数/値上がり幅の合計を値動き幅の合計で割って算出/70・30は目安に過ぎずトレンド次第で超えたまま推移することも"
     ],
@@ -43,10 +46,13 @@
     "publishedAt": "2026-07-31T07:00:00.000Z",
     "videoId": "9OrPAJIIVK0",
     "category": "テクニカル",
-    "format": "kaisetsu"
+    "format": "kaisetsu",
+    "seoRetriedAt": "2026-08-04T11:57:17.566Z",
+    "seoRetryCount": 1,
+    "viewsAtRetry": 1
   },
   {
-    "title": "政策金利とは？日銀FRBと公開市場操作の仕組み",
+    "title": "政策金利の対象とは？日銀FRBの公開市場操作を解説",
     "topics": [
       "政策金利の対象/公開市場操作の仕組み/中央銀行は金利を誘導しているだけという結論"
     ],
@@ -54,7 +60,10 @@
     "publishedAt": "2026-07-31T23:00:00.000Z",
     "videoId": "Eq6FBqh1wgU",
     "category": "金融",
-    "format": "qa"
+    "format": "qa",
+    "seoRetriedAt": "2026-08-04T11:57:17.566Z",
+    "seoRetryCount": 1,
+    "viewsAtRetry": 0
   },
   {
     "title": "原油マイナス価格の衝撃！商品雑学3選",
