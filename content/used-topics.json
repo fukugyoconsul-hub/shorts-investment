@@ -259,5 +259,18 @@
     "videoId": "ZQ7gbZ4WO74",
     "category": "ファンダメンタルズ",
     "format": "kaisetsu"
+  },
+  {
+    "title": "債券利回りとは？国債価格の逆相関の仕組み",
+    "topics": [
+      "国債・社債の基礎知識",
+      "価格と利回りの逆相関の仕組み",
+      "イールドカーブ逆転の注意点"
+    ],
+    "date": "2026-08-05",
+    "publishedAt": "2026-08-08T23:00:00.000Z",
+    "videoId": "yEVYAFTI9BM",
+    "category": "債券",
+    "format": "kaisetsu"
   }
 ]
