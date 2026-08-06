@@ -272,5 +272,18 @@
     "videoId": "yEVYAFTI9BM",
     "category": "債券",
     "format": "kaisetsu"
+  },
+  {
+    "title": "日米金利差とは？円安が続く仕組み",
+    "topics": [
+      "金利差とキャリー取引の基礎知識",
+      "金利差が通貨の売買を動かす仕組み",
+      "為替は金利差だけで決まらない注意点"
+    ],
+    "date": "2026-08-06",
+    "publishedAt": "2026-08-09T07:00:00.000Z",
+    "videoId": "Na011I3snRw",
+    "category": "FX",
+    "format": "kaisetsu"
   }
 ]
