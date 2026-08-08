@@ -285,5 +285,42 @@
     "videoId": "Na011I3snRw",
     "category": "FX",
     "format": "kaisetsu"
+  },
+  {
+    "title": "バブル期の地価とは？伝説の逸話３選",
+    "topics": [
+      "1980年代地価急騰の規模/皇居とカリフォルニア州の逸話/東京23区がアメリカ本土を上回った試算"
+    ],
+    "date": "2026-08-08",
+    "publishedAt": "2026-08-09T23:00:00.000Z",
+    "videoId": "L_PNlyu-ky8",
+    "category": "不動産",
+    "format": "qa"
+  },
+  {
+    "title": "世界恐慌とは？金融危機の歴史3選",
+    "topics": [
+      "アジア通貨危機とタイバーツ暴落",
+      "LTCM危機とロシア国債デフォルト",
+      "世界恐慌とNYダウ89%下落"
+    ],
+    "date": "2026-08-08",
+    "publishedAt": "2026-08-10T07:00:00.000Z",
+    "videoId": "BFbVT3i3sI8",
+    "category": "経済史",
+    "format": "ranking"
+  },
+  {
+    "title": "ステーブルコインとは？ドル連動の仕組み",
+    "topics": [
+      "ステーブルコインの定義と全体像",
+      "ドルペッグの2つの裏付け方式",
+      "デペッグ(価格乖離)の実例とリスク"
+    ],
+    "date": "2026-08-08",
+    "publishedAt": "2026-08-10T23:00:00.000Z",
+    "videoId": "AmOs0pzGNcE",
+    "category": "暗号資産",
+    "format": "kaisetsu"
   }
 ]
