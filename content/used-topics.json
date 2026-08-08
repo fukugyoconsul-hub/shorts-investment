@@ -322,5 +322,18 @@
     "videoId": "AmOs0pzGNcE",
     "category": "暗号資産",
     "format": "kaisetsu"
+  },
+  {
+    "title": "移動平均線とは？ゴールデンクロスの仕組み",
+    "topics": [
+      "基礎:単純移動平均線(SMA)の定義とチャート表示",
+      "仕組み:ゴールデンクロス・デッドクロスが生まれる仕組み",
+      "注意点:遅行指標ゆえのだましとリスク"
+    ],
+    "date": "2026-08-08",
+    "publishedAt": "2026-08-11T07:00:00.000Z",
+    "videoId": "tE3wfpp_oNs",
+    "category": "テクニカル",
+    "format": "kaisetsu"
   }
 ]
