@@ -377,5 +377,18 @@
     "videoId": "v6AmfSQdG9Q",
     "category": "日本経済",
     "format": "qa"
+  },
+  {
+    "title": "CFDとは？株主になれない差金決済",
+    "topics": [
+      "差金決済の基礎知識",
+      "証拠金と金利差調整の仕組み",
+      "金利差負担の注意点"
+    ],
+    "date": "2026-08-10",
+    "publishedAt": "2026-08-13T07:00:00.000Z",
+    "videoId": "Q2q6eakkRGU",
+    "category": "CFD",
+    "format": "kaisetsu"
   }
 ]
