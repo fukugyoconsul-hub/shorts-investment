@@ -390,5 +390,18 @@
     "videoId": "Q2q6eakkRGU",
     "category": "CFD",
     "format": "kaisetsu"
+  },
+  {
+    "title": "保険とは？大数の法則と保険料の仕組み",
+    "topics": [
+      "大数の法則が保険料算出の土台",
+      "純保険料と付加保険料の仕組み",
+      "公的保険と民間保険の違い"
+    ],
+    "date": "2026-08-10",
+    "publishedAt": "2026-08-13T23:00:00.000Z",
+    "videoId": "uzccm1wr9xo",
+    "category": "保険",
+    "format": "kaisetsu"
   }
 ]
