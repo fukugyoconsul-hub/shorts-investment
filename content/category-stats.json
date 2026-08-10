@@ -1,57 +1,92 @@
 {
   "株式": {
-    "totalViews": 612,
+    "totalViews": 1923,
     "videoCount": 6,
     "format": "ranking",
-    "avgViews": 102,
-    "avgRetentionPercentage": 41.8
+    "avgViews": 321,
+    "avgRetentionPercentage": 42.7
   },
   "世界情勢": {
     "totalViews": 39,
-    "videoCount": 1,
+    "videoCount": 2,
     "format": "qa",
-    "avgViews": 39,
+    "avgViews": 20,
     "avgRetentionPercentage": 32.4
   },
   "FX": {
-    "totalViews": 153,
-    "videoCount": 3,
+    "totalViews": 232,
+    "videoCount": 4,
     "format": "kaisetsu",
-    "avgViews": 51,
-    "avgRetentionPercentage": null
+    "avgViews": 58,
+    "avgRetentionPercentage": 18.4
   },
   "テクニカル": {
     "totalViews": 1,
-    "videoCount": 2,
+    "videoCount": 3,
     "format": "kaisetsu",
-    "avgViews": 1,
+    "avgViews": 0,
     "avgRetentionPercentage": 29.9
   },
   "金融": {
     "totalViews": 0,
-    "videoCount": 1,
+    "videoCount": 2,
     "format": "qa",
     "avgViews": 0,
     "avgRetentionPercentage": null
   },
   "コモディティ": {
-    "totalViews": 964,
-    "videoCount": 2,
+    "totalViews": 1683,
+    "videoCount": 4,
     "format": "ranking",
-    "avgViews": 482,
-    "avgRetentionPercentage": null
+    "avgViews": 421,
+    "avgRetentionPercentage": 44.2
   },
   "ファンダメンタルズ": {
-    "totalViews": 198,
-    "videoCount": 1,
+    "totalViews": 291,
+    "videoCount": 2,
     "format": "kaisetsu",
-    "avgViews": 198,
-    "avgRetentionPercentage": null
+    "avgViews": 146,
+    "avgRetentionPercentage": 11
   },
   "CFD": {
+    "totalViews": 55,
+    "videoCount": 1,
+    "format": "kaisetsu",
+    "avgViews": 55,
+    "avgRetentionPercentage": 40.2
+  },
+  "債券": {
+    "totalViews": 422,
+    "videoCount": 1,
+    "format": "kaisetsu",
+    "avgViews": 422,
+    "avgRetentionPercentage": null
+  },
+  "不動産": {
+    "totalViews": 768,
+    "videoCount": 1,
+    "format": "qa",
+    "avgViews": 768,
+    "avgRetentionPercentage": null
+  },
+  "経済史": {
+    "totalViews": 0,
+    "videoCount": 1,
+    "format": "ranking",
+    "avgViews": 0,
+    "avgRetentionPercentage": null
+  },
+  "暗号資産": {
     "totalViews": 0,
     "videoCount": 1,
     "format": "kaisetsu",
+    "avgViews": 0,
+    "avgRetentionPercentage": null
+  },
+  "日本経済": {
+    "totalViews": 0,
+    "videoCount": 1,
+    "format": "qa",
     "avgViews": 0,
     "avgRetentionPercentage": null
   }
