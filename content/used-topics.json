@@ -496,5 +496,42 @@
     "videoId": "lNQ6VuusDTI",
     "category": "税金",
     "format": "kaisetsu"
+  },
+  {
+    "title": "中央銀行はなぜ物価目標2％を掲げるのか",
+    "topics": [
+      "中央銀行の共通の使命/物価目標がゼロでない理由/2%目標導入の経緯"
+    ],
+    "date": "2026-08-24",
+    "publishedAt": "2026-08-26T07:00:00.000Z",
+    "videoId": "DT0-JvaNWW4",
+    "category": "中央銀行",
+    "format": "qa"
+  },
+  {
+    "title": "社債とは？格付けと利回りの仕組み",
+    "topics": [
+      "社債の基礎知識",
+      "格付けと信用スプレッドの仕組み",
+      "高利回り社債の注意点"
+    ],
+    "date": "2026-08-24",
+    "publishedAt": "2026-08-26T23:00:00.000Z",
+    "videoId": "8OVbgBGVaU8",
+    "category": "債券",
+    "format": "kaisetsu"
+  },
+  {
+    "title": "GDP速報値とは？改定される仕組み",
+    "topics": [
+      "GDPの定義と発表頻度",
+      "一次速報と二次速報の公表時期",
+      "速報値が改定される注意点"
+    ],
+    "date": "2026-08-24",
+    "publishedAt": "2026-08-27T07:00:00.000Z",
+    "videoId": "4JicN1LGzzI",
+    "category": "経済指標",
+    "format": "kaisetsu"
   }
 ]

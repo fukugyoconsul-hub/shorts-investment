@@ -1,75 +1,77 @@
 {
-  "title": "NISA非課税とは？投資の税金の仕組み",
+  "title": "GDP速報値とは？改定される仕組み",
   "topics": [
-    "NISA・iDeCoという公的な非課税制度の概要",
-    "譲渡益・配当に合計20.315％かかる課税の仕組み",
-    "NISAは損益通算不可・年20万円超で確定申告が必要な場合がある注意点"
+    "GDPの定義と発表頻度",
+    "一次速報と二次速報の公表時期",
+    "速報値が改定される注意点"
   ],
-  "descriptionHook": "NISAとiDeCoの非課税制度の仕組みと、譲渡益・配当にかかる20.315％の税金、確定申告が必要になる条件をまとめて解説。",
+  "descriptionHook": "GDP速報値とは何かを一言で伝える動画。日本のGDPが一次速報から二次速報にかけて改定される仕組みをわかりやすく解説します。",
   "tags": [
-    "NISA",
-    "新NISA",
-    "iDeCo",
-    "投資の税金",
-    "確定申告",
-    "譲渡益課税",
-    "配当課税",
-    "投資初心者"
+    "GDP",
+    "経済指標",
+    "投資初心者",
+    "FX初心者",
+    "GDP速報値",
+    "一次速報",
+    "内閣府",
+    "四半期統計",
+    "経済ニュース",
+    "資産形成"
   ],
-  "seoNotes": "タイトル冒頭15字以内に検索需要の大きい「NISA非課税」というキーワードを配置し、tagsは検索ボリュームの大きい順にNISA・新NISA・iDeCo・投資の税金・確定申告を並べて需要を取りこぼさないようにした。",
+  "seoNotes": "タイトル冒頭に検索需要の高い「GDP速報値とは」を配置し、タグには「GDP」「経済指標」といった一般的キーワードと「GDP速報値」「一次速報」など動画固有の複合語を検索需要順に並べてSEOを狙った。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "投資の利益ゼロ課税？",
-        "実は非課税は一部だけ"
+        "GDP発表後に2回",
+        "数字が書き換わる仕組み"
       ],
-      "narration": "NISAを使えば投資の利益は税金ゼロ、でもそれって実は投資全体のほんの一部の話だって知ってましたか？",
-      "pexelsQuery": "tax documents calculator japanese yen closeup"
+      "narration": "日本のGDP、発表直後の数字がそのまま確定するとは限らないのを知っていますか。実は2回も改定されます。",
+      "pexelsQuery": "stock market data screen numbers"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "NISA年360万円まで",
-        "iDeCoは掛金が控除"
+        "GDPとは付加価値の合計",
+        "内閣府が四半期ごとに発表"
       ],
-      "narration": "NISAは年間最大360万円、生涯で1800万円まで投資でき、iDeCoは掛金が全額所得控除になる、どちらも国が用意した公的な非課税制度です。",
-      "pexelsQuery": "nisa ideco pension savings japan finance"
+      "narration": "GDP(国内総生産)は一定期間に国内で生み出された付加価値の合計で、内閣府が四半期ごとに年4回発表します。支出面で見ると個人消費が全体の5割超を占めます。",
+      "pexelsQuery": "japan economy office skyscrapers"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "株式譲渡益・配当金に",
-        "合計20.315％課税"
+        "一次速報は1ヶ月半後",
+        "二次速報は1ヶ月後に公表"
       ],
-      "narration": "通常の課税口座では、株の譲渡益や配当に所得税15％、復興特別所得税0.315％、住民税5％、合計20.315％が自動的に源泉徴収される仕組みです。",
-      "pexelsQuery": "stock certificate dividend tax paperwork office"
+      "narration": "最初に出るのは一次速報(QE)で、四半期終了からおよそ1ヶ月半後に公表されます。二次速報はその1ヶ月後、法人企業統計など追加データを反映して発表される仕組みです。",
+      "pexelsQuery": "calendar schedule office desk"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "NISA損失は通算不可",
-        "年20万円超で申告要"
+        "一次速報は暫定的な推計",
+        "二次速報で上下に修正"
       ],
-      "narration": "NISA口座で出た損失は、他の課税口座で出た利益と損益通算や繰越控除ができず、給与以外の利益が年間20万円を超えると確定申告が必要になる場合があります。",
-      "pexelsQuery": "tax filing warning paperwork confused person desk"
+      "narration": "一次速報は基礎統計が出そろう前の暫定的な推計のため、二次速報で数字が上方にも下方にも修正されることが珍しくありません。速報値だけで判断するのは早計です。",
+      "pexelsQuery": "analyst reviewing financial documents"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "投資と税金の基礎知識",
-        "チャンネル登録お願い"
+        "投資の勧誘・助言ではない",
+        "チャンネル登録お願いします"
       ],
-      "narration": "税金の仕組みを正しく知ることが投資の第一歩です。チャンネル登録して、感想をぜひコメントで教えてください。",
-      "pexelsQuery": "smartphone youtube subscribe button animation"
+      "narration": "あくまで制度の解説であり、投資の勧誘や助言ではありません。チャンネル登録して、感想もコメントで教えてください。",
+      "pexelsQuery": "city skyline finance sunset"
     }
   ],
-  "category": "税金",
+  "category": "経済指標",
   "format": "kaisetsu",
-  "displayGenre": "税金"
+  "displayGenre": "経済指標"
 }
