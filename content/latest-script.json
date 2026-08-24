@@ -1,75 +1,75 @@
 {
-  "title": "米雇用統計とは？為替が動く仕組み",
+  "title": "NISA非課税とは？投資の税金の仕組み",
   "topics": [
-    "基礎:米雇用統計の三本柱",
-    "仕組み:予想との差でそうばが動く",
-    "注意点:速報値は後日修正される"
+    "NISA・iDeCoという公的な非課税制度の概要",
+    "譲渡益・配当に合計20.315％かかる課税の仕組み",
+    "NISAは損益通算不可・年20万円超で確定申告が必要な場合がある注意点"
   ],
-  "descriptionHook": "米雇用統計はなぜ為替を動かすのか、発表の仕組みと注意点を解説。",
+  "descriptionHook": "NISAとiDeCoの非課税制度の仕組みと、譲渡益・配当にかかる20.315％の税金、確定申告が必要になる条件をまとめて解説。",
   "tags": [
-    "FX初心者",
-    "米雇用統計",
-    "投資初心者",
-    "経済指標",
-    "ドル円",
-    "NFP",
-    "米労働省",
-    "為替の仕組み"
+    "NISA",
+    "新NISA",
+    "iDeCo",
+    "投資の税金",
+    "確定申告",
+    "譲渡益課税",
+    "配当課税",
+    "投資初心者"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「米雇用統計とは」を配置し、tagsには「FX初心者」「米雇用統計」「ドル円」「NFP」など知名度が高く検索需要が見込める語を需要順に含めた。",
+  "seoNotes": "タイトル冒頭15字以内に検索需要の大きい「NISA非課税」というキーワードを配置し、tagsは検索ボリュームの大きい順にNISA・新NISA・iDeCo・投資の税金・確定申告を並べて需要を取りこぼさないようにした。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "ドル円が数十銭動く",
-        "米雇用統計の正体"
+        "投資の利益ゼロ課税？",
+        "実は非課税は一部だけ"
       ],
-      "narration": "米雇用統計、発表直後のわずか数分でドル円が数十銭動くことがある。たった一つの数字がなぜここまでそうばを揺らすのか？",
-      "pexelsQuery": "stock market screen numbers flashing"
+      "narration": "NISAを使えば投資の利益は税金ゼロ、でもそれって実は投資全体のほんの一部の話だって知ってましたか？",
+      "pexelsQuery": "tax documents calculator japanese yen closeup"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "雇用統計の三本柱",
-        "NFP・失業率・時給"
+        "NISA年360万円まで",
+        "iDeCoは掛金が控除"
       ],
-      "narration": "米雇用統計は、非農業部門雇用者数(NFP)・失業率・平均時給の三つを柱とする米労働省発表の統計で、毎月第一金曜、日本時間の夜に公表される。",
-      "pexelsQuery": "US labor department building economy"
+      "narration": "NISAは年間最大360万円、生涯で1800万円まで投資でき、iDeCoは掛金が全額所得控除になる、どちらも国が用意した公的な非課税制度です。",
+      "pexelsQuery": "nisa ideco pension savings japan finance"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "動くのは予想との差",
-        "上回れば米ドル買い"
+        "株式譲渡益・配当金に",
+        "合計20.315％課税"
       ],
-      "narration": "実はそうばが反応するのは実数の大小ではなく事前予想との差で、たとえば予想を10万人上回るサプライズなら米ドル買い、下回れば売りが強まりやすい。",
-      "pexelsQuery": "forex trading chart dollar currency"
+      "narration": "通常の課税口座では、株の譲渡益や配当に所得税15％、復興特別所得税0.315％、住民税5％、合計20.315％が自動的に源泉徴収される仕組みです。",
+      "pexelsQuery": "stock certificate dividend tax paperwork office"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "速報値は後日修正",
-        "数万人単位で変動"
+        "NISA損失は通算不可",
+        "年20万円超で申告要"
       ],
-      "narration": "公表値はあくまで速報値で、翌月以降に数万人単位で上方や下方へ大きく修正されることも珍しくなく、その修正発表だけでかわせや株価が再び動くこともある。",
-      "pexelsQuery": "financial newspaper data revision"
+      "narration": "NISA口座で出た損失は、他の課税口座で出た利益と損益通算や繰越控除ができず、給与以外の利益が年間20万円を超えると確定申告が必要になる場合があります。",
+      "pexelsQuery": "tax filing warning paperwork confused person desk"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "チャンネル登録して",
-        "感想はコメントで"
+        "投資と税金の基礎知識",
+        "チャンネル登録お願い"
       ],
-      "narration": "経済指標の裏側を知ればそうばのニュースもぐっと身近になる。チャンネル登録して、感想もぜひコメントで教えてね。",
-      "pexelsQuery": "city skyline finance sunset"
+      "narration": "税金の仕組みを正しく知ることが投資の第一歩です。チャンネル登録して、感想をぜひコメントで教えてください。",
+      "pexelsQuery": "smartphone youtube subscribe button animation"
     }
   ],
-  "category": "ファンダメンタルズ",
+  "category": "税金",
   "format": "kaisetsu",
-  "displayGenre": "ファンダメンタルズ"
+  "displayGenre": "税金"
 }
