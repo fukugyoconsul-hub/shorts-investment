@@ -533,5 +533,29 @@
     "videoId": "4JicN1LGzzI",
     "category": "経済指標",
     "format": "kaisetsu"
+  },
+  {
+    "title": "ポンジスキームとは？破綻が不可避な理由",
+    "topics": [
+      "配当の原資は新規出資者/出資者増加が必須という数式/運用実力と無関係に破綻確定"
+    ],
+    "date": "2026-08-24",
+    "publishedAt": "2026-08-27T07:00:00.000Z",
+    "videoId": "4KVthQPaRKY",
+    "category": "詐欺",
+    "format": "qa"
+  },
+  {
+    "title": "フラッシュクラッシュとは？市場崩壊の歴史3選",
+    "topics": [
+      "1907年 米国恐慌(銅相場買い占め失敗)",
+      "1992年 ポンド危機(ブラックウェンズデー)",
+      "2010年 フラッシュクラッシュ(ダウ急落と即時回復)"
+    ],
+    "date": "2026-08-24",
+    "publishedAt": "2026-08-27T23:00:00.000Z",
+    "videoId": "uUsgBXqL9zw",
+    "category": "経済史",
+    "format": "ranking"
   }
 ]
