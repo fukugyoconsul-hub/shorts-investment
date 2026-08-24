@@ -15,9 +15,9 @@
   },
   "FX": {
     "totalViews": 439,
-    "videoCount": 4,
+    "videoCount": 5,
     "format": "kaisetsu",
-    "avgViews": 110,
+    "avgViews": 88,
     "avgRetentionPercentage": 27.8
   },
   "テクニカル": {
@@ -49,7 +49,7 @@
     "avgRetentionPercentage": 25.4
   },
   "CFD": {
-    "totalViews": 251,
+    "totalViews": 252,
     "videoCount": 2,
     "format": "kaisetsu",
     "avgViews": 126,
@@ -64,9 +64,9 @@
   },
   "不動産": {
     "totalViews": 910,
-    "videoCount": 1,
+    "videoCount": 2,
     "format": "qa",
-    "avgViews": 910,
+    "avgViews": 455,
     "avgRetentionPercentage": 77.9
   },
   "経済史": {
@@ -110,5 +110,12 @@
     "format": "qa",
     "avgViews": 919,
     "avgRetentionPercentage": 64.1
+  },
+  "税金": {
+    "totalViews": 0,
+    "videoCount": 1,
+    "format": "kaisetsu",
+    "avgViews": 0,
+    "avgRetentionPercentage": null
   }
 }
