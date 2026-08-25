@@ -12,21 +12,13 @@ const SPREADSHEET_ID = "1oyuIHE27xiOGppc3QOdP7fA0pNczDI14MTb5wnDQq4c";
 const SHEET_NAME = "TACグループ";
 const GRACE_MINUTES = 30; // YouTube側の処理猶予(予定時刻ちょうどでは間に合わないことがあるため)
 
-const usedTopics = JSON.parse(
-  fs.readFileSync(path.join(root, "content", "used-topics.json"), "utf-8")
-);
-const now = new Date();
-
-// 予約公開の予定時刻(publishedAt)を、猶予時間を含めても過ぎている動画
-const overdue = usedTopics.filter((t) => {
-  if (!t.publishedAt || !t.videoId) return false;
-  const scheduled = new Date(t.publishedAt);
-  return now.getTime() > scheduled.getTime() + GRACE_MINUTES * 60 * 1000;
-});
-
-if (overdue.length === 0) {
-  console.log("OK: 公開予定時刻を過ぎた動画はありません");
-  process.exit(0);
+// シート上の「投稿日時」(例: "2026/8/25 16:00")はJSTの壁時計時刻として書き込まれているため、
+// そのままDateにparseすると実行環境のタイムゾーン次第で解釈がズレる。明示的にJST→UTC変換する。
+function parseJstDatetime(str) {
+  const m = str?.trim().match(/^(\d{4})\/(\d{1,2})\/(\d{1,2})\s+(\d{1,2}):(\d{2})$/);
+  if (!m) return null;
+  const [, y, mo, d, h, mi] = m.map(Number);
+  return new Date(Date.UTC(y, mo - 1, d, h - 9, mi));
 }
 
 const auth = new google.auth.GoogleAuth({
@@ -35,38 +27,36 @@ const auth = new google.auth.GoogleAuth({
 });
 const sheets = google.sheets({ version: "v4", auth });
 
-// シート上の現在のステータス(C列)とURL(I列)をまとめて取得し、すでに「予約済み」以外
-// (投稿完了・エラー等、判定済み)になっている行は再チェック対象から除外する
-// (無駄なYouTube API・Sheets API呼び出しを避けるため)
-const [statusColumn, urlColumn] = await Promise.all([
-  sheets.spreadsheets.values.get({ spreadsheetId: SPREADSHEET_ID, range: `${SHEET_NAME}!C:C` }),
-  sheets.spreadsheets.values.get({ spreadsheetId: SPREADSHEET_ID, range: `${SHEET_NAME}!I:I` }),
-]);
-const statusValues = statusColumn.data.values ?? [];
-const urlValues = urlColumn.data.values ?? [];
+// シート自体を信頼できる情報源として、ステータス(C列)・投稿日時(E列)・URL(I列)を直接見て判定する。
+// (以前はcontent/used-topics.jsonとの突き合わせに依存していたが、そのファイルへの記録が
+// 何らかの理由で1件でも漏れると、その動画が自動チェックから永久に漏れ続ける弱点があった)
+const res = await sheets.spreadsheets.values.get({
+  spreadsheetId: SPREADSHEET_ID,
+  range: `${SHEET_NAME}!A2:K`,
+});
+const rows = res.data.values ?? [];
 
-function findRowForVideoId(videoId) {
-  const rowIndex = urlValues.findIndex((row) => row[0]?.includes(videoId));
-  return rowIndex === -1 ? null : rowIndex + 1; // 1-indexed行番号
-}
-
+const now = new Date();
 const toCheck = [];
-for (const t of overdue) {
-  const row = findRowForVideoId(t.videoId);
-  if (row === null) {
-    console.error(`該当行が見つかりませんでした(videoId: ${t.videoId})`);
+for (let i = 0; i < rows.length; i++) {
+  const row = rows[i];
+  const status = row[2]?.trim(); // C列
+  if (status !== "予約済み") continue;
+
+  const scheduled = parseJstDatetime(row[4]); // E列
+  if (!scheduled || now.getTime() <= scheduled.getTime() + GRACE_MINUTES * 60 * 1000) continue;
+
+  const url = row[8]; // I列
+  const videoIdMatch = url?.match(/shorts\/([a-zA-Z0-9_-]{6,})/);
+  if (!videoIdMatch) {
+    console.error(`行${i + 2}: 予約時刻を過ぎていますが動画URLが見つかりません`);
     continue;
   }
-  const currentStatus = statusValues[row - 1]?.[0]?.trim();
-  if (currentStatus && currentStatus !== "予約済み") {
-    // 既に「投稿完了」「エラー」等に判定済みなのでスキップ
-    continue;
-  }
-  toCheck.push({ ...t, row });
+  toCheck.push({ row: i + 2, videoId: videoIdMatch[1], scheduled });
 }
 
 if (toCheck.length === 0) {
-  console.log("OK: 再チェックが必要な動画はありません(すべて判定済み)");
+  console.log("OK: 再チェックが必要な動画はありません");
   process.exit(0);
 }
 
@@ -76,11 +66,11 @@ const oauth2Client = new google.auth.OAuth2(installed.client_id, installed.clien
 oauth2Client.setCredentials(tokens);
 const youtube = google.youtube({ version: "v3", auth: oauth2Client });
 
-const res = await youtube.videos.list({
+const res2 = await youtube.videos.list({
   part: ["status"],
   id: toCheck.map((t) => t.videoId),
 });
-const statusById = new Map(res.data.items.map((v) => [v.id, v.status.privacyStatus]));
+const statusById = new Map(res2.data.items.map((v) => [v.id, v.status.privacyStatus]));
 
 let completedCount = 0;
 let errorCount = 0;
@@ -115,7 +105,7 @@ for (const t of toCheck) {
     requestBody: {
       values: [
         [
-          `予約公開の予定時刻(${t.publishedAt})を${GRACE_MINUTES}分以上過ぎましたが、YouTube側で公開されていません(現在の状態: ${actualStatusLabel})。YouTube Studioで内容を確認してください。videoId: ${t.videoId}`,
+          `予約公開の予定時刻(${t.scheduled.toISOString()})を${GRACE_MINUTES}分以上過ぎましたが、YouTube側で公開されていません(現在の状態: ${actualStatusLabel})。YouTube Studioで内容を確認してください。videoId: ${t.videoId}`,
         ],
       ],
     },
