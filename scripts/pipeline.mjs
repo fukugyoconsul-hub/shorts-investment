@@ -126,6 +126,10 @@ log(
 for (const slot of slotsToFill) {
   const slotIso = slot.toISOString();
   log(`----- 予約枠 ${slotIso} 用の動画を作成します -----`);
+  // generate-script.mjsが今回まだ何も書き込んでいない状態にしておく。こうしないと、
+  // 万一今回の生成が失敗した際にreport-status.mjsが前回成功時の古いlatest-script.jsonを
+  // 読んでしまい、実際とは無関係なタイトル・ジャンルがエラー行に誤表示されてしまう
+  fs.writeFileSync(path.join(root, "content", "latest-script.json"), "{}");
   try {
     await runWithRetry("generate-script.mjs", () => runOnce("generate-script.mjs"));
     await runWithRetry("generate-tts.mjs", () => runOnce("generate-tts.mjs"));
