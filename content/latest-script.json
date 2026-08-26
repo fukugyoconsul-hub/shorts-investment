@@ -1,73 +1,75 @@
 {
-  "title": "実質実効為替レートとは？円の実力50年ぶり低水準",
+  "title": "CFDのロスカットとは？証拠金維持率の仕組み",
   "topics": [
-    "実質実効為替レートの定義/1995年比4分の1・50年ぶり低水準/物価差調整で名目と実力の差が判明"
+    "CFDは現物を持たず値動きを取引する仕組み",
+    "証拠金維持率が水準を下回るとロスカットが発動する仕組み",
+    "相場急変時の約定ずれと追証の注意点"
   ],
-  "descriptionHook": "実質実効為替レートで見ると、円の実力は1970年代前半以来およそ50年ぶりの低水準にあるという日銀・BISの統計です。",
+  "descriptionHook": "CFDのロスカットが発動する証拠金維持率の仕組みと追証のリスクを解説します。",
   "tags": [
-    "円安",
-    "為替レート",
-    "日本経済",
-    "実質実効為替レート",
-    "日銀",
-    "購買力",
+    "CFD",
     "投資初心者",
-    "経済ニュース"
+    "ロスカット",
+    "レバレッジ取引",
+    "証拠金維持率",
+    "CFD初心者",
+    "追証",
+    "資産運用"
   ],
-  "seoNotes": "検索需要の大きい「円安」「為替レート」「日本経済」をタグ前方に配置しつつ、タイトル冒頭11字以内に定番検索語「実質実効為替レートとは」を置いて専門用語での検索流入も狙った。",
+  "seoNotes": "タイトル冒頭にCFDとロスカットという検索需要の高いキーワードを配置し、tagsには証拠金維持率や追証などCFD特有の具体的な語句を加えて検索網羅性を高めた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "円安ばかり報じられるが",
-        "実力は50年前の水準"
+        "証拠金が尽きかける前に",
+        "自動で強制ロスカット"
       ],
-      "narration": "円安が進む今、円の実力は実は50年前と同じ水準まで落ち込んでいるって知っていますか？",
-      "pexelsQuery": "japanese yen banknotes currency"
+      "narration": "CFDではふくみぞんが膨らみ、ある一線を超えた瞬間、自分の注文なしで強制的にポジションが消される制度がある。",
+      "pexelsQuery": "stock market crash red numbers screen"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "実質実効為替レートとは",
-        "物価差を含む購買力指数"
+        "CFDは差金決済取引",
+        "株式・指数・商品を対象"
       ],
-      "narration": "実質実効かわせレートとは、物価差を含めて計算した円の総合的な購買力を示す指数です。日本銀行やBIS(国際決済銀行)が算出しています。",
-      "pexelsQuery": "bank of japan building tokyo"
+      "narration": "CFDとは差金決済取引の略称で、株価指数・商品先物・株式など幅広い銘柄を対象に、証拠金を担保として現物を保有せず売買差額だけを取引する、レバレッジが効く仕組みだ。",
+      "pexelsQuery": "trading chart candlestick screen close up"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "1995年比 4分の1に",
-        "2023年 50年ぶり低水準"
+        "証拠金維持率50-100%",
+        "下回るとロスカット発動"
       ],
-      "narration": "この指数は1995年のピーク時と比べるとおよそ4分の1の水準まで下落し、2023年には1970年代前半以来およそ50年ぶりの低さを記録しました。",
-      "pexelsQuery": "stock market chart declining graph"
+      "narration": "証拠金維持率が取引会社の定める水準(目安として50〜100%)を下回ると、ふくみぞんの拡大に応じてシステムが自動的にたてぎょくを決済するロスカットが発動する。",
+      "pexelsQuery": "financial data margin trading computer screen"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "名目は300円と150円",
-        "物価差調整で実力同水準"
+        "相場急変でスリッページ",
+        "追証で不足分を追加入金"
       ],
-      "narration": "名目のかわせレートは当時1ドル300円台と今の150円前後では全く違いますが、物価の差を差し引いて比べると円の実力は当時と同程度まで下がっているという計算結果なのです。",
-      "pexelsQuery": "US dollar and yen currency exchange"
+      "narration": "そうばが急変すると指定水準どおりにやくじょうせず損失がさらに膨らみ、証拠金を超えた不足分を追加で入金するおいしょうが発生し、想定以上の負担を負う場合もある。",
+      "pexelsQuery": "volatile stock market chart red arrows falling"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "日本経済の雑学を毎日更新",
-        "チャンネル登録お願いします"
+        "チャンネル登録お願いします",
+        "コメントでも教えてね"
       ],
-      "narration": "数字が示す円の実力、意外でしたか？コメントで感想を教えてください。ぜひチャンネル登録をお願いします。",
-      "pexelsQuery": "tokyo cityscape night skyline"
+      "narration": "制度を正しく理解しリスク管理に役立てて。投資の勧誘ではない。チャンネル登録してコメントも教えてほしい。",
+      "pexelsQuery": "city skyline finance office night lights"
     }
   ],
-  "category": "日本経済",
-  "format": "qa",
-  "displayGenre": "日本経済"
+  "category": "CFD",
+  "format": "kaisetsu",
+  "displayGenre": "CFD"
 }

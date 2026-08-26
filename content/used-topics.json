@@ -608,5 +608,18 @@
     "videoId": "q1yZmL6wYbg",
     "category": "日本経済",
     "format": "qa"
+  },
+  {
+    "title": "CFDのロスカットとは？証拠金維持率の仕組み",
+    "topics": [
+      "CFDは現物を持たず値動きを取引する仕組み",
+      "証拠金維持率が水準を下回るとロスカットが発動する仕組み",
+      "相場急変時の約定ずれと追証の注意点"
+    ],
+    "date": "2026-08-26",
+    "publishedAt": "2026-08-29T23:00:00.000Z",
+    "videoId": "nDdH9kI8gpQ",
+    "category": "CFD",
+    "format": "kaisetsu"
   }
 ]
