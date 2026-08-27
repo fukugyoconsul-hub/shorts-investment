@@ -621,5 +621,42 @@
     "videoId": "nDdH9kI8gpQ",
     "category": "CFD",
     "format": "kaisetsu"
+  },
+  {
+    "title": "マイナス金利とは？当座預金3層の仕組み",
+    "topics": [
+      "マイナス金利政策導入の背景/日銀当座預金3層構造の仕組み/政策金利残高のみマイナス適用という事実"
+    ],
+    "date": "2026-08-27",
+    "publishedAt": "2026-08-29T23:00:00.000Z",
+    "videoId": "KDs6q79JXE8",
+    "category": "金融",
+    "format": "qa"
+  },
+  {
+    "title": "MACDとは？移動平均線の差で見る仕組み",
+    "topics": [
+      "MACDの基礎(2本の移動平均線の差)",
+      "MACD線とシグナル線のクロスの仕組み",
+      "だましシグナルが増える注意点"
+    ],
+    "date": "2026-08-27",
+    "publishedAt": "2026-08-30T07:00:00.000Z",
+    "videoId": "ifZFcmrqKwE",
+    "category": "テクニカル",
+    "format": "kaisetsu"
+  },
+  {
+    "title": "新NISAとは？非課税枠1800万円3選",
+    "topics": [
+      "非課税期間が無期限化された仕組み",
+      "年間投資枠360万円の内訳",
+      "生涯上限1800万円と枠復活の仕組み"
+    ],
+    "date": "2026-08-27",
+    "publishedAt": "2026-08-30T23:00:00.000Z",
+    "videoId": "n-6Hj-2Fr10",
+    "category": "株式",
+    "format": "ranking"
   }
 ]

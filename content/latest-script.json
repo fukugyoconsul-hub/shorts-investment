@@ -1,1 +1,75 @@
-{}
+{
+  "title": "新NISAとは？非課税枠1800万円3選",
+  "topics": [
+    "非課税期間が無期限化された仕組み",
+    "年間投資枠360万円の内訳",
+    "生涯上限1800万円と枠復活の仕組み"
+  ],
+  "descriptionHook": "新NISAの非課税期間・年間投資枠・生涯上限1800万円と枠復活の仕組みを3つの事実で解説します。",
+  "tags": [
+    "新NISA",
+    "投資初心者",
+    "NISA仕組み",
+    "非課税投資枠",
+    "つみたて投資枠",
+    "成長投資枠",
+    "資産形成",
+    "株式投資"
+  ],
+  "seoNotes": "検索需要の高い「新NISA」をタイトル冒頭に配置し、「〜とは」型で定義検索と関連動画表示の両方に対応。tagsは新NISA・NISA仕組み・非課税投資枠など制度理解を検索する初心者層のキーワードを優先順に並べた。",
+  "segments": [
+    {
+      "id": "hook",
+      "badge": null,
+      "caption": [
+        "新NISA非課税1800万円",
+        "使うと翌年また使える"
+      ],
+      "narration": "新NISAの生涯非課税枠1800万円は、売った分だけ翌年また使えるようになる仕組みだと知っていますか。",
+      "pexelsQuery": "tokyo stock market skyscrapers finance"
+    },
+    {
+      "id": "rank3",
+      "badge": "第3位",
+      "caption": [
+        "旧NISAは期間限定",
+        "新NISAは無期限に"
+      ],
+      "narration": "第3位は制度の基礎。旧一般NISAは非課税期間が5年、旧つみたてNISAは20年でしたが、2024年開始の新NISAはこの期間制限自体をなくしました。",
+      "pexelsQuery": "calendar clock time investment concept"
+    },
+    {
+      "id": "rank2",
+      "badge": "第2位",
+      "caption": [
+        "つみたて枠120万円",
+        "成長投資枠240万円"
+      ],
+      "narration": "第2位は年間投資枠。合計360万円まで投資でき、つみたて投資枠は金融庁選定の投資信託約300本限定、成長投資枠は上場株式にも使えます。",
+      "pexelsQuery": "investment fund growth chart graph"
+    },
+    {
+      "id": "rank1",
+      "badge": "第1位",
+      "caption": [
+        "生涯上限1800万円",
+        "売却分は翌年に復活"
+      ],
+      "narration": "第1位は生涯非課税限度額1800万円という上限。うち成長投資枠は1200万円までで、売却すれば取得時の簿価分だけ翌年枠が復活し何度でも再利用できます。",
+      "pexelsQuery": "piggy bank coins savings growth"
+    },
+    {
+      "id": "outro",
+      "badge": null,
+      "caption": [
+        "新NISAの仕組み解説",
+        "チャンネル登録で応援"
+      ],
+      "narration": "情報提供が目的で投資の勧誘ではありません。感想はコメント欄で、続きが気になる方はチャンネル登録をお願いします。",
+      "pexelsQuery": "financial planning laptop calculator desk"
+    }
+  ],
+  "category": "株式",
+  "format": "ranking",
+  "displayGenre": "株式"
+}
