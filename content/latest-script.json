@@ -1,73 +1,75 @@
 {
-  "title": "アンカリング効果とは？投資家心理の罠",
+  "title": "ニッケル価格2倍急騰！コモディティ雑学3選",
   "topics": [
-    "1974年の心理実験/購入価格という基準点/アンカリング効果の正体"
+    "パラジウムが金を上回った2019年",
+    "原油WTI史上最高値147ドル",
+    "ニッケル価格1日で2倍急騰"
   ],
-  "descriptionHook": "アンカリング効果とは？最初に見た数字が投資判断を狂わせる心理の仕組みを解説します。",
+  "descriptionHook": "2022年ニッケル価格が1日で2倍に急騰した衝撃の実話など、コモディティ市場の雑学3選を紹介します。",
   "tags": [
     "投資初心者",
-    "FX初心者",
-    "行動経済学",
-    "投資家心理",
-    "アンカリング効果",
-    "損切り",
-    "資産運用",
-    "心理学"
+    "コモディティ投資",
+    "原油価格",
+    "ニッケル価格",
+    "パラジウム",
+    "商品先物",
+    "経済雑学",
+    "金融リテラシー"
   ],
-  "seoNotes": "タイトル冒頭15字以内に検索需要の高い「アンカリング効果とは」を配置し、tagsには一般語の投資初心者・FX初心者を上位に、動画固有語のアンカリング効果・投資家心理を続けて配置した。",
+  "seoNotes": "タイトル冒頭15字以内に「ニッケル価格2倍急騰」という具体的な数字入りキーワードを配置し検索意図に合わせた。tagsは検索需要が見込める「投資初心者」「コモディティ投資」を先頭に、動画固有の「ニッケル価格」「パラジウム」等の複合語を続けて構成した。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "1万円で買った株が",
-        "値下がりでも売れない理由"
+        "数時間で価格が2倍に",
+        "コモディティ雑学3選"
       ],
-      "narration": "1万円で買った株が9千円に値下がりしても、損切りできずに握り続けてしまう人が多いのはなぜか知っていますか？",
-      "pexelsQuery": "person hesitating looking at stock chart"
+      "narration": "たった数時間で価格が2倍に跳ね上がった金属がある。コモディティ市場で実際に起きた驚きの雑学3選です。",
+      "pexelsQuery": "commodity trading screen prices"
     },
     {
       "id": "rank3",
-      "badge": null,
+      "badge": "第3位",
       "caption": [
-        "1974年の心理実験",
-        "でたらめな数字が判断を左右"
+        "2019年 パラジウム",
+        "史上初めて金を上回る"
       ],
-      "narration": "1974年、心理学者トベルスキーとカーネマンは、ルーレットで出たでたらめな数字が、その後の推定値に影響することを実験で確認しました。",
-      "pexelsQuery": "spinning roulette wheel random numbers"
+      "narration": "第3位は2019年、排ガス規制の強化で需要が急増し、貴金属のパラジウムが金の価格を初めて上回りました。自動車の排出ガス浄化装置に欠かせない金属です。",
+      "pexelsQuery": "palladium metal catalytic converter"
     },
     {
       "id": "rank2",
-      "badge": null,
+      "badge": "第2位",
       "caption": [
-        "購入価格が基準点に",
-        "売買判断を無意識に左右"
+        "2008年 原油WTI",
+        "史上最高値147ドル"
       ],
-      "narration": "株式投資でも同じ心理が働きます。購入時の価格が基準点として記憶に残り、値上がりでも値下がりでも、その後の売買判断に無意識のうちに強く影響を与え続けるのです。",
-      "pexelsQuery": "investor looking at stock purchase price chart"
+      "narration": "第2位は2008年、原油WTIが1バレル147ドルという史上最高値をつけた出来事。投機マネーの流入と地政学的な供給不安が重なった結果です。",
+      "pexelsQuery": "oil rig offshore drilling platform"
     },
     {
       "id": "rank1",
-      "badge": null,
+      "badge": "第1位",
       "caption": [
-        "正体はアンカリング効果",
-        "過去の価格に判断が縛られる"
+        "2022年 ニッケル急騰",
+        "1日で2倍 取引停止"
       ],
-      "narration": "これがアンカリング効果です。取得価格はすでに戻らない過去の数字なのに、多くの投資家が無意識に次の判断の基準にしてしまうという、非合理な心理なのです。",
-      "pexelsQuery": "financial decision brain psychology anchor"
+      "narration": "第1位は結論から、2022年ニッケル価格は1日で2倍以上に急騰しました。大口の売り持ち解消による買い戻しが殺到し、ロンドン市場は取引を一時停止する事態となりました。",
+      "pexelsQuery": "london metal exchange trading floor"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "情報提供が目的です",
-        "コメント&チャンネル登録を"
+        "あくまで情報提供です",
+        "チャンネル登録お願いします"
       ],
-      "narration": "投資の勧誘ではなく、心理の仕組みの解説です。コメントで教えてください。チャンネル登録もお願いします。",
-      "pexelsQuery": "subscribe button notification bell social media"
+      "narration": "今回の内容は情報提供が目的で、投資の勧誘ではありません。感想はコメントへ。チャンネル登録もぜひお願いします。",
+      "pexelsQuery": "financial district skyline sunset"
     }
   ],
-  "category": "行動経済学",
-  "format": "qa",
-  "displayGenre": "行動経済学"
+  "category": "コモディティ",
+  "format": "ranking",
+  "displayGenre": "コモディティ"
 }
