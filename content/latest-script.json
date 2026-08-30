@@ -1,1 +1,75 @@
-{}
+{
+  "title": "財政検証とは？年金5年ごとの仕組み",
+  "topics": [
+    "基礎:財政検証は年金財政を100年見通しで試算する制度",
+    "仕組み:所得代替率をマクロ経済スライドで自動調整",
+    "注意点:代替率は保証値でなく複数前提の試算にすぎない"
+  ],
+  "descriptionHook": "年金は5年に一度「財政検証」で100年先まで収支を試算しています、その仕組みと所得代替率の意味を解説します。",
+  "tags": [
+    "年金",
+    "年金制度",
+    "厚生年金",
+    "国民年金",
+    "財政検証",
+    "所得代替率",
+    "マクロ経済スライド",
+    "公的年金"
+  ],
+  "seoNotes": "タイトル冒頭に検索需要の高い「財政検証」「年金」を配置し、タグには年金制度・厚生年金・国民年金・所得代替率・マクロ経済スライドなど具体的な複合語を検索需要順に並べました。",
+  "segments": [
+    {
+      "id": "hook",
+      "badge": null,
+      "caption": [
+        "年金は5年に1度検証",
+        "厚労省がひそかに採点"
+      ],
+      "narration": "実は年金制度、厚生労働省が5年に一度、将来100年分の収支をひそかに採点しているのを知っていますか？",
+      "pexelsQuery": "japanese government building exterior"
+    },
+    {
+      "id": "rank3",
+      "badge": null,
+      "caption": [
+        "5年ごとに厚労省が",
+        "100年先の収支試算"
+      ],
+      "narration": "この5年に一度の点検は財政検証と呼ばれ、厚生労働省が年金積立金や保険料収入をもとに今後100年間の年金財政の収支を試算し、制度の持続性を確かめる仕組みです。",
+      "pexelsQuery": "senior couple reviewing financial documents"
+    },
+    {
+      "id": "rank2",
+      "badge": null,
+      "caption": [
+        "手取り比の所得代替率",
+        "マクロ経済スライドで調整"
+      ],
+      "narration": "検証では現役世代の手取り収入に対する年金額の割合を示す所得だいたい率を複数の経済前提で算出し、給付水準を賃金や物価に応じてマクロ経済スライドで自動調整する仕組みです。",
+      "pexelsQuery": "balance scale finance concept"
+    },
+    {
+      "id": "rank1",
+      "badge": null,
+      "caption": [
+        "代替率は試算にすぎず",
+        "将来の受給額は未定"
+      ],
+      "narration": "所得だいたい率はあくまで高位・中位・低位など複数の経済前提に基づく試算であり、前提が変われば数値も変わるため、将来の受給額を保証するものではありません。",
+      "pexelsQuery": "magnifying glass over financial chart"
+    },
+    {
+      "id": "outro",
+      "badge": null,
+      "caption": [
+        "年金の仕組みを理解",
+        "コメント＆登録を"
+      ],
+      "narration": "年金の仕組みを知れば将来への見方も変わります。感想はコメントで、チャンネル登録もよろしくお願いします。",
+      "pexelsQuery": "hand tapping subscribe button on phone"
+    }
+  ],
+  "category": "年金",
+  "format": "kaisetsu",
+  "displayGenre": "年金"
+}
