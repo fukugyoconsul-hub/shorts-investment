@@ -142,6 +142,7 @@ for (const slot of slotsToFill) {
       runOnce("youtube-upload.mjs", { TARGET_PUBLISH_AT: slotIso })
     );
     runNodeSoft("set-thumbnail.mjs");
+    runNodeSoft("tiktok-upload.mjs");
     await runWithRetry("append-sheet.mjs", () => runOnce("append-sheet.mjs"));
     log(`----- 予約枠 ${slotIso} 完了 -----`);
   } catch (err) {

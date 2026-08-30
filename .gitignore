@@ -4,6 +4,7 @@ dist
 .env
 client_secret.json
 youtube-token.json
+tiktok-token.json
 service-account.json
 pipeline.log
 
