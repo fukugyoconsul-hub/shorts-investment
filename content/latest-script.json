@@ -1,73 +1,75 @@
 {
-  "title": "REITとは？分配金が高い意外な理由",
+  "title": "iDeCoとは？税制優遇3つの仕組み",
   "topics": [
-    "リートの仕組み/分配金利回りの水準/導管性要件による節税構造"
+    "iDeCoの基礎知識(私的年金制度)",
+    "3段階の非課税の仕組み",
+    "60歳まで引き出せない注意点"
   ],
-  "descriptionHook": "REIT(不動産投資信託)の分配金がなぜ高いのか、その仕組みを解説します。",
+  "descriptionHook": "iDeCoの掛金・運用益・受け取り時にはたらく3段階の非課税制度を解説します。",
   "tags": [
-    "不動産投資",
-    "REIT",
-    "投資信託",
-    "資産運用",
     "投資初心者",
-    "分配金",
-    "不動産投資信託",
-    "Jリート"
+    "税金",
+    "iDeCo",
+    "資産形成",
+    "老後資金",
+    "所得控除",
+    "確定拠出年金",
+    "非課税制度"
   ],
-  "seoNotes": "検索需要の高い「不動産投資」「REIT」「投資信託」を前方かつタグ上位に配置し、タイトル冒頭に定番の検索意図に合う「REITとは」を置くことでSEOを強化しました。",
+  "seoNotes": "タイトル冒頭に検索需要の高い「iDeCo」というキーワードを配置し、定番の「とは」型で検索意図に合わせました。tagsは「投資初心者」「税金」など一般的なキーワードから「所得控除」「確定拠出年金」といった固有のキーワードまで需要順に並べています。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "毎月家賃を払うだけで",
-        "ビルのオーナーになれる？"
+        "毎月天引きされる税金が",
+        "iDeCoで軽くなる？"
       ],
-      "narration": "毎月の家賃をただ払い続けるだけなのに、実は自分もビルのオーナーになれる方法があるって知っていますか？",
-      "pexelsQuery": "apartment building exterior city street"
+      "narration": "毎月の給料から天引きされるその税金、実はiDeCoの掛金なら全額差し引いて軽くできる仕組みがあります。",
+      "pexelsQuery": "salary payslip tax deduction"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "投資家の資金でビル購入",
-        "2001年に上場開始"
+        "iDeCoは私的年金制度",
+        "掛金上限は月6.8万円まで"
       ],
-      "narration": "リートは投資家から集めた資金でオフィスやマンションなど複数の不動産を購入し、その賃料収入を分配する仕組みの金融商品で、日本では2001年に上場が始まりました。",
-      "pexelsQuery": "modern office building real estate investment"
+      "narration": "iDeCoは自分で掛金を出して運用し、60歳以降に受け取る私的年金制度です。加入は20歳から65歳未満で、掛金上限は月1.2万円から6.8万円まで職業ごとに異なります。",
+      "pexelsQuery": "retirement savings piggy bank money"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "分配金の利回り3%台",
-        "株式の配当より高水準"
+        "非課税の仕組みは3段階",
+        "掛金・運用益・受取時"
       ],
-      "narration": "東証に上場するリートの分配金のりまわりは、平均で3%台後半とされ、東証プライム市場の株式の配当より高い水準で推移することが多いとされます。",
-      "pexelsQuery": "stock market financial chart growth"
+      "narration": "実は非課税は3段階あります。掛金は全額が所得控除の対象になり、運用で得た利益にも税金がかからず、受け取る時も退職所得控除や公的年金等控除が使えます。",
+      "pexelsQuery": "financial growth chart savings plan"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "利益の90%超を分配",
-        "導管性要件で法人税ゼロ"
+        "原則60歳まで引出不可",
+        "元本割れリスクも残る"
       ],
-      "narration": "実は利益の90%超を投資家に分配すれば、リート自体には法人税が実質かからない導管性要件という税制上の仕組みがあり、これが高い分配金の正体です。",
-      "pexelsQuery": "tax documents calculator finance office"
+      "narration": "ただし原則60歳まで引き出せず、途中でやめることもできません。受取額が控除枠を超えれば課税され、運用の内容次第では元本割れする可能性も残ります。",
+      "pexelsQuery": "warning caution finance risk"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "投資の基礎知識を毎日",
-        "チャンネル登録で応援"
+        "投資の税金は複雑な仕組み",
+        "チャンネル登録で解説を"
       ],
-      "narration": "この動画は情報提供が目的で、投資の勧誘ではありません。あなたはどう思う？コメントとチャンネル登録お願いします。",
-      "pexelsQuery": "city skyline sunset buildings"
+      "narration": "税金の仕組みを知ることは資産形成の第一歩です。チャンネル登録して、感じたことはコメントで教えてください。",
+      "pexelsQuery": "smartphone subscribe notification bell"
     }
   ],
-  "category": "不動産",
-  "format": "qa",
-  "displayGenre": "不動産"
+  "category": "税金",
+  "format": "kaisetsu",
+  "displayGenre": "税金"
 }
