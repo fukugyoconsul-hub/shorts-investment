@@ -1,75 +1,73 @@
 {
-  "title": "財政検証とは？年金5年ごとの仕組み",
+  "title": "REITとは？分配金が高い意外な理由",
   "topics": [
-    "基礎:財政検証は年金財政を100年見通しで試算する制度",
-    "仕組み:所得代替率をマクロ経済スライドで自動調整",
-    "注意点:代替率は保証値でなく複数前提の試算にすぎない"
+    "リートの仕組み/分配金利回りの水準/導管性要件による節税構造"
   ],
-  "descriptionHook": "年金は5年に一度「財政検証」で100年先まで収支を試算しています、その仕組みと所得代替率の意味を解説します。",
+  "descriptionHook": "REIT(不動産投資信託)の分配金がなぜ高いのか、その仕組みを解説します。",
   "tags": [
-    "年金",
-    "年金制度",
-    "厚生年金",
-    "国民年金",
-    "財政検証",
-    "所得代替率",
-    "マクロ経済スライド",
-    "公的年金"
+    "不動産投資",
+    "REIT",
+    "投資信託",
+    "資産運用",
+    "投資初心者",
+    "分配金",
+    "不動産投資信託",
+    "Jリート"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「財政検証」「年金」を配置し、タグには年金制度・厚生年金・国民年金・所得代替率・マクロ経済スライドなど具体的な複合語を検索需要順に並べました。",
+  "seoNotes": "検索需要の高い「不動産投資」「REIT」「投資信託」を前方かつタグ上位に配置し、タイトル冒頭に定番の検索意図に合う「REITとは」を置くことでSEOを強化しました。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "年金は5年に1度検証",
-        "厚労省がひそかに採点"
+        "毎月家賃を払うだけで",
+        "ビルのオーナーになれる？"
       ],
-      "narration": "実は年金制度、厚生労働省が5年に一度、将来100年分の収支をひそかに採点しているのを知っていますか？",
-      "pexelsQuery": "japanese government building exterior"
+      "narration": "毎月の家賃をただ払い続けるだけなのに、実は自分もビルのオーナーになれる方法があるって知っていますか？",
+      "pexelsQuery": "apartment building exterior city street"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "5年ごとに厚労省が",
-        "100年先の収支試算"
+        "投資家の資金でビル購入",
+        "2001年に上場開始"
       ],
-      "narration": "この5年に一度の点検は財政検証と呼ばれ、厚生労働省が年金積立金や保険料収入をもとに今後100年間の年金財政の収支を試算し、制度の持続性を確かめる仕組みです。",
-      "pexelsQuery": "senior couple reviewing financial documents"
+      "narration": "リートは投資家から集めた資金でオフィスやマンションなど複数の不動産を購入し、その賃料収入を分配する仕組みの金融商品で、日本では2001年に上場が始まりました。",
+      "pexelsQuery": "modern office building real estate investment"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "手取り比の所得代替率",
-        "マクロ経済スライドで調整"
+        "分配金の利回り3%台",
+        "株式の配当より高水準"
       ],
-      "narration": "検証では現役世代の手取り収入に対する年金額の割合を示す所得だいたい率を複数の経済前提で算出し、給付水準を賃金や物価に応じてマクロ経済スライドで自動調整する仕組みです。",
-      "pexelsQuery": "balance scale finance concept"
+      "narration": "東証に上場するリートの分配金のりまわりは、平均で3%台後半とされ、東証プライム市場の株式の配当より高い水準で推移することが多いとされます。",
+      "pexelsQuery": "stock market financial chart growth"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "代替率は試算にすぎず",
-        "将来の受給額は未定"
+        "利益の90%超を分配",
+        "導管性要件で法人税ゼロ"
       ],
-      "narration": "所得だいたい率はあくまで高位・中位・低位など複数の経済前提に基づく試算であり、前提が変われば数値も変わるため、将来の受給額を保証するものではありません。",
-      "pexelsQuery": "magnifying glass over financial chart"
+      "narration": "実は利益の90%超を投資家に分配すれば、リート自体には法人税が実質かからない導管性要件という税制上の仕組みがあり、これが高い分配金の正体です。",
+      "pexelsQuery": "tax documents calculator finance office"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "年金の仕組みを理解",
-        "コメント＆登録を"
+        "投資の基礎知識を毎日",
+        "チャンネル登録で応援"
       ],
-      "narration": "年金の仕組みを知れば将来への見方も変わります。感想はコメントで、チャンネル登録もよろしくお願いします。",
-      "pexelsQuery": "hand tapping subscribe button on phone"
+      "narration": "この動画は情報提供が目的で、投資の勧誘ではありません。あなたはどう思う？コメントとチャンネル登録お願いします。",
+      "pexelsQuery": "city skyline sunset buildings"
     }
   ],
-  "category": "年金",
-  "format": "kaisetsu",
-  "displayGenre": "年金"
+  "category": "不動産",
+  "format": "qa",
+  "displayGenre": "不動産"
 }
