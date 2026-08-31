@@ -1,75 +1,75 @@
 {
-  "title": "予定利率とは？保険料が決まる仕組み",
+  "title": "スワップポイントとは？金利差で貰える仕組み",
   "topics": [
-    "予定利率の基礎知識",
-    "保険料が決まる仕組み",
-    "逆ざやという経営リスク"
+    "基礎:政策金利差から生まれる調整額",
+    "仕組み:日割り計算で毎日口座へ反映",
+    "注意点:金利差縮小や逆転で支払いに変わることも"
   ],
-  "descriptionHook": "生命保険の保険料が契約する時期で大きく変わる理由、その鍵となる予定利率の仕組みをわかりやすく解説します。",
+  "descriptionHook": "スワップポイントとは何か、通貨間の政策金利差から生まれる仕組みと注意点を分かりやすく解説します。",
   "tags": [
-    "生命保険",
-    "保険の仕組み",
-    "予定利率",
-    "保険料",
-    "逆ざや",
-    "金融リテラシー",
-    "保険初心者",
-    "資産運用"
+    "スワップポイント",
+    "FX初心者",
+    "金利差",
+    "通貨ペア",
+    "ロールオーバー",
+    "政策金利",
+    "外国為替",
+    "資産運用の基礎"
   ],
-  "seoNotes": "タイトル冒頭に検索需要が見込める「予定利率」というキーワードを配置し、tagsには生命保険・保険の仕組み・逆ざやなど具体的な複合語を検索需要順に含めました。",
+  "seoNotes": "検索需要の高い「スワップポイントとは」を title冒頭15字以内に配置し、tagsには「スワップポイント」「FX初心者」「金利差」「通貨ペア」など具体的キーワードを検索需要順に並べてSEOを狙った。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "保険料が変わる理由は",
-        "「予定利率」という数字"
+        "毎日発生する謎のお金",
+        "その正体とは"
       ],
-      "narration": "同じ保障内容でも、契約した年によって保険料が大きく違う理由、実は「予定利率」という数字ひとつで決まります。",
-      "pexelsQuery": "insurance policy documents desk"
+      "narration": "FXは値上がり益だけが儲けじゃない。ポジションを持っているだけで毎日発生するお金があるとしたら？",
+      "pexelsQuery": "forex trading chart currency numbers"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "予定利率とは運用益を",
-        "保険料に反映する利率"
+        "スワップポイントとは",
+        "政策金利差の調整額"
       ],
-      "narration": "予定利率とは、保険会社が保険料の一部を運用すると仮定し、その運用益分をあらかじめ割り引いて計算する運用りまわりの前提数値のことです。",
-      "pexelsQuery": "insurance agent calculator paperwork"
+      "narration": "スワップポイントとは、二国間の政策金利差から生まれる金利調整額のこと。高金利通貨を買い低金利通貨を売ると、差額を毎日受け取れる仕組みになっている。",
+      "pexelsQuery": "central bank interest rate currency comparison"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "バブル期は利率5.5%",
-        "現在は1%未満に低下"
+        "日割り計算で毎日反映",
+        "水曜またぎは3日分"
       ],
-      "narration": "予定利率が高いほど将来の運用益を保険料から先に差し引けるため保険料は安くなり、バブル期の1990年前後は予定利率が5.5%前後、現在は1%未満まで低下しています。",
-      "pexelsQuery": "interest rate percentage graph finance"
+      "narration": "金利差を日割りで計算し、保有している通貨ペアごとに毎日自動で口座へ反映される。水曜日をまたぐ日はロールオーバーの関係で土日分を含めた3日分がまとめて付与される。",
+      "pexelsQuery": "calendar clock daily calculation finance"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "市場金利が下がると",
-        "保険会社が負担する逆ざや"
+        "金利差縮小で逆転も",
+        "受取りが支払いに"
       ],
-      "narration": "予定利率は契約時点で固定される一方、その後の市場金利が下がっても保険会社が差額を負担し続ける「逆ざや」という経営リスクを抱える点には注意が必要です。",
-      "pexelsQuery": "financial risk warning red arrow"
+      "narration": "受け取りだけとは限らず、逆方向のポジションを持てば毎日支払いが発生する。中央銀行の金融政策で金利差が縮小・逆転すると、受け取りが支払いに変わることもある。",
+      "pexelsQuery": "warning sign risk red arrow finance"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "続きが気になる方は",
-        "チャンネル登録お願いします"
+        "チャンネル登録で",
+        "金融知識をもっと"
       ],
-      "narration": "保険の仕組みをもっと知りたい方はぜひチャンネル登録をお願いします。感想はコメント欄で教えてください。",
-      "pexelsQuery": "modern office finance background"
+      "narration": "スワップポイントも金利差が生む仕組みの一つ。あなたはどう思う？コメントで教えてね。チャンネル登録もよろしくお願いします。",
+      "pexelsQuery": "subscribe button notification bell animation"
     }
   ],
-  "category": "保険",
+  "category": "FX",
   "format": "kaisetsu",
-  "displayGenre": "保険"
+  "displayGenre": "FX"
 }
