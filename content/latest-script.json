@@ -1,75 +1,75 @@
 {
-  "title": "iDeCoとは？税制優遇3つの仕組み",
+  "title": "予定利率とは？保険料が決まる仕組み",
   "topics": [
-    "iDeCoの基礎知識(私的年金制度)",
-    "3段階の非課税の仕組み",
-    "60歳まで引き出せない注意点"
+    "予定利率の基礎知識",
+    "保険料が決まる仕組み",
+    "逆ざやという経営リスク"
   ],
-  "descriptionHook": "iDeCoの掛金・運用益・受け取り時にはたらく3段階の非課税制度を解説します。",
+  "descriptionHook": "生命保険の保険料が契約する時期で大きく変わる理由、その鍵となる予定利率の仕組みをわかりやすく解説します。",
   "tags": [
-    "投資初心者",
-    "税金",
-    "iDeCo",
-    "資産形成",
-    "老後資金",
-    "所得控除",
-    "確定拠出年金",
-    "非課税制度"
+    "生命保険",
+    "保険の仕組み",
+    "予定利率",
+    "保険料",
+    "逆ざや",
+    "金融リテラシー",
+    "保険初心者",
+    "資産運用"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「iDeCo」というキーワードを配置し、定番の「とは」型で検索意図に合わせました。tagsは「投資初心者」「税金」など一般的なキーワードから「所得控除」「確定拠出年金」といった固有のキーワードまで需要順に並べています。",
+  "seoNotes": "タイトル冒頭に検索需要が見込める「予定利率」というキーワードを配置し、tagsには生命保険・保険の仕組み・逆ざやなど具体的な複合語を検索需要順に含めました。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "毎月天引きされる税金が",
-        "iDeCoで軽くなる？"
+        "保険料が変わる理由は",
+        "「予定利率」という数字"
       ],
-      "narration": "毎月の給料から天引きされるその税金、実はiDeCoの掛金なら全額差し引いて軽くできる仕組みがあります。",
-      "pexelsQuery": "salary payslip tax deduction"
+      "narration": "同じ保障内容でも、契約した年によって保険料が大きく違う理由、実は「予定利率」という数字ひとつで決まります。",
+      "pexelsQuery": "insurance policy documents desk"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "iDeCoは私的年金制度",
-        "掛金上限は月6.8万円まで"
+        "予定利率とは運用益を",
+        "保険料に反映する利率"
       ],
-      "narration": "iDeCoは自分で掛金を出して運用し、60歳以降に受け取る私的年金制度です。加入は20歳から65歳未満で、掛金上限は月1.2万円から6.8万円まで職業ごとに異なります。",
-      "pexelsQuery": "retirement savings piggy bank money"
+      "narration": "予定利率とは、保険会社が保険料の一部を運用すると仮定し、その運用益分をあらかじめ割り引いて計算する運用りまわりの前提数値のことです。",
+      "pexelsQuery": "insurance agent calculator paperwork"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "非課税の仕組みは3段階",
-        "掛金・運用益・受取時"
+        "バブル期は利率5.5%",
+        "現在は1%未満に低下"
       ],
-      "narration": "実は非課税は3段階あります。掛金は全額が所得控除の対象になり、運用で得た利益にも税金がかからず、受け取る時も退職所得控除や公的年金等控除が使えます。",
-      "pexelsQuery": "financial growth chart savings plan"
+      "narration": "予定利率が高いほど将来の運用益を保険料から先に差し引けるため保険料は安くなり、バブル期の1990年前後は予定利率が5.5%前後、現在は1%未満まで低下しています。",
+      "pexelsQuery": "interest rate percentage graph finance"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "原則60歳まで引出不可",
-        "元本割れリスクも残る"
+        "市場金利が下がると",
+        "保険会社が負担する逆ざや"
       ],
-      "narration": "ただし原則60歳まで引き出せず、途中でやめることもできません。受取額が控除枠を超えれば課税され、運用の内容次第では元本割れする可能性も残ります。",
-      "pexelsQuery": "warning caution finance risk"
+      "narration": "予定利率は契約時点で固定される一方、その後の市場金利が下がっても保険会社が差額を負担し続ける「逆ざや」という経営リスクを抱える点には注意が必要です。",
+      "pexelsQuery": "financial risk warning red arrow"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "投資の税金は複雑な仕組み",
-        "チャンネル登録で解説を"
+        "続きが気になる方は",
+        "チャンネル登録お願いします"
       ],
-      "narration": "税金の仕組みを知ることは資産形成の第一歩です。チャンネル登録して、感じたことはコメントで教えてください。",
-      "pexelsQuery": "smartphone subscribe notification bell"
+      "narration": "保険の仕組みをもっと知りたい方はぜひチャンネル登録をお願いします。感想はコメント欄で教えてください。",
+      "pexelsQuery": "modern office finance background"
     }
   ],
-  "category": "税金",
+  "category": "保険",
   "format": "kaisetsu",
-  "displayGenre": "税金"
+  "displayGenre": "保険"
 }
