@@ -1,72 +1,72 @@
 {
-  "title": "貿易赤字とは？円安が進む仕組み",
+  "title": "FXのpipsとは？通貨ペアと値動きの仕組み",
   "topics": [
-    "基礎:貿易収支の定義",
-    "仕組み:実需の円売り圧力",
-    "注意点:金融収支の規模の方が大きい"
+    "通貨ペア表記の基礎",
+    "pipsの仕組み",
+    "損益差の注意点"
   ],
-  "descriptionHook": "貿易赤字が円安を進める仕組みを、貿易収支の定義から実需の円売り圧力まで解説します。",
+  "descriptionHook": "FXの基本用語、pips、通貨ペア表記の仕組みと注意点を初心者向けに解説。",
   "tags": [
-    "円安",
-    "貿易赤字",
-    "貿易収支",
-    "経常収支",
     "FX初心者",
-    "為替の仕組み",
-    "金融収支",
-    "実需筋"
+    "pips",
+    "通貨ペア",
+    "ドル円",
+    "FX用語",
+    "外国為替",
+    "ユーロドル",
+    "為替レート"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「貿易赤字とは」「円安」を配置し、タグには円安・貿易赤字・貿易収支・経常収支など検索ボリュームの見込める語を検索需要順に並べた。",
+  "seoNotes": "タイトル冒頭に検索需要の高い「FXのpips」を配置し、「とは？」で疑問検索意図に対応。タグは通貨ペア・ドル円・外国為替など具体的な複合語を検索需要順に並べた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "スーパー値上げの裏に",
-        "貿易赤字という円安要因"
+        "「1円動いた」は誤解",
+        "正しくは100pips"
       ],
-      "narration": "スーパーやガソリン代の値上げの裏側では、実は貿易赤字という円安を進める構造的な要因が働き続けているのです。",
-      "pexelsQuery": "japanese supermarket grocery shopping prices"
+      "narration": "FXの値動きは「1円上がった」ではなく、実はプロの世界では「100ピップス動いた」と表現するのが正しいんです。",
+      "pexelsQuery": "forex trading chart screen closeup"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "貿易収支＝輸出額－輸入額",
-        "経常収支を構成する項目"
+        "通貨ペアの表記ルール",
+        "ドル/円=基軸+決済"
       ],
-      "narration": "貿易収支とは輸出額から輸入額を引いた差額のことで、資源を多く輸入する日本では毎月財務省が公表し、サービス収支と合わせて経常収支を構成します。",
-      "pexelsQuery": "cargo ship container port export import"
+      "narration": "通貨ペアはドル/円のように2つの通貨を並べた表記で、前の通貨が基軸通貨、後ろの通貨が決済通貨を意味し、ドル円やユーロドルが代表的な組み合わせです。",
+      "pexelsQuery": "world currencies money exchange"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "輸入代金は円売りドル買い",
-        "貿易赤字で実需の円安圧力"
+        "1pips=0.01円",
+        "為替レート最小変動単位"
       ],
-      "narration": "輸入企業は原油や食料などの代金を海外に支払うため円を売ってドルを買う必要があり、貿易赤字が続くほど実需の円売り圧力が積み上がる仕組みです。",
-      "pexelsQuery": "currency exchange dollar yen banknotes"
+      "narration": "ピップスはかわせレートの最小変動単位で、対円通貨ペアでは0.01円、対ドル建て通貨ペアでは0.0001ドルの値動きが1ピップスとして扱われます。",
+      "pexelsQuery": "forex price chart zoom numbers"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "為替は貿易収支だけでは",
-        "動かず金融収支が主要因"
+        "同じ1pipsでも差",
+        "通貨ペア・ロットで変動"
       ],
-      "narration": "ただしかわせは貿易収支だけで動くわけではなく、株や債券投資に伴う金融収支のほうが資金移動の規模としてははるかに大きく、金利差などにも左右される点に注意が必要です。",
-      "pexelsQuery": "stock market financial data charts screen"
+      "narration": "同じ1ピップスでもドル/円とユーロ/ドルでは1ピップスあたりの損益額が異なり、さらに取引量ロット数によっても実際の損益は大きく変わる点に注意が必要です。",
+      "pexelsQuery": "trader analyzing risk warning screen"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "投資勧誘ではなく情報提供",
-        "コメント＆チャンネル登録"
+        "FXの基礎を毎日発信",
+        "チャンネル登録してね"
       ],
-      "narration": "投資の勧誘ではなく情報提供が目的です。感想はぜひコメントで教えてください。チャンネル登録もお願いします。",
-      "pexelsQuery": "smartphone notification social media like subscribe"
+      "narration": "あなたはFXのピップスを知っていましたか？コメントで教えてください。チャンネル登録もぜひお願いします。",
+      "pexelsQuery": "smartphone social media subscribe notification"
     }
   ],
   "category": "FX",
