@@ -1,72 +1,72 @@
 {
-  "title": "FXのpipsとは？通貨ペアと値動きの仕組み",
+  "title": "FXのpipsとは？値動きの最小単位",
   "topics": [
-    "通貨ペア表記の基礎",
-    "pipsの仕組み",
-    "損益差の注意点"
+    "pips(ピップス)の基礎知識",
+    "通貨ペアごとの桁の仕組み",
+    "pips計算で誤解しやすい注意点"
   ],
-  "descriptionHook": "FXの基本用語、pips、通貨ペア表記の仕組みと注意点を初心者向けに解説。",
+  "descriptionHook": "FXのpips(ピップス)とは何か、通貨ペアで桁が変わる仕組みと計算時の注意点を解説します。",
   "tags": [
     "FX初心者",
-    "pips",
     "通貨ペア",
-    "ドル円",
+    "pips",
+    "ピップス",
     "FX用語",
     "外国為替",
-    "ユーロドル",
-    "為替レート"
+    "FXレバレッジ",
+    "スプレッド"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「FXのpips」を配置し、「とは？」で疑問検索意図に対応。タグは通貨ペア・ドル円・外国為替など具体的な複合語を検索需要順に並べた。",
+  "seoNotes": "タイトル前方に検索需要の高い「FXのpips」というキーワードを配置し、タグには「FX初心者」「通貨ペア」「ピップス」「FX用語」等、検索ボリュームが見込める語を優先順に列挙しました。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "「1円動いた」は誤解",
-        "正しくは100pips"
+        "FXの値動きを表す単位",
+        "その正体は「pips」"
       ],
-      "narration": "FXの値動きは「1円上がった」ではなく、実はプロの世界では「100ピップス動いた」と表現するのが正しいんです。",
-      "pexelsQuery": "forex trading chart screen closeup"
+      "narration": "FXの値動きは「pips」という共通単位で表されます。実はこの数字、通貨ペアごとに桁の位置が変わるんです。",
+      "pexelsQuery": "forex currency trading screen close up"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "通貨ペアの表記ルール",
-        "ドル/円=基軸+決済"
+        "USD/JPYは0.01円",
+        "の値動き＝1pips"
       ],
-      "narration": "通貨ペアはドル/円のように2つの通貨を並べた表記で、前の通貨が基軸通貨、後ろの通貨が決済通貨を意味し、ドル円やユーロドルが代表的な組み合わせです。",
-      "pexelsQuery": "world currencies money exchange"
+      "narration": "pipsとは通貨の値動きを表す共通の最小単位です。USD/JPYなど円がらみの通貨ペアでは小数点第2位、つまり1銭の動きが1pipsになります。",
+      "pexelsQuery": "japanese yen dollar bills currency exchange"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "1pips=0.01円",
-        "為替レート最小変動単位"
+        "USD/JPYを1万通貨で",
+        "1pips＝約100円の損益"
       ],
-      "narration": "ピップスはかわせレートの最小変動単位で、対円通貨ペアでは0.01円、対ドル建て通貨ペアでは0.0001ドルの値動きが1ピップスとして扱われます。",
-      "pexelsQuery": "forex price chart zoom numbers"
+      "narration": "取引量が増えるほどpipsの価値も上がります。1万通貨単位でUSD/JPYを取引した場合、1pipsの変動でおよそ100円の損益が生まれます。",
+      "pexelsQuery": "trader calculating profit forex computer screen"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "同じ1pipsでも差",
-        "通貨ペア・ロットで変動"
+        "非JPYペアは4桁目",
+        "桁を間違うと計算ミス"
       ],
-      "narration": "同じ1ピップスでもドル/円とユーロ/ドルでは1ピップスあたりの損益額が異なり、さらに取引量ロット数によっても実際の損益は大きく変わる点に注意が必要です。",
-      "pexelsQuery": "trader analyzing risk warning screen"
+      "narration": "米ドルとユーロなど円を含まない通貨ペアは小数点第4位が1pipsという違いがあります。桁を勘違いすると損益計算を大きく誤るので注意が必要です。",
+      "pexelsQuery": "confused trader reading financial chart mistake"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "FXの基礎を毎日発信",
-        "チャンネル登録してね"
+        "毎日FXの知識を発信中",
+        "今すぐチャンネル登録"
       ],
-      "narration": "あなたはFXのピップスを知っていましたか？コメントで教えてください。チャンネル登録もぜひお願いします。",
-      "pexelsQuery": "smartphone social media subscribe notification"
+      "narration": "pipsの仕組み、理解できましたか？あなたの感想をコメントで教えてください。チャンネル登録もお願いします。",
+      "pexelsQuery": "smartphone youtube subscribe app notification"
     }
   ],
   "category": "FX",
