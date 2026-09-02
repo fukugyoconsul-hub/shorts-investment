@@ -1,75 +1,75 @@
 {
-  "title": "FXのpipsとは？値動きの最小単位の仕組み",
+  "title": "保険料の決まり方とは？3つの予定基礎率",
   "topics": [
-    "pipsは通貨の値動きを表す共通単位",
-    "通貨ペアで基準となる桁が異なる仕組み",
-    "取引量によって損益額が変わる注意点"
+    "予定死亡率・予定利率・予定事業費率という3つの予定基礎率",
+    "生命表の死亡確率と運用収益・経費から保険料を算出する仕組み",
+    "予定利率は契約時に固定され過去の契約ほど有利な場合がある注意点"
   ],
-  "descriptionHook": "FXの値動きを表す共通単位「pips」の意味と、通貨ペアごとに変わる計算の仕組みを解説します。",
+  "descriptionHook": "生命保険の保険料がどのような仕組みで決まるのか、3つの予定基礎率から解説します。",
   "tags": [
-    "FX初心者",
-    "pips",
-    "通貨ペア",
-    "ドル円",
-    "ユーロドル",
-    "FX用語",
-    "スプレッド",
-    "レバレッジ"
+    "生命保険",
+    "保険料",
+    "保険の仕組み",
+    "予定利率",
+    "予定死亡率",
+    "生命表",
+    "医療保険",
+    "金融リテラシー"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「FX」「pipsとは」を配置し、tagsには「pips」「通貨ペア」「ドル円」「ユーロドル」などFX基礎用語の検索キーワードを需要順に含めました。",
+  "seoNotes": "検索需要の大きい「生命保険」「保険料」を序盤に配置しつつ、タイトルに「とは？」と数字「3つ」を入れて検索意図と完走見通しの両方に対応した。タグは「予定利率」「予定死亡率」「生命表」など固有の専門用語で、一般的な「保険の仕組み」「医療保険」と組み合わせた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "値動きを測る共通単位",
-        "pipsの正体とは？"
+        "生命保険の保険料は",
+        "3つの予定数値で決定"
       ],
-      "narration": "FXの値動きを示す共通単位「pips」、実際には円でもドルでもない特殊な単位があるのを知っていますか？",
-      "pexelsQuery": "forex trading chart currency screen"
+      "narration": "生命保険の保険料は、実は年齢や性別だけでなく3つの予定数値の掛け算で決まっているのを知っていますか？",
+      "pexelsQuery": "insurance documents calculator desk"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "pipsの基礎知識",
-        "ドル円は1pips＝1銭"
+        "予定死亡率・予定利率",
+        "予定事業費率の3つ"
       ],
-      "narration": "pipsとは通貨の値動き幅を表す共通単位のことで、ドル円取引では1pips＝1銭、つまり0.01円の変動を意味し、価格水準が違う通貨ペア同士でも比較しやすくなります。",
-      "pexelsQuery": "usd jpy currency exchange chart"
+      "narration": "生命保険の保険料は「予定死亡率」「予定利率」「予定事業費率」という3つの予定基礎率をもとに算出されます。将来の死亡・運用・経費をあらかじめ見積もる仕組みです。",
+      "pexelsQuery": "life insurance policy paperwork close up"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "通貨ペアで変わる基準",
-        "ユーロドルは0.0001刻み"
+        "生命表と運用収益等から",
+        "純保険料＋付加保険料"
       ],
-      "narration": "一方、円が絡まないユーロドルなどの通貨ペアでは基準が小数点第4位になり、1pips＝0.0001ドルとして計算されるため、ドル円とは値幅の刻み方が異なります。",
-      "pexelsQuery": "eur usd forex chart close up"
+      "narration": "予定死亡率は生命表による年齢・性別ごとの死亡確率、予定利率は運用収益の見込み、予定事業費率は経費相当分です。3つを組み合わせて純保険料と付加保険料が決まります。",
+      "pexelsQuery": "actuary calculating risk table charts"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "同じpipsでも要注意",
-        "ロットで損益額が変化"
+        "予定利率は契約時に固定",
+        "過去の契約ほど有利な場合も"
       ],
-      "narration": "同じ1pipsの値動きでも、通貨ペアや取引数量(ロット)によって実際の損益額は大きく変わるため、値幅だけで単純に比較するのは禁物です。",
-      "pexelsQuery": "forex trading risk chart numbers"
+      "narration": "予定利率は契約時点で固定され、加入後は基本的に変わりません。過去に予定利率が高かった契約は、同じ保障でも保険料が割安だったという違いが生まれます。",
+      "pexelsQuery": "old insurance contract document vintage"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "仕組みを理解しよう",
-        "チャンネル登録もぜひ"
+        "保険の仕組みを解説",
+        "チャンネル登録で応援を"
       ],
-      "narration": "この仕組みを知れば値動きの見え方が変わります。チャンネル登録して、感想もぜひコメントで教えてください。",
-      "pexelsQuery": "finance subscribe background chart"
+      "narration": "保険の仕組みを知れば商品の見え方も変わります。チャンネル登録して、感想もぜひコメントで教えてください。",
+      "pexelsQuery": "hands signing document contract office"
     }
   ],
-  "category": "FX",
+  "category": "保険",
   "format": "kaisetsu",
-  "displayGenre": "FX"
+  "displayGenre": "保険"
 }
