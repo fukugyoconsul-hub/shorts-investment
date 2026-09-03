@@ -1,72 +1,72 @@
 {
-  "title": "FXのpipsとは？1円でも1銭でもない単位",
+  "title": "スワップポイントとは？金利差で毎日発生の仕組み",
   "topics": [
-    "基礎:pipsは通貨ペアの値動きを表す最小単位",
-    "仕組み:pips数×取引数量で損益が決まる仕組み",
-    "注意点:通貨ペアやレート水準でpipsの価値が変わる注意点"
+    "スワップポイントの基礎(金利差による調整額)",
+    "高金利買い・低金利売りで発生するキャリー取引の仕組み",
+    "かわせ変動による損失とスワップ額変動の注意点"
   ],
-  "descriptionHook": "FXの「pips」とは何か、ドル円とその他の通貨ペアでの違いと損益計算の仕組みを解説します。",
+  "descriptionHook": "FXのスワップポイントとは何か、金利差で毎日発生する仕組みと注意点を解説します。",
   "tags": [
     "FX初心者",
-    "ドル円",
-    "pips",
-    "通貨ペア",
-    "為替相場",
+    "スワップポイント",
+    "FX仕組み",
+    "金利差",
+    "キャリー取引",
+    "政策金利",
     "FX用語",
-    "投資初心者",
-    "値幅"
+    "通貨ペア"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「FXのpips」というキーワードを配置し、タグには「FX初心者」「ドル円」「pips」「通貨ペア」など具体性と検索需要を両立する複合語を検索需要順に並べました。",
+  "seoNotes": "タイトル冒頭に検索需要の高い「スワップポイントとは」を配置し、タグには「スワップポイント」「金利差」「キャリー取引」等の関連複合語を検索需要順に含めてSEOを意識しました。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "FXの「pips」とは",
-        "1円でも1銭でもない単位"
+        "毎日発生するお金の正体",
+        "スワップポイントとは？"
       ],
-      "narration": "FX初心者が最初につまずく「pips」、実はドル円だと1円でも1銭でもない専用単位だと知っていますか？",
-      "pexelsQuery": "forex trading chart currency pairs screen"
+      "narration": "FXで保有するだけで毎日発生するお金、実はその正体は2国間の金利差から生まれるスワップポイントです。",
+      "pexelsQuery": "forex trading chart screen"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "円がらみは",
-        "1pips=1銭(0.01円)"
+        "2国間の金利差が正体",
+        "保有日数分だけ毎日発生"
       ],
-      "narration": "pipsは通貨ペアの値動きを表す単位で、ドル円など円がらみの通貨ペアは1pipsが1銭(0.01円)、ユーロドルなど他の通貨ペアは1pipsが0.0001です。",
-      "pexelsQuery": "currency exchange rate numbers digital screen"
+      "narration": "スワップポイントは異なる通貨の政策金利差から生じる調整額で、ポジションを保有する日数分だけ毎日発生します。買いポジションなら高金利通貨を持つほど受け取り額が増えます。",
+      "pexelsQuery": "currency exchange rate board"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "100pips=1円",
-        "1万通貨で損益1万円"
+        "高金利買い低金利売りで受取",
+        "証券会社ごとに毎日更新"
       ],
-      "narration": "損益はpips数×取引数量で決まる仕組みで、ドル円換算では100pipsが1円に相当し、1万通貨を保有していれば1円の変動で約1万円の損益が生まれます。",
-      "pexelsQuery": "trading calculator profit loss chart screen"
+      "narration": "高金利通貨を買い低金利通貨を売ると金利差分を毎日受け取れ、逆の組み合わせだと支払いになります。金額は通貨ペアや証券会社ごとに毎日更新されます。",
+      "pexelsQuery": "stack of international currency notes"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "pips数だけの比較は誤解",
-        "通貨ペアで価値が違う"
+        "為替変動で損失が上回ることも",
+        "毎日変動し金額は固定でない"
       ],
-      "narration": "同じ1pipsでも通貨ペアや取引数量、円換算のレート水準によって実際の価値が変わるため、pips数だけで損益の大きさを単純比較すると誤解のもとになります。",
-      "pexelsQuery": "confused person analyzing financial chart data"
+      "narration": "金利差の受け取りより、かわせ変動による損失が上回れば全体では赤字になり得ます。政策金利が変わればスワップ額も日々変動し、固定された金額ではありません。",
+      "pexelsQuery": "central bank building interest rate"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "チャンネル登録で",
-        "FX知識を毎日更新"
+        "情報提供が目的です",
+        "チャンネル登録お願いします"
       ],
-      "narration": "pipsを知れば値動きの見え方が変わります。ぜひチャンネル登録して、疑問はコメントで教えてください。",
-      "pexelsQuery": "smartphone subscribe button notification finance app"
+      "narration": "スワップポイントの解説は情報提供が目的です。感想はコメントで教えてね。チャンネル登録もお願いします。",
+      "pexelsQuery": "smartphone finance app subscribe button"
     }
   ],
   "category": "FX",
