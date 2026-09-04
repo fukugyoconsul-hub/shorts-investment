@@ -1,72 +1,72 @@
 {
-  "title": "スワップポイントとは？金利差の仕組み",
+  "title": "pipsとは？FX値動きの共通単位",
   "topics": [
-    "基礎:スワップポイントの定義",
-    "仕組み:金利差×日数で毎日発生",
-    "注意点:金利変動でマイナス転落もある"
+    "基礎：pipsは為替の値動きを表す共通単位",
+    "仕組み：取引数量に応じた損益計算の仕組み",
+    "注意点：通貨ペアによって換算が異なる点"
   ],
-  "descriptionHook": "FXのスワップポイントとは何か、政策金利差で毎日損益が発生する仕組みと注意点を解説します。",
+  "descriptionHook": "FXのpipsとは何かを、通貨ペアごとの単位の違いと具体的な損益計算の仕組みから解説します。",
   "tags": [
+    "pips",
     "FX初心者",
-    "スワップポイント",
-    "為替",
-    "金利差",
+    "為替相場",
+    "通貨ペア",
+    "米ドル円",
     "FX用語",
-    "高金利通貨",
-    "FX基礎知識",
-    "ロールオーバー"
+    "損益計算",
+    "FXレート"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「スワップポイントとは」を配置し、タグには「FX初心者」「スワップポイント」「金利差」など検索ボリュームが見込める名詞を優先順で並べた。",
+  "seoNotes": "タイトル冒頭に検索需要の高い「pips」というキーワードを配置し、tagsには「pips」「FX初心者」「通貨ペア」「米ドル円」など具体性と検索需要を両立させた複合語を検索需要順に並べました。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "外貨を持つと毎日発生",
-        "その正体はスワップポイント"
+        "1pipsの正体は？",
+        "通貨ペアで単位が違う"
       ],
-      "narration": "実は円を売って高金利の外貨を買うだけで、寝ている間にも金利差の損益が毎日積み上がる仕組みがあります。",
-      "pexelsQuery": "foreign currency banknotes stack"
+      "narration": "かわせニュースで頻繁に聞くpipsという単位、実は通貨ペアごとに小数点の位置が異なるって知っていましたか？",
+      "pexelsQuery": "forex trading chart screen close up"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "スワップポイントとは",
-        "2国間の金利差の受払い"
+        "pipsは値動きの単位",
+        "円ペアは小数点2位"
       ],
-      "narration": "スワップポイントとは、通貨ペア間の政策金利差から生まれる損益のことです。売買した外貨を翌日以降も保有し続けると、原則として毎日この差額が自動的に口座へ反映されます。",
-      "pexelsQuery": "central bank building finance"
+      "narration": "pipsとはかわせの値動きを表す世界共通の単位のことで、多くの通貨ペアは小数点第4位、米ドル円などの円が絡むペアは第2位を1pipsとして扱います。",
+      "pexelsQuery": "currency exchange rate numbers screen"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "高金利買いでプラスに",
-        "金曜は3日分まとめて計算"
+        "1万通貨で1pips100円",
+        "10万通貨なら1000円"
       ],
-      "narration": "仕組みは単純で、買った通貨金利が売った通貨より高ければプラス、低ければマイナスになります。金曜持ち越し分は土日を含めて3日分まとめて計算されます。",
-      "pexelsQuery": "calendar calculator finance interest"
+      "narration": "1万通貨を保有中にかわせレートが1pips動くと損益は約100円変わり、10万通貨なら同じ1pipsの変動でも損益は約1000円に拡大します。",
+      "pexelsQuery": "forex trading calculator money desk"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "高金利でも油断は禁物",
-        "突然マイナスに転じる例も"
+        "通貨ペアで換算が違う",
+        "単純比較は誤解のもと"
       ],
-      "narration": "注意したいのは、高金利だからと安心してはいけない点です。政策金利は変動するため、プラスだったスワップが突然マイナスに転じることもあり、注意が必要です。",
-      "pexelsQuery": "stock market red chart decline"
+      "narration": "同じ1円の値動きでも通貨ペアによってpipsの換算は変わるため、通貨ペアが違う商品同士を値幅だけで単純に比較すると誤解しやすいので注意が必要です。",
+      "pexelsQuery": "stock market chart warning caution"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "スワップも為替の一部",
-        "チャンネル登録お願いします"
+        "感想はコメントで",
+        "チャンネル登録もぜひ"
       ],
-      "narration": "毎日のスワップ損益、あなたは意識したことありますか？ぜひチャンネル登録して仕組みを学んでいきましょう。",
-      "pexelsQuery": "smartphone finance app subscribe"
+      "narration": "pipsの仕組みは理解できましたか？あなたの感想もコメントで教えてください。チャンネル登録もぜひお願いします。",
+      "pexelsQuery": "smartphone social media subscribe button"
     }
   ],
   "category": "FX",
