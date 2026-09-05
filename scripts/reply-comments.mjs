@@ -8,7 +8,7 @@ const root = path.join(__dirname, "..");
 
 const MAX_REPLIES_PER_RUN = 3;
 
-const X_URL = "https://x.com/TAC_FXtrade";
+const X_URL = "https://twitter.com/tac_fxtrade?s=21";
 const MAIN_CHANNEL_URL = "https://www.youtube.com/channel/UCpmL0HqTr-rqJSoSa6trPoQ";
 
 // Xへの案内を含む返信(言い回しを変えたパターン。毎回同じ文面だとスパム判定のリスクがあるため)
