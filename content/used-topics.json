@@ -771,5 +771,38 @@
     "videoId": "DiCYcbP8AvM",
     "category": "経済指標",
     "format": "kaisetsu"
+  },
+  {
+    "title": "無登録業者とは？高レバレッジ詐欺の手口",
+    "topics": [
+      "国内は金融庁登録必須でレバレッジ上限25倍/無登録業者がSNSで高レバレッジ勧誘/証拠金保全なしで金融ADRの対象外"
+    ],
+    "date": "2026-09-05",
+    "publishedAt": "2026-09-07T07:00:00.000Z",
+    "videoId": "LhYT8clzSck",
+    "category": "詐欺",
+    "format": "qa"
+  },
+  {
+    "title": "中央銀行の独立性とは？政府から分離の仕組み",
+    "topics": [
+      "中央銀行の独立性/政治介入のリスク/独立した金融政策決定の仕組み"
+    ],
+    "date": "2026-09-05",
+    "publishedAt": "2026-09-07T23:00:00.000Z",
+    "videoId": "-wMcLLDkZ-w",
+    "category": "中央銀行",
+    "format": "qa"
+  },
+  {
+    "title": "VIX恐怖指数とは？地政学危機で急騰する仕組み",
+    "topics": [
+      "VIX指数の算出方法/リーマン・コロナ危機の急騰記録/オプション需要が生む恐怖指数の仕組み"
+    ],
+    "date": "2026-09-05",
+    "publishedAt": "2026-09-08T07:00:00.000Z",
+    "videoId": "xDM9zUuxseQ",
+    "category": "世界情勢",
+    "format": "qa"
   }
 ]

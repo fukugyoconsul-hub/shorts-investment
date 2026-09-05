@@ -1,75 +1,73 @@
 {
-  "title": "失業率とは？完全失業率の計算式の仕組み",
+  "title": "VIX恐怖指数とは？地政学危機で急騰する仕組み",
   "topics": [
-    "失業率の定義と労働力調査",
-    "完全失業者数÷労働力人口の計算式",
-    "季節調整済み数値と求職断念者の注意点"
+    "VIX指数の算出方法/リーマン・コロナ危機の急騰記録/オプション需要が生む恐怖指数の仕組み"
   ],
-  "descriptionHook": "失業率の定義と計算式、総務省の労働力調査の仕組みを解説します。",
+  "descriptionHook": "VIX恐怖指数とは何か、リーマンショックやコロナショックで急騰した仕組みをわかりやすく解説します。",
   "tags": [
-    "失業率",
-    "経済指標",
-    "雇用統計",
     "投資初心者",
-    "FX初心者",
-    "労働力調査",
-    "完全失業率",
-    "総務省統計"
+    "株式投資",
+    "VIX指数",
+    "恐怖指数",
+    "リーマンショック",
+    "コロナショック",
+    "株価暴落",
+    "オプション取引"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「失業率とは」を配置し、タグには「失業率」「経済指標」「雇用統計」「労働力調査」など具体的な検索語を検索需要順に並べました。",
+  "seoNotes": "タイトル冒頭10文字以内に検索需要の高い「VIX恐怖指数とは」を配置し、tagsには投資初心者・株式投資といった一般キーワードとVIX指数・恐怖指数・リーマンショックなど固有キーワードを検索需要順に含めた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "失業率2.5％の中身",
-        "求人数とは無関係の計算式"
+        "世界の危機で急騰する",
+        "謎の指数の正体とは？"
       ],
-      "narration": "日本の失業率は約2.5％、実はハローワークの求人数の増減とはまったく無関係な計算式で毎月算出されています。",
-      "pexelsQuery": "job search unemployment office"
+      "narration": "世界のどこかで金融危機や地政学的な緊張が急激に高まるたび、決まって急騰する指数があるのを知っていますか？",
+      "pexelsQuery": "stock market crash red numbers screen"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "失業率とは労働力調査",
-        "総務省が毎月末に公表"
+        "シカゴ算出のVIX指数",
+        "平常時は15~20で推移"
       ],
-      "narration": "失業率とは、働く意思があるのに仕事に就けない人の割合のことで、総務省統計局が毎月末に発表する労働力調査の結果として公表される経済指標です。",
-      "pexelsQuery": "statistics office data analysis"
+      "narration": "VIX指数はシカゴオプション取引所が算出する指標で、S&P500のオプション価格から算出した予想変動率を示す。平常時はおおむね15から20程度で推移する。",
+      "pexelsQuery": "chicago board options exchange trading floor"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "完全失業者数÷労働力人口",
-        "15歳以上の就業者と失業者"
+        "リーマン時80超えに",
+        "コロナ禍は82.69へ"
       ],
-      "narration": "計算式は完全失業者数を労働力人口で割ったもので、労働力人口とは仕事に就いている就業者と職を探している完全失業者を合わせた15歳以上の人数を指します。",
-      "pexelsQuery": "calculator math formula close up"
+      "narration": "ところが2008年のリーマンショックでは80超え、2020年のコロナショック時には史上最高となる82.69まで、VIX指数が跳ね上がった。",
+      "pexelsQuery": "financial crisis stock chart crashing down"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "季節調整済みが基本の値",
-        "求職あきらめた人は対象外"
+        "恐怖指数の正体は",
+        "オプション需要急増"
       ],
-      "narration": "発表される数値は季節調整済みが基本ですが、就職をあきらめて求職活動をやめた人は労働力人口に含まれず、失業率にも反映されない点に注意が必要です。",
-      "pexelsQuery": "empty office chairs job market"
+      "narration": "実は下落に備えた投資家がプットオプションを大量に買い漁ることで需要と予想変動率が同時に跳ね上がる仕組みで、これが恐怖指数と呼ばれる正体である。",
+      "pexelsQuery": "trader looking at volatility chart screen"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "経済指標の仕組みを解説",
-        "チャンネル登録お願いします"
+        "チャンネル登録で",
+        "経済知識を毎日更新"
       ],
-      "narration": "経済指標の仕組みを知れば、ニュースの見方が変わります。感想はぜひコメントで、チャンネル登録もお願いします。",
-      "pexelsQuery": "finance news smartphone city"
+      "narration": "VIX指数、実は知らなかった方も多いはず。チャンネル登録して、あなたの感想もコメントで教えてください。",
+      "pexelsQuery": "modern city finance skyline sunset"
     }
   ],
-  "category": "経済指標",
-  "format": "kaisetsu",
-  "displayGenre": "経済指標"
+  "category": "世界情勢",
+  "format": "qa",
+  "displayGenre": "世界情勢"
 }
