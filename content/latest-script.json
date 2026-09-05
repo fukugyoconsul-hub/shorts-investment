@@ -1,73 +1,75 @@
 {
-  "title": "VIX恐怖指数とは？地政学危機で急騰する仕組み",
+  "title": "通貨危機の歴史3選",
   "topics": [
-    "VIX指数の算出方法/リーマン・コロナ危機の急騰記録/オプション需要が生む恐怖指数の仕組み"
+    "1994年メキシコ通貨危機",
+    "2001年アルゼンチン債務危機",
+    "2015年チャイナショック"
   ],
-  "descriptionHook": "VIX恐怖指数とは何か、リーマンショックやコロナショックで急騰した仕組みをわかりやすく解説します。",
+  "descriptionHook": "1994年メキシコ通貨危機、2001年アルゼンチン債務危機、2015年チャイナショックなど、世界の通貨危機の歴史を3つ解説します。",
   "tags": [
     "投資初心者",
-    "株式投資",
-    "VIX指数",
-    "恐怖指数",
-    "リーマンショック",
-    "コロナショック",
-    "株価暴落",
-    "オプション取引"
+    "経済史",
+    "金融危機",
+    "通貨危機",
+    "チャイナショック",
+    "アルゼンチン債務危機",
+    "メキシコ通貨危機",
+    "デフォルト"
   ],
-  "seoNotes": "タイトル冒頭10文字以内に検索需要の高い「VIX恐怖指数とは」を配置し、tagsには投資初心者・株式投資といった一般キーワードとVIX指数・恐怖指数・リーマンショックなど固有キーワードを検索需要順に含めた。",
+  "seoNotes": "タイトル冒頭に検索需要の見込める「通貨危機」というキーワードを配置し、タグには一般的な「投資初心者」「金融危機」に加え「チャイナショック」「アルゼンチン債務危機」など固有の検索語を検索ボリュームが大きい順に並べた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "世界の危機で急騰する",
-        "謎の指数の正体とは？"
+        "たった数週間で価値半減",
+        "世界を襲った通貨危機3選"
       ],
-      "narration": "世界のどこかで金融危機や地政学的な緊張が急激に高まるたび、決まって急騰する指数があるのを知っていますか？",
-      "pexelsQuery": "stock market crash red numbers screen"
+      "narration": "通貨の価値がわずか数週間で半分になる。そんな衝撃的な通貨危機が世界では過去に何度も繰り返されてきました。",
+      "pexelsQuery": "stock market crash red numbers chart"
     },
     {
       "id": "rank3",
-      "badge": null,
+      "badge": "第3位",
       "caption": [
-        "シカゴ算出のVIX指数",
-        "平常時は15~20で推移"
+        "メキシコ通貨危機1994",
+        "緊急支援500億ドル"
       ],
-      "narration": "VIX指数はシカゴオプション取引所が算出する指標で、S&P500のオプション価格から算出した予想変動率を示す。平常時はおおむね15から20程度で推移する。",
-      "pexelsQuery": "chicago board options exchange trading floor"
+      "narration": "第3位は1994年のメキシコ通貨危機。実はペソが数週間でおよそ半分の価値まで急落し、アメリカと国際通貨基金が総額500億ドル規模の緊急支援に動きました。",
+      "pexelsQuery": "mexican peso currency crisis dollar bills"
     },
     {
       "id": "rank2",
-      "badge": null,
+      "badge": "第2位",
       "caption": [
-        "リーマン時80超えに",
-        "コロナ禍は82.69へ"
+        "アルゼンチン債務危機",
+        "対外債務1000億ドル"
       ],
-      "narration": "ところが2008年のリーマンショックでは80超え、2020年のコロナショック時には史上最高となる82.69まで、VIX指数が跳ね上がった。",
-      "pexelsQuery": "financial crisis stock chart crashing down"
+      "narration": "第2位は2001年のアルゼンチン債務危機。実は対外債務およそ1000億ドルの返済が滞り、当時としては史上最大級の債務不履行として世界に記録されました。",
+      "pexelsQuery": "argentina bank run financial crisis"
     },
     {
       "id": "rank1",
-      "badge": null,
+      "badge": "第1位",
       "caption": [
-        "恐怖指数の正体は",
-        "オプション需要急増"
+        "2015年チャイナショック",
+        "上海総合指数3割下落"
       ],
-      "narration": "実は下落に備えた投資家がプットオプションを大量に買い漁ることで需要と予想変動率が同時に跳ね上がる仕組みで、これが恐怖指数と呼ばれる正体である。",
-      "pexelsQuery": "trader looking at volatility chart screen"
+      "narration": "第1位は2015年のチャイナショック。実は上海総合指数はおよそ1か月で3割も下落し、数百社もの株式取引が一時停止される事態となりました。",
+      "pexelsQuery": "shanghai stock exchange trading screen crash"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "チャンネル登録で",
-        "経済知識を毎日更新"
+        "情報提供目的の解説です",
+        "チャンネル登録もお願いします"
       ],
-      "narration": "VIX指数、実は知らなかった方も多いはず。チャンネル登録して、あなたの感想もコメントで教えてください。",
-      "pexelsQuery": "modern city finance skyline sunset"
+      "narration": "あくまで情報提供が目的で投資助言ではありません。感想はぜひコメントで、そしてチャンネル登録もお願いします。",
+      "pexelsQuery": "financial district skyline sunset"
     }
   ],
-  "category": "世界情勢",
-  "format": "qa",
-  "displayGenre": "世界情勢"
+  "category": "経済史",
+  "format": "ranking",
+  "displayGenre": "経済史"
 }

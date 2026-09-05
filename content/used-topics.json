@@ -804,5 +804,18 @@
     "videoId": "xDM9zUuxseQ",
     "category": "世界情勢",
     "format": "qa"
+  },
+  {
+    "title": "通貨危機の歴史3選",
+    "topics": [
+      "1994年メキシコ通貨危機",
+      "2001年アルゼンチン債務危機",
+      "2015年チャイナショック"
+    ],
+    "date": "2026-09-05",
+    "publishedAt": "2026-09-08T23:00:00.000Z",
+    "videoId": "IGSmyaN2rlk",
+    "category": "経済史",
+    "format": "ranking"
   }
 ]
