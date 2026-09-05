@@ -9,9 +9,10 @@ const root = path.join(__dirname, "..");
 const MAX_REPLIES_PER_RUN = 3;
 
 const X_URL = "https://x.com/TAC_FXtrade";
+const MAIN_CHANNEL_URL = "https://www.youtube.com/channel/UCpmL0HqTr-rqJSoSa6trPoQ";
 
 // Xへの案内を含む返信(言い回しを変えたパターン。毎回同じ文面だとスパム判定のリスクがあるため)
-const TEMPLATES_WITH_LINK = [
+const TEMPLATES_WITH_X = [
   `コメントありがとうございます!今後もFX・投資の学びに役立つ内容をお届けします。感想はXでもお待ちしています。\n\n▼X(Twitter)はこちら\n${X_URL}`,
   `見てくださってありがとうございます!Xでも金融・投資に関する情報を発信しているので、よければ覗いてみてください。\n\n▼X(Twitter)はこちら\n${X_URL}`,
   `コメント嬉しいです!よかったらXでも感想や気になるテーマを聞かせてください。\n\n▼X(Twitter)はこちら\n${X_URL}`,
@@ -24,6 +25,17 @@ const TEMPLATES_WITH_LINK = [
   `ありがとうございます!Xでも金融・経済の話題を発信しています、ぜひ覗いてみてください。\n\n▼X(Twitter)はこちら\n${X_URL}`,
 ];
 
+// メインチャンネルへの案内を含む返信(同様に言い回しを変えたパターン)
+const TEMPLATES_WITH_MAIN_CHANNEL = [
+  `コメントありがとうございます!メインチャンネルでも投資に役立つ情報を発信しているので、よければご覧ください。\n\n▼メインチャンネルはこちら\n${MAIN_CHANNEL_URL}`,
+  `見てくださってありがとうございます!メインチャンネルではより詳しい解説もしているので、ぜひ覗いてみてください。\n\n▼メインチャンネルはこちら\n${MAIN_CHANNEL_URL}`,
+  `コメント嬉しいです!メインチャンネルの方もよろしければチェックしてみてください。\n\n▼メインチャンネルはこちら\n${MAIN_CHANNEL_URL}`,
+  `ありがとうございます!メインチャンネルでも関連テーマを取り上げています。\n\n▼メインチャンネルはこちら\n${MAIN_CHANNEL_URL}`,
+  `コメントありがとうございます😊 メインチャンネルにも投資学習に役立つ動画があるので、よければどうぞ。\n\n▼メインチャンネルはこちら\n${MAIN_CHANNEL_URL}`,
+  `見ていただき感謝です!メインチャンネルでは長尺での解説もしています。\n\n▼メインチャンネルはこちら\n${MAIN_CHANNEL_URL}`,
+  `ありがとうございます!より深く学びたい方はメインチャンネルもぜひ。\n\n▼メインチャンネルはこちら\n${MAIN_CHANNEL_URL}`,
+];
+
 // リンクなしの返信(毎回リンクを貼ると宣伝色が強すぎて凍結リスクが上がるため、一部混ぜる)
 const TEMPLATES_PLAIN = [
   "コメントありがとうございます!励みになります。",
@@ -33,8 +45,9 @@ const TEMPLATES_PLAIN = [
 ];
 
 function pickTemplate() {
-  // 7割はXへの案内あり、3割はプレーンな返信
-  const pool = Math.random() < 0.7 ? TEMPLATES_WITH_LINK : TEMPLATES_PLAIN;
+  // 35%はXへの案内、35%はメインチャンネルへの案内、30%はプレーンな返信
+  const r = Math.random();
+  const pool = r < 0.35 ? TEMPLATES_WITH_X : r < 0.7 ? TEMPLATES_WITH_MAIN_CHANNEL : TEMPLATES_PLAIN;
   return pool[Math.floor(Math.random() * pool.length)];
 }
 
