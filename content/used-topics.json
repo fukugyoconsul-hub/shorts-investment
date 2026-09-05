@@ -732,5 +732,44 @@
     "videoId": "xV6SeYgfxgY",
     "category": "税金",
     "format": "kaisetsu"
+  },
+  {
+    "title": "予定利率とは？保険料が決まる仕組み",
+    "topics": [
+      "純保険料と付加保険料の構成",
+      "予定死亡率・予定利率・予定事業費率の仕組み",
+      "配当金は保証されない注意点"
+    ],
+    "date": "2026-09-05",
+    "publishedAt": "2026-09-05T23:00:00.000Z",
+    "videoId": "u-9nE95yAl0",
+    "category": "保険",
+    "format": "kaisetsu"
+  },
+  {
+    "title": "貿易赤字とは？円安が進む仕組み",
+    "topics": [
+      "基礎:貿易収支の定義",
+      "仕組み:実需の円売り圧力",
+      "注意点:円安は複合要因で決まる"
+    ],
+    "date": "2026-09-05",
+    "publishedAt": "2026-09-06T07:00:00.000Z",
+    "videoId": "JA8EAegTJIE",
+    "category": "FX",
+    "format": "kaisetsu"
+  },
+  {
+    "title": "失業率とは？完全失業率の計算式の仕組み",
+    "topics": [
+      "失業率の定義と労働力調査",
+      "完全失業者数÷労働力人口の計算式",
+      "季節調整済み数値と求職断念者の注意点"
+    ],
+    "date": "2026-09-05",
+    "publishedAt": "2026-09-06T23:00:00.000Z",
+    "videoId": "DiCYcbP8AvM",
+    "category": "経済指標",
+    "format": "kaisetsu"
   }
 ]
