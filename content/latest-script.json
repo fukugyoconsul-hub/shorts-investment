@@ -1,72 +1,70 @@
 {
-  "title": "pipsとは？FX値動きの共通単位",
+  "title": "スワップポイントとは？FX金利差の仕組み",
   "topics": [
-    "基礎：pipsは為替の値動きを表す共通単位",
-    "仕組み：取引数量に応じた損益計算の仕組み",
-    "注意点：通貨ペアによって換算が異なる点"
+    "スワップポイントの基礎(金利差益の定義)/証券会社が毎日自動計算する仕組み/金利差逆転で支払いに変わる注意点"
   ],
-  "descriptionHook": "FXのpipsとは何かを、通貨ペアごとの単位の違いと具体的な損益計算の仕組みから解説します。",
+  "descriptionHook": "FXのスワップポイントとは、通貨間の政策金利差から毎日発生する損益のことです。",
   "tags": [
-    "pips",
     "FX初心者",
-    "為替相場",
-    "通貨ペア",
-    "米ドル円",
+    "スワップポイント",
     "FX用語",
-    "損益計算",
-    "FXレート"
+    "金利差",
+    "外国為替",
+    "トリプルスワップ",
+    "FX基礎知識",
+    "為替相場"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「pips」というキーワードを配置し、tagsには「pips」「FX初心者」「通貨ペア」「米ドル円」など具体性と検索需要を両立させた複合語を検索需要順に並べました。",
+  "seoNotes": "タイトル冒頭に検索需要の高い「スワップポイント」「FX」を配置し、tagsには「FX初心者」「スワップポイント」「金利差」「トリプルスワップ」など検索ボリュームが見込める複合語を優先順に含めました。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "1pipsの正体は？",
-        "通貨ペアで単位が違う"
+        "為替差益だけじゃない",
+        "毎日発生する謎の損益"
       ],
-      "narration": "かわせニュースで頻繁に聞くpipsという単位、実は通貨ペアごとに小数点の位置が異なるって知っていましたか？",
-      "pexelsQuery": "forex trading chart screen close up"
+      "narration": "FXはかわせ差益だけじゃありません。実は持っているだけで毎日、口座残高が静かに増減する仕組みがあるんです。",
+      "pexelsQuery": "forex trading chart screen"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "pipsは値動きの単位",
-        "円ペアは小数点2位"
+        "スワップポイントとは",
+        "金利差で生まれる損益"
       ],
-      "narration": "pipsとはかわせの値動きを表す世界共通の単位のことで、多くの通貨ペアは小数点第4位、米ドル円などの円が絡むペアは第2位を1pipsとして扱います。",
-      "pexelsQuery": "currency exchange rate numbers screen"
+      "narration": "スワップポイントとは、2つの通貨の政策金利差を反映した損益のことです。低金利通貨を売って高金利通貨を買うポジションを持つと、金利差分を毎日受け取れます。",
+      "pexelsQuery": "currency exchange rates global"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "1万通貨で1pips100円",
-        "10万通貨なら1000円"
+        "証券会社が毎日算出",
+        "水曜はトリプルスワップ"
       ],
-      "narration": "1万通貨を保有中にかわせレートが1pips動くと損益は約100円変わり、10万通貨なら同じ1pipsの変動でも損益は約1000円に拡大します。",
-      "pexelsQuery": "forex trading calculator money desk"
+      "narration": "スワップポイントは通貨ペアの金利差を基に証券会社が毎日算出し、保有日数分だけ自動で口座に反映されます。土日分の調整であるトリプルスワップが発生する曜日もあります。",
+      "pexelsQuery": "financial data analysis screen"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "通貨ペアで換算が違う",
-        "単純比較は誤解のもと"
+        "金利差縮小で逆転も",
+        "確定利益ではない点に注意"
       ],
-      "narration": "同じ1円の値動きでも通貨ペアによってpipsの換算は変わるため、通貨ペアが違う商品同士を値幅だけで単純に比較すると誤解しやすいので注意が必要です。",
-      "pexelsQuery": "stock market chart warning caution"
+      "narration": "金利差は縮小や逆転もあり、受け取りだったスワップが支払いに変わることもあります。確定利益ではなく、かわせ差損とは別に発生する変動費用である点に注意が必要です。",
+      "pexelsQuery": "stock market volatility risk"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "感想はコメントで",
-        "チャンネル登録もぜひ"
+        "コメントで教えて",
+        "チャンネル登録もお願い"
       ],
-      "narration": "pipsの仕組みは理解できましたか？あなたの感想もコメントで教えてください。チャンネル登録もぜひお願いします。",
-      "pexelsQuery": "smartphone social media subscribe button"
+      "narration": "スワップポイントの仕組み、知っていましたか？コメントで教えてください。チャンネル登録も忘れずにお願いします。",
+      "pexelsQuery": "person using smartphone app"
     }
   ],
   "category": "FX",
