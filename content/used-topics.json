@@ -830,5 +830,18 @@
     "videoId": "bhQJjq1tvmA",
     "category": "債券",
     "format": "kaisetsu"
+  },
+  {
+    "title": "ビットコイン上限2100万枚の仕組み",
+    "topics": [
+      "ビットコインの発行上限2100万枚",
+      "半減期でマイニング報酬が減る仕組み",
+      "上限があっても価格保証ではない注意点"
+    ],
+    "date": "2026-09-06",
+    "publishedAt": "2026-09-09T23:00:00.000Z",
+    "videoId": "l6T3EYSCXTQ",
+    "category": "暗号資産",
+    "format": "kaisetsu"
   }
 ]
