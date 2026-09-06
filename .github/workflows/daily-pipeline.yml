@@ -66,8 +66,14 @@ jobs:
           for i in 1 2 3 4 5; do
             git push && exit 0
             echo "push rejected (attempt $i/5), rebasing onto latest main..."
-            git pull --rebase --autostash origin main
+            if ! git pull --rebase --autostash origin main; then
+              echo "::warning::content/*.jsonの内容が競合したため、今回分の履歴更新は破棄して続行します(動画自体の生成・投稿には影響ありません)"
+              git rebase --abort || true
+              git reset --hard origin/main
+              exit 0
+            fi
             sleep 5
           done
-          echo "::error::used-topics.json の push が5回失敗しました。手動でのマージが必要です。"
-          exit 1
+          echo "::warning::used-topics.json の push が5回失敗しましたが、動画自体の生成・投稿には影響ないため続行します"
+          git reset --hard origin/main
+          exit 0

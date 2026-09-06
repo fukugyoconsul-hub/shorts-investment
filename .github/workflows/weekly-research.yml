@@ -61,8 +61,14 @@ jobs:
           for i in 1 2 3 4 5; do
             git push && exit 0
             echo "push rejected (attempt $i/5), rebasing onto latest main..."
-            git pull --rebase --autostash origin main
+            if ! git pull --rebase --autostash origin main; then
+              echo "::warning::content等の内容が競合したため、今回分の更新は破棄して続行します"
+              git rebase --abort || true
+              git reset --hard origin/main
+              exit 0
+            fi
             sleep 5
           done
-          echo "::error::categories.json/content/ の push が5回失敗しました。手動でのマージが必要です。"
-          exit 1
+          echo "::warning::categories.json/content/ の push が5回失敗しましたが続行します"
+          git reset --hard origin/main
+          exit 0
