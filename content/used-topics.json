@@ -817,5 +817,18 @@
     "videoId": "IGSmyaN2rlk",
     "category": "経済史",
     "format": "ranking"
+  },
+  {
+    "title": "デュレーションとは？国債価格が動く仕組み",
+    "topics": [
+      "基礎:デュレーションの定義",
+      "仕組み:残存期間・表面利率との関係",
+      "注意点:価格変動には他の要因も影響"
+    ],
+    "date": "2026-09-06",
+    "publishedAt": "2026-09-09T07:00:00.000Z",
+    "videoId": "bhQJjq1tvmA",
+    "category": "債券",
+    "format": "kaisetsu"
   }
 ]
