@@ -1,73 +1,75 @@
 {
-  "title": "肩車型社会とは？年金を支える人数の推移",
+  "title": "CFDの空売りとは？売りから入る仕組み",
   "topics": [
-    "胴上げ型(1965年9.1人)/騎馬戦型(現在2人)/肩車型(2070年1.3人)の推計"
+    "基礎:CFDは差金決済取引で売買方向を選べる",
+    "仕組み:証拠金だけで売り建てができる仕組み",
+    "注意点:証拠金維持率と無制限損失リスクへの注意"
   ],
-  "descriptionHook": "高齢者1人を支える現役世代の人数が、胴上げ型から肩車型へ変わっていく仕組みを解説します。",
+  "descriptionHook": "CFDが「売り」から取引を始められる仕組みと、証拠金・損失リスクの注意点を解説します。",
   "tags": [
-    "少子高齢化",
-    "高齢化率",
-    "年金制度",
-    "肩車型社会",
-    "生産年齢人口",
-    "日本経済",
+    "CFD",
     "投資初心者",
-    "将来推計人口"
+    "空売り",
+    "CFD取引",
+    "レバレッジ取引",
+    "差金決済",
+    "証拠金",
+    "売り建て"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「肩車型社会」「とは」を配置し、tagsには「少子高齢化」「高齢化率」など一般的な検索キーワードと「肩車型社会」「生産年齢人口」等の固有キーワードを検索需要順に含めた。",
+  "seoNotes": "タイトル冒頭に検索需要の高い『CFD』と『空売り』を配置し、『とは？』型の定義タイトルで検索流入を狙った。タグには『空売り』『差金決済』『証拠金』『売り建て』など具体的な複合語を用い、固定ハッシュタグと重複しないようにした。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "支え手は何人になる？",
-        "少子高齢化の現実とは"
+        "現物株を保有していなくても",
+        "売り注文から取引を開始"
       ],
-      "narration": "少子高齢化が進む日本は将来、肩車型社会になると言われますが、具体的に何人で支えるか知っていますか？",
-      "pexelsQuery": "Japan aging population elderly crowd"
+      "narration": "CFDでは、株を一株も持っていないのに「売る」ところから取引を始められる、現物株にはない仕組みがあります。",
+      "pexelsQuery": "stock trading screen numbers close up"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "1965年は9.1人で",
-        "1人を支える胴上げ型"
+        "CFDは差金決済取引",
+        "買いも売りも選択可能"
       ],
-      "narration": "1965年ごろの日本は、現役世代9.1人で高齢者1人を支える胴上げ型でした。当時の高齢化率はわずか6%程度に過ぎませんでした。",
-      "pexelsQuery": "Japan 1960s vintage workers city street"
+      "narration": "CFDは差金決済取引の略称で、原資産そのものを保有せず、買値と売値の差額だけをやり取りする取引方法で、買いと売りのどちらからでも取引を始められます。",
+      "pexelsQuery": "financial trading chart definition graphic"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "今は2人で1人を支える",
-        "高齢化率は約29%に上昇"
+        "原資産を保有しないまま",
+        "証拠金だけで売り建て可能"
       ],
-      "narration": "やがて高齢化が進み、今の日本は現役世代2人程度で高齢者1人を支える騎馬戦型に近づき、高齢化率は約29%まで上昇し、世界でも高い水準となっています。",
-      "pexelsQuery": "Japanese elderly and young worker balance"
+      "narration": "現物株のからうりは証券を借りて売る仕組みですが、CFDは原資産を保有しないため、証拠金を差し入れるだけで新規に売り建てができ、値下がり時に買い戻して差額を受け取ります。",
+      "pexelsQuery": "margin trading mechanism screen numbers"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "2070年は1.3人で",
-        "1人を支える肩車型に"
+        "証拠金維持率の管理必須",
+        "損失は理論上無制限に"
       ],
-      "narration": "実は2070年ごろには、現役世代わずか1.3人で高齢者1人を支える肩車型社会になると、内閣府が推計しており、社会保障の支え手が大きく減ることを意味します。",
-      "pexelsQuery": "Japan future city elderly care technology"
+      "narration": "売り建てには証拠金維持率の管理が必須で、価格が予想と反対に動けば損失は理論上無制限に拡大し、保有中は金利差調整額などのコストも発生します。",
+      "pexelsQuery": "red declining chart risk warning"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "少子高齢化を正しく知る",
-        "チャンネル登録で応援を"
+        "チャンネル登録はこちら",
+        "感想はコメント欄で待ってます"
       ],
-      "narration": "少子高齢化の現実を知ることも資産形成の第一歩です。あなたはどう思いますか、チャンネル登録もお願いします。",
-      "pexelsQuery": "Japan skyline sunset city finance"
+      "narration": "CFDの仕組みは制度の解説であり投資助言ではありません。感想はコメントで、チャンネル登録もぜひお願いします。",
+      "pexelsQuery": "finance city skyline sunset calm"
     }
   ],
-  "category": "日本経済",
-  "format": "qa",
-  "displayGenre": "日本経済"
+  "category": "CFD",
+  "format": "kaisetsu",
+  "displayGenre": "CFD"
 }

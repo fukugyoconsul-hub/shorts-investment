@@ -854,5 +854,18 @@
     "videoId": "cZCaUbv_2T0",
     "category": "日本経済",
     "format": "qa"
+  },
+  {
+    "title": "CFDの空売りとは？売りから入る仕組み",
+    "topics": [
+      "基礎:CFDは差金決済取引で売買方向を選べる",
+      "仕組み:証拠金だけで売り建てができる仕組み",
+      "注意点:証拠金維持率と無制限損失リスクへの注意"
+    ],
+    "date": "2026-09-07",
+    "publishedAt": "2026-09-10T23:00:00.000Z",
+    "videoId": "3o-0p0w9D64",
+    "category": "CFD",
+    "format": "kaisetsu"
   }
 ]
