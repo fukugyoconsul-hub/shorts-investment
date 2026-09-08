@@ -878,5 +878,18 @@
     "videoId": "FGEPm1FEEoI",
     "category": "金融",
     "format": "qa"
+  },
+  {
+    "title": "ローソク足とは？陽線・陰線の仕組み",
+    "topics": [
+      "基礎:4本値と実体・ヒゲの構成",
+      "仕組み:陽線陰線が示す買い圧力と売り圧力",
+      "注意点:1本だけでは方向性を断定できない"
+    ],
+    "date": "2026-09-08",
+    "publishedAt": "2026-09-11T23:00:00.000Z",
+    "videoId": "PjmYk_2ecdM",
+    "category": "テクニカル",
+    "format": "kaisetsu"
   }
 ]
