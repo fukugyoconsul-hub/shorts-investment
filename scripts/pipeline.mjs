@@ -85,15 +85,21 @@ function runNodeSoft(scriptName) {
   }
 }
 
-// 今から先の投稿枠(JST 8:00 / 16:00)を、必要数だけ古い順に列挙する
-function computeUpcomingSlots(now, count) {
+// 今から先の投稿枠(JST 8:00 / 16:00)を、count個ぶん古い順に列挙する。
+// takenIsoSetに含まれる(=既に使用済みの)日時は除外する。
+// (以前は「使用済み件数ぶん先頭からスキップする」件数ベースの方式だったが、
+// 途中に欠番(過去の失敗分)や重複があると誤った枠を割り当ててしまう不具合があったため、
+// 実際の使用状況を1件ずつ照合する方式に変更した)
+function computeUpcomingSlots(now, count, takenIsoSet) {
   const slots = [];
   let dayOffset = 0;
-  while (slots.length < count && dayOffset < 30) {
+  while (slots.length < count && dayOffset < 60) {
     const baseUTC = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + dayOffset);
     for (const h of SLOT_HOURS_UTC) {
       const slot = new Date(baseUTC + h * 3600 * 1000);
-      if (slot.getTime() > now.getTime()) slots.push(slot);
+      if (slot.getTime() > now.getTime() && !takenIsoSet.has(slot.toISOString())) {
+        slots.push(slot);
+      }
     }
     dayOffset++;
   }
@@ -108,16 +114,15 @@ const usedTopics = JSON.parse(fs.readFileSync(usedTopicsPath, "utf-8"));
 const now = new Date();
 
 // used-topics.jsonのpublishedAtが未来の日時になっているもの = まだ公開されていない予約済み動画
-const futureQueuedCount = usedTopics.filter(
-  (t) => t.publishedAt && new Date(t.publishedAt).getTime() > now.getTime()
-).length;
-
-const upcomingSlots = computeUpcomingSlots(now, STOCK_SLOTS);
-const neededCount = Math.max(0, STOCK_SLOTS - futureQueuedCount);
-const slotsToFill = upcomingSlots.slice(
-  futureQueuedCount,
-  futureQueuedCount + Math.min(neededCount, MAX_NEW_PER_RUN)
+const takenIsoSet = new Set(
+  usedTopics
+    .filter((t) => t.publishedAt && new Date(t.publishedAt).getTime() > now.getTime())
+    .map((t) => new Date(t.publishedAt).toISOString())
 );
+const futureQueuedCount = takenIsoSet.size;
+
+const neededCount = Math.max(0, STOCK_SLOTS - futureQueuedCount);
+const slotsToFill = computeUpcomingSlots(now, Math.min(neededCount, MAX_NEW_PER_RUN), takenIsoSet);
 
 log(
   `現在の予約済み本数: ${futureQueuedCount}本 / 目標: ${STOCK_SLOTS}本(${STOCK_DAYS}日分・1日${SLOT_HOURS_UTC.length}本) → 今回作成: ${slotsToFill.length}本`
