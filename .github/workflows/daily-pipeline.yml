@@ -52,6 +52,13 @@ jobs:
           echo '${{ secrets.YOUTUBE_TOKEN_JSON }}' > youtube-token.json
           echo '${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}' > service-account.json
 
+      - name: Sync to latest main before generating
+        # workflow_dispatch/scheduleはトリガー時点のmainをcheckoutするため、
+        # concurrencyキューで実行が遅延した場合、待機中に別の実行がpushした
+        # content/used-topics.jsonの更新を見落として同じ投稿枠を二重生成する
+        # おそれがある。実行直前に必ず最新mainを取り込んでから判定させる。
+        run: git pull --ff-only origin main
+
       - name: Run pipeline
         run: node scripts/pipeline.mjs
 
