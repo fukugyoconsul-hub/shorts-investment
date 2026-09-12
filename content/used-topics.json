@@ -769,5 +769,38 @@
     "videoId": "vE0O32p9jAU",
     "category": "経済指標",
     "format": "kaisetsu"
+  },
+  {
+    "title": "pipsとは？FXの値動き単位の仕組み",
+    "topics": [
+      "pipsの定義と値動き単位"
+    ],
+    "date": "2026-09-12",
+    "publishedAt": "2026-09-14T07:00:00.000Z",
+    "videoId": "J4OABWIlTns",
+    "category": "FX",
+    "format": "kaisetsu"
+  },
+  {
+    "title": "中央銀行の独立性とは？政府と距離を置く理由",
+    "topics": [
+      "中央銀行の独立性の理由"
+    ],
+    "date": "2026-09-12",
+    "publishedAt": "2026-09-14T23:00:00.000Z",
+    "videoId": "zFeVoTXS4hw",
+    "category": "中央銀行",
+    "format": "kaisetsu"
+  },
+  {
+    "title": "生命表とは？保険料が上がる仕組み",
+    "topics": [
+      "生命表と保険料の関係"
+    ],
+    "date": "2026-09-12",
+    "publishedAt": "2026-09-15T07:00:00.000Z",
+    "videoId": "lfp8wIdYJG4",
+    "category": "保険",
+    "format": "kaisetsu"
   }
 ]
