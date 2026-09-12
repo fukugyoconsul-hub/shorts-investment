@@ -1,77 +1,73 @@
 {
-  "title": "IPOとは？新規上場の仕組み3選",
+  "title": "サンクコスト効果とは？埋没費用に縛られる心理",
   "topics": [
-    "公募価格はブックビルディングで決定",
-    "初値が公募価格を下回る公募割れ",
-    "大株主に課されるロックアップ期間"
+    "1985年の心理実験/コンコルド効果/サンクコスト効果の正体"
   ],
-  "descriptionHook": "IPO(新規上場)の公募価格の決め方から、初値が下落する公募割れ、大株主の売却制限まで、新規上場の仕組みを3つの事実で解説します。",
+  "descriptionHook": "サンクコスト効果とは、すでに支払った費用に縛られて損失をさらに広げてしまう投資家心理の仕組みを解説します。",
   "tags": [
-    "IPO",
-    "新規上場",
+    "投資心理",
+    "行動経済学",
     "投資初心者",
-    "株式投資",
-    "経済雑学",
-    "公募価格",
     "資産運用",
-    "公募割れ",
-    "ロックアップ期間",
-    "ブックビルディング方式"
+    "認知バイアス",
+    "サンクコスト効果",
+    "埋没費用効果",
+    "コンコルド効果"
   ],
-  "seoNotes": "検索需要の高い「IPO」「新規上場」をタイトル冒頭に配置し、定番の「とは」形式と組み合わせた。タグは「投資初心者」「株式投資」「資産運用」など一般的な語と、「公募価格」「公募割れ」「ロックアップ期間」など固有の専門語をバランスよく含めた。",
+  "seoNotes": "検索需要の大きい「サンクコスト効果とは」をタイトル冒頭に配置し、タグは投資心理・行動経済学・投資初心者・資産運用といった一般的な検索語と、サンクコスト効果・埋没費用効果・コンコルド効果・認知バイアスという固有の専門語を組み合わせて検索網羅性を高めた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "新規上場した人気株も",
-        "公募価格を下回ることも"
+        "赤字でもやめられない",
+        "投資家心理の正体とは？"
       ],
-      "narration": "新規上場した人気の株でも、取引開始からわずか数分で公募価格を下回って値下がりすることも珍しくありません。",
-      "pexelsQuery": "stock market ticker screen red numbers"
+      "narration": "投資でもビジネスでも、つぎ込んだお金や時間を惜しんで大赤字でもやめられない人が多いって知っていますか？",
+      "pexelsQuery": "person hesitating difficult business decision"
     },
     {
       "id": "rank3",
-      "badge": "第3位",
+      "badge": null,
       "caption": [
-        "公募価格の決め方とは",
-        "ブックビルディング方式"
+        "1985年の心理実験で判明",
+        "支払い済み代金への執着"
       ],
-      "narration": "実は公募価格は会社が自由に決めているわけではありません。投資家の希望価格をもとに証券会社が決定するブックビルディング方式が採用されています。",
-      "pexelsQuery": "stock exchange trading floor investors"
+      "narration": "1985年、心理学者アーキスとブルーマーが行った実験で、多くの人がすでに支払った代金を惜しみ、その後の判断を誤ることが確認されました。",
+      "pexelsQuery": "psychology research experiment laboratory"
     },
     {
       "id": "rank2",
-      "badge": "第2位",
+      "badge": null,
       "caption": [
-        "初値が公募価格を下回る",
-        "公募割れという現象も"
+        "超音速機コンコルドは",
+        "赤字でも開発中止できず"
       ],
-      "narration": "公募価格より初値が高くなるとは限りません。実は上場初日に公募価格を下回って値がつく公募割れとなる銘柄も、実際には一定数存在します。",
-      "pexelsQuery": "stock price chart falling red candlestick"
+      "narration": "1976年に就航した超音速旅客機コンコルドは、採算が取れないと分かった後も開発中止できず、この現象は「コンコルド効果」と呼ばれるようになりました。",
+      "pexelsQuery": "concorde supersonic jet airplane flying"
     },
     {
       "id": "rank1",
-      "badge": "第1位",
+      "badge": null,
       "caption": [
-        "大株主は90日から180日",
-        "売却できないロックアップ"
+        "答えはサンクコスト効果",
+        "埋没費用に縛られる心理"
       ],
-      "narration": "上場すれば大株主がすぐに株を売れるわけではありません。創業者や大株主には、上場後90日から180日程度、株式の売却を制限するロックアップ条項が課されるのが一般的です。",
-      "pexelsQuery": "business handshake contract signing office"
+      "narration": "実は、支払った費用は本来これからの判断と無関係なのに、人は今やめたら投資が無駄になると考え、損失を広げてしまいます。これがサンクコスト効果、埋没費用効果の正体です。",
+      "pexelsQuery": "money loss frustration finance stress"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "IPOの仕組みが分かった",
-        "チャンネル登録お願いします"
+        "チャンネル登録して",
+        "コメントで感想教えて"
       ],
-      "narration": "IPOの仕組みを知ればニュースの見方も変わります。チャンネル登録してコメントで感想を教えてください。",
-      "pexelsQuery": "city skyline finance district sunset"
+      "narration": "チャンネル登録して、投資家心理の仕組みをもっと学びましょう。あなたはどう思う？コメントで教えてください。",
+      "pexelsQuery": "subscribe button social media notification"
     }
   ],
-  "category": "株式",
-  "format": "ranking",
-  "displayGenre": "株式"
+  "category": "行動経済学",
+  "format": "qa",
+  "displayGenre": "行動経済学"
 }
