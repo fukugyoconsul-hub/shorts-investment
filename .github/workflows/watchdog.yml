@@ -46,3 +46,6 @@ jobs:
 
       - name: Check for overdue unpublished videos
         run: node scripts/check-published.mjs
+
+      - name: Clean up error rows and re-sort by date
+        run: node scripts/cleanup-errors.mjs
