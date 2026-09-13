@@ -4,9 +4,12 @@ dist
 .env
 client_secret.json
 youtube-token.json
+tac633-token.json
+tac633-video-ids.json
 /tiktok-token.json
 service-account.json
 pipeline.log
+catchup.log
 
 # Ignore the output video from Git but not videos you import into src/.
 out

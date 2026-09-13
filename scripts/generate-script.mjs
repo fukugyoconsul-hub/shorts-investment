@@ -100,7 +100,14 @@ for (let i = 0; i < weights.length; i++) {
     break;
   }
 }
-const category = candidateCategories[categoryIndex];
+// 間違ったチャンネルに投稿されてしまった動画と同じトピックを、正しいチャンネル向けに
+// 作り直すための強制トピック指定(通常運用では未設定)。
+const forcedTopicTitle = process.env.FORCE_TOPIC_TITLE;
+const forcedCategory = forcedTopicTitle
+  ? CATEGORIES.find((c) => c.name === process.env.FORCE_TOPIC_CATEGORY) ?? candidateCategories[0]
+  : null;
+
+const category = forcedCategory ?? candidateCategories[categoryIndex];
 
 // 選ばれたジャンルに関連するテーマ傾向があれば優先し、無ければランダムに1件だけ採用する
 const matchingThemes = trendThemes.filter((t) => t.relatedGenre === category.name);
@@ -194,7 +201,11 @@ ${usedTitlesList || "(まだありません)"}
 
 # 今回のジャンル
 ${category.name}: ${category.brief}
-
+${
+  forcedTopicTitle
+    ? `\n# 今回扱うべきテーマ(必須)\n次のテーマを必ず扱うこと: 「${forcedTopicTitle}」。タイトル文言自体は上記SEOルールに従って独自に作り直してよいが、内容の主旨はこのテーマから外れないこと。`
+    : ""
+}
 # ネタの条件
 - 上記ジャンルの範囲内で作ること。悩み相談・個別相談への誘導・アフィリエイト誘導は絶対に含めない
 - 内容は、公的機関の統計・広く知られている経済的事実・一般的な金融の仕組みの解説に基づくこと(不確かな内容、誇張、将来予測の断定は避ける)
