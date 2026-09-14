@@ -1,11 +1,18 @@
 name: Schedule Watchdog
 
-# daily-pipeline.yml(バッファ方式)が正常に機能しているかを2つの観点で確認する監視役。
-# GitHub Actions側のcronが遅延・スキップされても daily-pipeline.yml 自身は起動すらして
-# いないため自己検知できない。そのため「結果」そのものを直接チェックする。
+# daily-pipeline.yml(バッファ方式)・weekly-research.ymlが正常に機能しているかを
+# 確認する監視役。GitHub Actions側のcronが遅延・スキップされてもワークフロー自身は
+# 起動すらしていないため自己検知できない。そのため「結果」そのものを直接チェックする。
 #   1) 予約投稿のバッファ(在庫)が十分にあるか(scripts/check-buffer.mjs)
 #   2) 予約公開の予定時刻を過ぎたのに、YouTube側でまだ公開されていない動画がないか
 #      (scripts/check-published.mjs)
+#   3) weekly-research.ymlの直近の実行が失敗していないか
+#
+# 注意: エラー行の掃除(cleanup-errors.mjs)は必ず一番最初に行うこと。もし上記チェックの
+# 後に掃除すると、この実行で今まさに書き込んだエラー行まで同じ実行内で消えてしまい、
+# 誰の目にも触れないまま消滅する(実際にこのバグがあった)。掃除を先に行うことで、
+# 前回の実行で書き込まれたエラー行は次回の実行まで表示され続け、今回新たに書き込む
+# エラー行は次々回の実行まで表示され続ける。
 
 on:
   schedule:
@@ -14,6 +21,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 jobs:
   check:
@@ -35,6 +43,9 @@ jobs:
           echo '${{ secrets.YOUTUBE_TOKEN_JSON }}' > youtube-token.json
           echo '${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}' > service-account.json
 
+      - name: Clean up error rows and re-sort by date
+        run: node scripts/cleanup-errors.mjs
+
       - name: Check remaining buffer of scheduled videos
         id: buffer
         run: node scripts/check-buffer.mjs
@@ -47,5 +58,14 @@ jobs:
       - name: Check for overdue unpublished videos
         run: node scripts/check-published.mjs
 
-      - name: Clean up error rows and re-sort by date
-        run: node scripts/cleanup-errors.mjs
+      - name: Check latest Weekly Genre Research run
+        id: weekly
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          conclusion=$(gh run list --repo ${{ github.repository }} --workflow weekly-research.yml --status completed --limit 1 --json conclusion -q '.[0].conclusion')
+          echo "conclusion=$conclusion" >> "$GITHUB_OUTPUT"
+
+      - name: Report Weekly Genre Research failure to sheet
+        if: steps.weekly.outputs.conclusion == 'failure'
+        run: node scripts/report-status.mjs エラー "Weekly Genre Research(週次リサーチ)ワークフローの直近の実行が失敗しています。Actionsタブでログを確認してください。" "(週次リサーチ失敗警告)"
