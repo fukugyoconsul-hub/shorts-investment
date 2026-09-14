@@ -112,12 +112,17 @@ if (candidates.length === 0) {
   process.exit(0);
 }
 
-// 再生数を一括取得
-const statsRes = await youtube.videos.list({
-  part: ["statistics", "status"],
-  id: candidates.map((t) => t.videoId),
-});
-const statsById = new Map(statsRes.data.items.map((v) => [v.id, v]));
+// 再生数を一括取得(videos.listは1回のリクエストにつきIDを最大50件までしか受け付けないため分割する)
+const candidateIds = candidates.map((t) => t.videoId);
+const statsItems = [];
+for (let i = 0; i < candidateIds.length; i += 50) {
+  const statsRes = await youtube.videos.list({
+    part: ["statistics", "status"],
+    id: candidateIds.slice(i, i + 50),
+  });
+  statsItems.push(...statsRes.data.items);
+}
+const statsById = new Map(statsItems.map((v) => [v.id, v]));
 
 const withStats = candidates
   .map((t) => {
