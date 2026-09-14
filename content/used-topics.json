@@ -41,7 +41,7 @@
     "viewsAtRetry": 0
   },
   {
-    "title": "RSIとは？70・30の計算式と相対力指数",
+    "title": "RSI指標の計算式！70と30の意味を解説",
     "topics": [
       "RSIは0〜100で示す相対力指数/値上がり幅の合計を値動き幅の合計で割って算出/70・30は目安に過ぎずトレンド次第で超えたまま推移することも"
     ],
@@ -50,12 +50,12 @@
     "videoId": "9OrPAJIIVK0",
     "category": "テクニカル",
     "format": "kaisetsu",
-    "seoRetriedAt": "2026-08-24T09:26:20.884Z",
-    "seoRetryCount": 2,
-    "viewsAtRetry": 4
+    "seoRetriedAt": "2026-09-14T01:28:44.799Z",
+    "seoRetryCount": 3,
+    "viewsAtRetry": 5
   },
   {
-    "title": "政策金利の対象は？日銀FRB公開市場操作の仕組み",
+    "title": "政策金利とは？公開市場操作の仕組み解説",
     "topics": [
       "政策金利の対象/公開市場操作の仕組み/中央銀行は金利を誘導しているだけという結論"
     ],
@@ -64,9 +64,9 @@
     "videoId": "Eq6FBqh1wgU",
     "category": "金融",
     "format": "qa",
-    "seoRetriedAt": "2026-08-24T09:26:20.884Z",
-    "seoRetryCount": 2,
-    "viewsAtRetry": 3
+    "seoRetriedAt": "2026-09-14T01:28:44.799Z",
+    "seoRetryCount": 3,
+    "viewsAtRetry": 4
   },
   {
     "title": "原油マイナス価格の衝撃！商品雑学3選",
@@ -392,7 +392,7 @@
     "format": "kaisetsu"
   },
   {
-    "title": "大数の法則とは？保険料算出の仕組み",
+    "title": "大数の法則とは？純保険料の仕組み解説",
     "topics": [
       "大数の法則が保険料算出の土台",
       "純保険料と付加保険料の仕組み",
@@ -403,9 +403,9 @@
     "videoId": "uzccm1wr9xo",
     "category": "保険",
     "format": "kaisetsu",
-    "seoRetriedAt": "2026-08-24T09:26:20.884Z",
-    "seoRetryCount": 1,
-    "viewsAtRetry": 3
+    "seoRetriedAt": "2026-09-14T01:28:44.799Z",
+    "seoRetryCount": 2,
+    "viewsAtRetry": 4
   },
   {
     "title": "年金は積立ではない？賦課方式の仕組み",
