@@ -1046,5 +1046,31 @@
     "videoId": "JiUdqOQyMpM",
     "category": "経済史",
     "format": "ranking"
+  },
+  {
+    "title": "GDP・CPI・雇用統計｜発表時刻に隠れた仕組み",
+    "topics": [
+      "基礎:経済指標の定義と種類",
+      "仕組み:米指標の発表時刻が統一される理由",
+      "注意点:発表前のロックアップ制度"
+    ],
+    "date": "2026-09-15",
+    "publishedAt": "2026-09-16T07:00:00.000Z",
+    "videoId": "ImGOsaqMujI",
+    "category": "経済指標",
+    "format": "kaisetsu"
+  },
+  {
+    "title": "FRB利上げとは？物価が日本に波及する仕組み",
+    "topics": [
+      "FRBとFF金利の基礎知識",
+      "日米金利差が円安を招く仕組み",
+      "為替転嫁のタイムラグという注意点"
+    ],
+    "date": "2026-09-15",
+    "publishedAt": "2026-09-16T23:00:00.000Z",
+    "videoId": "7_f1fUa_CCs",
+    "category": "ファンダメンタルズ",
+    "format": "kaisetsu"
   }
 ]

@@ -1,77 +1,75 @@
 {
-  "title": "スイスショックとは？通貨危機の歴史3選",
+  "title": "FRB利上げとは？物価が日本に波及する仕組み",
   "topics": [
-    "1994年メキシコ通貨危機(テキーラショック)",
-    "2011年アメリカ国債史上初の格下げ",
-    "2015年スイスフランショック"
+    "FRBとFF金利の基礎知識",
+    "日米金利差が円安を招く仕組み",
+    "為替転嫁のタイムラグという注意点"
   ],
-  "descriptionHook": "スイスフランが数分で急騰したスイスショックなど、世界を揺るがした通貨危機の歴史3選を解説。",
+  "descriptionHook": "FRBの利上げが日米金利差・円安を通じて日本の物価にどう波及するか、仕組みと注意点を解説します。",
   "tags": [
     "投資初心者",
     "経済雑学",
-    "通貨危機",
-    "スイスショック",
-    "為替の歴史",
-    "FX初心者",
-    "米国債格下げ",
-    "テキーラショック",
-    "資産運用",
-    "金融危機の歴史"
+    "FRB",
+    "円安",
+    "ドル円",
+    "日米金利差",
+    "輸入物価",
+    "金融政策"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「スイスショックとは」という定義型キーワードを配置し、通貨危機3選という矛盾回避の言い回しを使用。タグは投資初心者・経済雑学・資産運用など一般キーワードと、スイスショック・テキーラショック・米国債格下げという固有キーワードを組み合わせた。",
+  "seoNotes": "検索需要の大きい「投資初心者」「経済雑学」に加え、タイトル冒頭に「FRB利上げ」という具体的な検索キーワードを配置し、タグには「円安」「ドル円」「日米金利差」など専門用語と一般語をバランスよく組み合わせた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "数分で3割近く変動",
-        "為替市場に実在した衝撃"
+        "FRB利上げが日本に波及",
+        "ガソリン代も動く仕組み"
       ],
-      "narration": "かわせ市場には、中央銀行の一言で通貨の価値が数分で3割近くも動いてしまった、そんな衝撃の日が実在する。",
-      "pexelsQuery": "financial chart crash red numbers screen"
+      "narration": "実は、FRBが金利を上げると、日本のガソリン代や輸入食品の値段まで実際に動きます。その仕組み、知っていますか？",
+      "pexelsQuery": "gas station price sign USA"
     },
     {
       "id": "rank3",
-      "badge": "第3位",
+      "badge": null,
       "caption": [
-        "1994年 メキシコ危機",
-        "ペソが数週間で半減"
+        "FRBは米国の中央銀行",
+        "年8回のFOMCで金利決定"
       ],
-      "narration": "第3位、まず値を落としたのはメキシコペソ。1994年、わずか数週間でペソの価値は半分近くまで下落し、危機は中南米全体に「テキーラ効果」として広がった。",
-      "pexelsQuery": "mexican pesos currency money close up"
+      "narration": "FRB(米連邦準備制度理事会)は、アメリカの中央銀行にあたる組織で、景気と物価の安定を目的に、年8回のFOMCでFF金利の誘導目標を決定します。",
+      "pexelsQuery": "federal reserve building washington dc"
     },
     {
       "id": "rank2",
-      "badge": "第2位",
+      "badge": null,
       "caption": [
-        "2011年 米国が格下げ",
-        "建国以来初のAAA陥落"
+        "日米金利差→ドル高円安",
+        "円安で輸入物価が上昇"
       ],
-      "narration": "第2位は、まさかの超大国の格下げ。2011年、アメリカ国債は建国以来初めて最高格付けAAAを失い、直後に世界中の株式市場が同時に急落した。",
-      "pexelsQuery": "us capitol building finance flag"
+      "narration": "FRBが利上げすると日米の金利差が広がり、特に短期金利が敏感に反応して金利が高いドルに資金が集まり円が売られます。その円安が輸入物価を押し上げ、企業物価に波及します。",
+      "pexelsQuery": "dollar yen currency exchange board"
     },
     {
       "id": "rank1",
-      "badge": "第1位",
+      "badge": null,
       "caption": [
-        "2015年 スイスショック",
-        "フラン急騰・FX業者に打撃"
+        "反映まで数か月のラグ",
+        "原油は転嫁食品は鈍い"
       ],
-      "narration": "そして第1位は、20分足らずで世界を揺らした通貨。2015年、スイス中央銀行がかわせの上限を突然撤廃し、フランは一時3割近く急騰、多くのFX業者が巨額損失を抱えた。",
-      "pexelsQuery": "swiss alps flag mountains finance"
+      "narration": "実は輸入物価の上昇が店頭価格に反映されるまで数か月のタイムラグがあり、原油等はほぼ転嫁される一方、食品等は転嫁されにくい傾向があります。",
+      "pexelsQuery": "grocery store shelf prices japan"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "続きはコメントで",
-        "チャンネル登録もぜひ"
+        "コメントで感想教えて",
+        "チャンネル登録お願い"
       ],
-      "narration": "歴史は形を変えて繰り返すと言われる。あなたはどれに一番驚いた？コメントで教えて、チャンネル登録もよろしく。",
-      "pexelsQuery": "city skyline finance district sunset"
+      "narration": "物価とかわせの関係、あなたはどう思いましたか？コメントで教えてください。チャンネル登録もお願いします！",
+      "pexelsQuery": "smartphone social media subscribe button"
     }
   ],
-  "category": "経済史",
-  "format": "ranking",
-  "displayGenre": "経済史"
+  "category": "ファンダメンタルズ",
+  "format": "kaisetsu",
+  "displayGenre": "ファンダメンタルズ"
 }
