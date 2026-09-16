@@ -1,75 +1,75 @@
 {
-  "title": "FRB利上げとは？物価が日本に波及する仕組み",
+  "title": "逆選択とは？保険料が上がる仕組み",
   "topics": [
-    "FRBとFF金利の基礎知識",
-    "日米金利差が円安を招く仕組み",
-    "為替転嫁のタイムラグという注意点"
+    "逆選択(情報の非対称性)の基礎",
+    "質問書・診査によるリスク審査の仕組み",
+    "逆選択が招く保険料上昇の悪循環という注意点"
   ],
-  "descriptionHook": "FRBの利上げが日米金利差・円安を通じて日本の物価にどう波及するか、仕組みと注意点を解説します。",
+  "descriptionHook": "健康な人ほど保険に入りにくい？逆選択という情報の非対称性が保険料を左右する仕組みを解説します。",
   "tags": [
-    "投資初心者",
-    "経済雑学",
-    "FRB",
-    "円安",
-    "ドル円",
-    "日米金利差",
-    "輸入物価",
-    "金融政策"
+    "保険の仕組み",
+    "生命保険",
+    "医療保険",
+    "保険初心者",
+    "逆選択",
+    "情報の非対称性",
+    "保険料",
+    "経済雑学"
   ],
-  "seoNotes": "検索需要の大きい「投資初心者」「経済雑学」に加え、タイトル冒頭に「FRB利上げ」という具体的な検索キーワードを配置し、タグには「円安」「ドル円」「日米金利差」など専門用語と一般語をバランスよく組み合わせた。",
+  "seoNotes": "タイトル冒頭に検索需要の高い「逆選択とは」を配置し、tagsには「保険の仕組み」「生命保険」「医療保険」等の一般キーワードと「逆選択」「情報の非対称性」等の専門キーワードを組み合わせました。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "FRB利上げが日本に波及",
-        "ガソリン代も動く仕組み"
+        "保険に入りたい人ほど",
+        "警戒される仕組みとは"
       ],
-      "narration": "実は、FRBが金利を上げると、日本のガソリン代や輸入食品の値段まで実際に動きます。その仕組み、知っていますか？",
-      "pexelsQuery": "gas station price sign USA"
+      "narration": "なぜ、保険に入りたい人ほど保険会社に警戒されてしまうのでしょうか？実はある経済用語が関係しています。",
+      "pexelsQuery": "insurance application paperwork office"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "FRBは米国の中央銀行",
-        "年8回のFOMCで金利決定"
+        "逆選択とは情報の偏り",
+        "リスクの高い人が集中"
       ],
-      "narration": "FRB(米連邦準備制度理事会)は、アメリカの中央銀行にあたる組織で、景気と物価の安定を目的に、年8回のFOMCでFF金利の誘導目標を決定します。",
-      "pexelsQuery": "federal reserve building washington dc"
+      "narration": "逆選択とは、生命保険や医療保険で、健康状態などリスクの高い人ほど加入したがり、リスクの低い人ほど加入を避ける、情報の非対称性から生まれる現象です。",
+      "pexelsQuery": "insurance policy documents desk"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "日米金利差→ドル高円安",
-        "円安で輸入物価が上昇"
+        "質問書や診査で厳しく審査",
+        "リスクに応じ保険料に差"
       ],
-      "narration": "FRBが利上げすると日米の金利差が広がり、特に短期金利が敏感に反応して金利が高いドルに資金が集まり円が売られます。その円安が輸入物価を押し上げ、企業物価に波及します。",
-      "pexelsQuery": "dollar yen currency exchange board"
+      "narration": "保険会社は加入前に健康状態や既往歴を細かく質問書や医師の診査で確認し、リスクに応じて加入条件や保険料を細かく分けることで公平性を保つ仕組みです。",
+      "pexelsQuery": "doctor medical checkup examination"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "反映まで数か月のラグ",
-        "原油は転嫁食品は鈍い"
+        "情報格差はゼロにならず",
+        "保険料上昇の悪循環も"
       ],
-      "narration": "実は輸入物価の上昇が店頭価格に反映されるまで数か月のタイムラグがあり、原油等はほぼ転嫁される一方、食品等は転嫁されにくい傾向があります。",
-      "pexelsQuery": "grocery store shelf prices japan"
+      "narration": "審査をしても情報の差はゼロにはなりません。入院や手術のリスクが高い人ばかりが集まり続けると保険料は上昇し、健康な人ほど抜けていく悪循環に陥ることがあります。",
+      "pexelsQuery": "rising cost calculator insurance"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "コメントで感想教えて",
-        "チャンネル登録お願い"
+        "警戒される理由は逆選択",
+        "チャンネル登録お願いします"
       ],
-      "narration": "物価とかわせの関係、あなたはどう思いましたか？コメントで教えてください。チャンネル登録もお願いします！",
-      "pexelsQuery": "smartphone social media subscribe button"
+      "narration": "警戒される理由は、この逆選択という仕組みでした。チャンネル登録して、感想もコメントで教えてください。",
+      "pexelsQuery": "insurance advisor office smiling"
     }
   ],
-  "category": "ファンダメンタルズ",
+  "category": "保険",
   "format": "kaisetsu",
-  "displayGenre": "ファンダメンタルズ"
+  "displayGenre": "保険"
 }

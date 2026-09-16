@@ -1072,5 +1072,18 @@
     "videoId": "7_f1fUa_CCs",
     "category": "ファンダメンタルズ",
     "format": "kaisetsu"
+  },
+  {
+    "title": "逆選択とは？保険料が上がる仕組み",
+    "topics": [
+      "逆選択(情報の非対称性)の基礎",
+      "質問書・診査によるリスク審査の仕組み",
+      "逆選択が招く保険料上昇の悪循環という注意点"
+    ],
+    "date": "2026-09-16",
+    "publishedAt": "2026-09-17T07:00:00.000Z",
+    "videoId": "r0RdnOjixhE",
+    "category": "保険",
+    "format": "kaisetsu"
   }
 ]
