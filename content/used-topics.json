@@ -1118,5 +1118,18 @@
     "videoId": "mWiMGUIZOVI",
     "category": "不動産",
     "format": "qa"
+  },
+  {
+    "title": "為替レートとは？円安円高が決まる仕組み",
+    "topics": [
+      "基礎:為替レートと通貨ペアの定義",
+      "仕組み:需要と供給が動かす24時間取引",
+      "注意点:大半は投資目的の短期売買という実態"
+    ],
+    "date": "2026-09-16",
+    "publishedAt": "2026-09-19T07:00:00.000Z",
+    "videoId": "NVMgRqKkWoQ",
+    "category": "FX",
+    "format": "kaisetsu"
   }
 ]

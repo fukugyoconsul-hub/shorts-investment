@@ -1,73 +1,76 @@
 {
-  "title": "住宅ローンの返済方式とは？元利均等の秘密",
+  "title": "為替レートとは？円安円高が決まる仕組み",
   "topics": [
-    "元利均等返済と元金均等返済の仕組み/総支払利息に差が出るという結論"
+    "基礎:為替レートと通貨ペアの定義",
+    "仕組み:需要と供給が動かす24時間取引",
+    "注意点:大半は投資目的の短期売買という実態"
   ],
-  "descriptionHook": "住宅ローンの元利均等返済と元金均等返済、総支払利息の違いを一般的な仕組みとして解説します。",
+  "descriptionHook": "為替レートが1日7.5兆ドルも動く仕組みと、円安円高が決まる基礎知識を解説します。",
   "tags": [
-    "住宅ローン",
+    "FX初心者",
     "投資初心者",
     "経済雑学",
+    "為替レート",
+    "円安円高",
+    "通貨ペア",
+    "変動相場制",
     "資産運用",
-    "不動産投資",
-    "元利均等返済",
-    "元金均等返済",
-    "住宅ローン返済額"
+    "外国為替市場"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の大きい「住宅ローン」を配置し「返済方式とは」で定番の検索意図に合わせた。tagsは「投資初心者」「経済雑学」「資産運用」といった一般キーワードと、「元利均等返済」「元金均等返済」という具体的な専門タームを組み合わせて検索網を広げた。",
+  "seoNotes": "タイトル冒頭に検索需要の高い「為替レートとは」を配置し、タグには為替レート・円安円高・通貨ペアといった具体キーワードとFX初心者・投資初心者・経済雑学など一般検索語を組み合わせた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "返済方式を変えるだけで",
-        "総利息に数十万円の差"
+        "1ドル=150円の裏側",
+        "秒間に何千回変動"
       ],
-      "narration": "同じ借入額・同じ金利・同じ返済期間でも、返済方式を変えるだけで総利息が数十万円変わるって知っていますか？",
-      "pexelsQuery": "couple reviewing mortgage documents at home"
+      "narration": "1ドル150円というレートの数字は1秒間に何千回も変わる。なぜかわせは片時も止まらず動き続けるのだろうか。",
+      "pexelsQuery": "digital currency exchange rate numbers screen"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "元利均等返済の仕組み",
-        "当初は利息中心の返済"
+        "通貨ペアと交換比率",
+        "変動相場制で決定"
       ],
-      "narration": "元利均等返済は毎月の返済額を一定に保つ方式で、借入当初は返済額の大半が利息に充てられ、元金はごくわずかしか減らず、住宅ローン控除にも影響します。",
-      "pexelsQuery": "mortgage payment calculation paperwork calculator"
+      "narration": "かわせレートとは異なる通貨同士を交換する際の比率のこと。1ドル150円のような表示は通貨ペアと呼ばれ、日本を含む主要国は市場で価格が決まる変動そうば制を採用している。",
+      "pexelsQuery": "currency pairs banknotes global money"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "元金均等返済の仕組み",
-        "毎月の元金部分が一定"
+        "貿易・投資の資金移動",
+        "24時間休まず取引"
       ],
-      "narration": "元金均等返済は毎月の元金部分を一定にする方式で、返済開始直後の負担は重い一方、残高が減るほど利息も返済額も年々軽くなっていきます。",
-      "pexelsQuery": "family budget planning home finance table"
+      "narration": "レートを動かす正体は世界中の参加者による外貨の需要と供給。貿易の決済や海外投資の資金移動が売買を生み、24時間休みなく取引が続く仕組みだ。",
+      "pexelsQuery": "international trade shipping containers finance"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "総支払利息を比較すると",
-        "元金均等の方が少ない"
+        "1日7.5兆ドル規模",
+        "大半は投資目的の売買"
       ],
-      "narration": "実は総支払利息を比べると、元金均等返済の方が元利均等返済より少なくなります。理由は単純で、元金の減りが早い分、利息計算の対象となる残高も早く縮むからです。",
-      "pexelsQuery": "house model with coins and calculator"
+      "narration": "実はかわせを動かす取引の大半は貿易目的ではない。世界のかわせ取引は1日7.5兆ドルを超え、その大部分は投資目的の短期売買が占めている。",
+      "pexelsQuery": "stock trading screens fast paced finance"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "住宅ローンの仕組み解説",
-        "チャンネル登録してね"
+        "答えは思惑の交錯",
+        "チャンネル登録を"
       ],
-      "narration": "こうした住宅ローンの仕組みを、これからも分かりやすく解説します。チャンネル登録してコメントも教えてください。",
-      "pexelsQuery": "modern house exterior golden hour"
+      "narration": "かわせが止まらず動く理由は世界中の思惑がぶつかり合うから。チャンネル登録して、感想もコメントで教えてね。",
+      "pexelsQuery": "city skyline finance sunset"
     }
   ],
-  "category": "不動産",
-  "format": "qa",
-  "displayGenre": "不動産"
+  "category": "FX",
+  "format": "kaisetsu",
+  "displayGenre": "FX"
 }
