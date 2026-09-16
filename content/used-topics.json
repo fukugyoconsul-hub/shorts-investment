@@ -1085,5 +1085,38 @@
     "videoId": "r0RdnOjixhE",
     "category": "保険",
     "format": "kaisetsu"
+  },
+  {
+    "title": "最後の貸し手とは？中央銀行の無制限融資",
+    "topics": [
+      "中央銀行の3大機能/バジョットの原則(19世紀)/最後の貸し手が取り付け騒ぎを防ぐ仕組み"
+    ],
+    "date": "2026-09-16",
+    "publishedAt": "2026-09-17T23:00:00.000Z",
+    "videoId": "Q5m7DcKPzpI",
+    "category": "金融",
+    "format": "qa"
+  },
+  {
+    "title": "食品値上げ2024年、本当の理由とは？",
+    "topics": [
+      "帝国データバンク調査で2024年値上げ品目1万超/原材料費が要因の中心/円安が輸入コストを押し上げ複合的に価格転嫁"
+    ],
+    "date": "2026-09-16",
+    "publishedAt": "2026-09-18T07:00:00.000Z",
+    "videoId": "SFhii9WIuag",
+    "category": "日本経済",
+    "format": "qa"
+  },
+  {
+    "title": "住宅ローンの返済方式とは？元利均等の秘密",
+    "topics": [
+      "元利均等返済と元金均等返済の仕組み/総支払利息に差が出るという結論"
+    ],
+    "date": "2026-09-16",
+    "publishedAt": "2026-09-18T23:00:00.000Z",
+    "videoId": "mWiMGUIZOVI",
+    "category": "不動産",
+    "format": "qa"
   }
 ]
