@@ -1153,5 +1153,18 @@
     "videoId": "SGt1pkppxHA",
     "category": "世界情勢",
     "format": "qa"
+  },
+  {
+    "title": "決算とは？損益計算書など3つの書類",
+    "topics": [
+      "基礎:決算発表の義務",
+      "仕組み:PL・BS・CFの3表",
+      "注意点:黒字倒産と過去の実績"
+    ],
+    "date": "2026-09-17",
+    "publishedAt": "2026-09-20T23:00:00.000Z",
+    "videoId": "wXvVN_hxJu4",
+    "category": "決算",
+    "format": "kaisetsu"
   }
 ]
