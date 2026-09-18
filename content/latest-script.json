@@ -1,75 +1,75 @@
 {
-  "title": "決算とは？損益計算書など3つの書類",
+  "title": "株の税金20.315％とは？申告不要の仕組み",
   "topics": [
-    "基礎:決算発表の義務",
-    "仕組み:PL・BS・CFの3表",
-    "注意点:黒字倒産と過去の実績"
+    "譲渡益・配当課税20.315%の内訳",
+    "特定口座源泉徴収で確定申告不要になる仕組み",
+    "NISA口座の損失は損益通算できない注意点"
   ],
-  "descriptionHook": "決算とは何か、損益計算書・貸借対照表・キャッシュフロー計算書の仕組みと注意点をわかりやすく解説します。",
+  "descriptionHook": "株や投資信託の利益にかかる税金20.315％の内訳と、確定申告が不要になる仕組みをわかりやすく解説します。",
   "tags": [
     "投資初心者",
-    "経済雑学",
-    "決算書",
-    "財務諸表",
-    "損益計算書",
-    "貸借対照表",
-    "キャッシュフロー",
-    "黒字倒産"
+    "資産運用",
+    "確定申告",
+    "株の税金",
+    "特定口座",
+    "NISA",
+    "譲渡益課税",
+    "損益通算"
   ],
-  "seoNotes": "検索意図に合う「決算とは」をタイトル前方に配置し、損益計算書・貸借対照表・キャッシュフロー・黒字倒産といった具体的な会計用語をタグに含めつつ、投資初心者・経済雑学など検索需要の大きい一般語も組み合わせた。",
+  "seoNotes": "タイトル冒頭に検索需要の高い「株の税金」「20.315％」を配置し、tagsは「株の税金」「確定申告」「特定口座」「NISA」などの具体的キーワードと「投資初心者」「資産運用」といった一般キーワードを組み合わせた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "決算発表は年4回義務",
-        "数字だけで判断は誤解招く"
+        "利益の20％が税金に",
+        "でも申告不要になる人も"
       ],
-      "narration": "上場企業は年4回、決算書の公開が法律で義務づけられています。実はその数字、読み方次第で誤解を招きます。",
-      "pexelsQuery": "business financial documents office meeting"
+      "narration": "株の利益、実は20％以上も税金として引かれる。でも面倒な確定申告がいらなくなるケースがあるって知ってた？",
+      "pexelsQuery": "calculator tax documents close up"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "決算書は経営成績の報告書",
-        "金融商品取引法で義務化"
+        "税率は20.315％",
+        "所得税+住民税の合計"
       ],
-      "narration": "決算とは、一定期間の経営成績や財産状況をまとめた報告書のことです。上場企業は金融商品取引法により、年に一度の本決算に加え、四半期ごとの開示が義務づけられています。",
-      "pexelsQuery": "annual report documents desk office"
+      "narration": "株や投資信託の利益には所得税15.315％と住民税5％、合計20.315％の税金がかかる。給与とは別に計算する申告分離課税という仕組みだ。",
+      "pexelsQuery": "stock market chart calculator finance"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "決算書は主に3種類の資料",
-        "損益計算書・貸借対照表など"
+        "源泉徴収ありの特定口座",
+        "税金は自動計算・納税"
       ],
-      "narration": "決算書は主に3つの書類で構成されます。損益計算書は一年間の儲けを、貸借対照表は資産と負債の残高を、キャッシュフロー計算書はお金の流れを表します。",
-      "pexelsQuery": "balance sheet spreadsheet calculator finance"
+      "narration": "証券会社の特定口座で源泉徴収ありを選べば、譲渡益にも配当にも税金が発生するたびに自動で計算・納税してくれる。だから原則、確定申告は不要になる。",
+      "pexelsQuery": "banking app automatic payment smartphone"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "黒字でも倒産するケース",
-        "決算は過去の実績にすぎない"
+        "NISAの損失は要注意",
+        "他口座と損益通算不可"
       ],
-      "narration": "実は損益計算書で利益が出ていても、キャッシュフローが不足して倒産する黒字倒産という現象があります。決算は過去の結果であり、将来の業績を保証するものではありません。",
-      "pexelsQuery": "confused businessman paperwork stress office"
+      "narration": "実はNISA口座は非課税な一方、そこで出た損失は課税口座の利益と損益通算できない仕組みだ。得は非課税でも、損失は他の口座の利益と合算できないという盲点がある。",
+      "pexelsQuery": "warning sign financial paperwork"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "決算の仕組み解説動画",
-        "チャンネル登録お願いします"
+        "情報提供が目的です",
+        "チャンネル登録してね"
       ],
-      "narration": "決算の仕組みの解説で、投資助言ではありません。参考になったらチャンネル登録と感想コメントお願いします。",
-      "pexelsQuery": "smiling businessperson city skyline finance"
+      "narration": "税金の仕組みを知れば投資の不安も減る。次回もお届けするのでチャンネル登録を。あなたの体験もコメントで教えてね。",
+      "pexelsQuery": "smartphone finance app subscribe"
     }
   ],
-  "category": "決算",
+  "category": "税金",
   "format": "kaisetsu",
-  "displayGenre": "決算"
+  "displayGenre": "税金"
 }
