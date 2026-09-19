@@ -1203,5 +1203,18 @@
     "videoId": "HupUSOTHSH8",
     "category": "テクニカル",
     "format": "kaisetsu"
+  },
+  {
+    "title": "国債入札とは？価格が決まる仕組み",
+    "topics": [
+      "基礎:国債発行の目的と規模",
+      "仕組み:価格競争入札で価格が決まる流れ",
+      "注意点:テール拡大が示す市場の警戒シグナル"
+    ],
+    "date": "2026-09-19",
+    "publishedAt": "2026-09-22T23:00:00.000Z",
+    "videoId": "7ADfs7J4OTE",
+    "category": "債券",
+    "format": "kaisetsu"
   }
 ]
