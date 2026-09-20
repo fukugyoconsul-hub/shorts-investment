@@ -1,0 +1,36 @@
+name: VOICEVOX Sample
+
+# VOICEVOX導入前の声の比較用サンプル音声を作る一時的なワークフロー(手動実行のみ)。
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Start VOICEVOX engine
+        run: |
+          docker run -d --name voicevox -p 50021:50021 voicevox/voicevox_engine:cpu-latest
+          for i in $(seq 1 60); do
+            if curl -sf http://127.0.0.1:50021/version; then echo; break; fi
+            sleep 5
+          done
+          curl -sf http://127.0.0.1:50021/version
+
+      - name: Generate samples
+        run: node scripts/voicevox-sample.mjs
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: voicevox-samples
+          path: out/voicevox-samples
