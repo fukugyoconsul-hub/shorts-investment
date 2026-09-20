@@ -1,6 +1,6 @@
 name: VOICEVOX Sample
 
-# VOICEVOX導入前の声の比較用サンプル音声を作る一時的なワークフロー(手動実行のみ)。
+# VOICEVOX導入検証用の一時的なワークフロー(手動実行のみ)。導入完了後に削除する。
 on:
   workflow_dispatch: {}
 
@@ -27,10 +27,7 @@ jobs:
           done
           curl -sf http://127.0.0.1:50021/version
 
-      - name: Generate samples
-        run: node scripts/voicevox-sample.mjs
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: voicevox-samples
-          path: out/voicevox-samples
+      - name: Calibrate reading speed
+        env:
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+        run: node scripts/tts-calibrate.mjs
