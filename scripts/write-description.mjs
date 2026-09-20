@@ -11,6 +11,9 @@ const latestScript = JSON.parse(
 const { creditLine } = JSON.parse(
   fs.readFileSync(path.join(root, "content", "current-bgm-credit.json"), "utf-8")
 );
+const { creditLine: voiceCreditLine } = JSON.parse(
+  fs.readFileSync(path.join(root, "content", "current-voice-credit.json"), "utf-8")
+);
 const template = fs.readFileSync(path.join(root, "description-template.txt"), "utf-8");
 
 const CORE_TAGS = ["FX", "テクニカル分析", "ファンダメンタルズ分析", "shorts"];
@@ -24,6 +27,7 @@ const extraTags = (latestScript.tags ?? [])
 const hashtags = [...CORE_TAGS, ...extraTags].map((t) => `#${t}`).join(" ");
 
 const description = `${latestScript.descriptionHook}\n\n${template
+  .replace("{{VOICE_CREDIT}}", voiceCreditLine)
   .replace("{{MUSIC_CREDIT}}", creditLine)
   .replace("{{HASHTAGS}}", hashtags)}`;
 

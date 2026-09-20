@@ -5,79 +5,97 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 
-function loadEnv() {
-  const envPath = path.join(root, ".env");
-  const text = fs.readFileSync(envPath, "utf-8");
-  const env = {};
-  for (const line of text.split(/\r?\n/)) {
-    const trimmed = line.trim();
-    if (!trimmed || trimmed.startsWith("#")) continue;
-    const idx = trimmed.indexOf("=");
-    if (idx === -1) continue;
-    env[trimmed.slice(0, idx).trim()] = trimmed.slice(idx + 1).trim();
-  }
-  return env;
-}
-
-const env = loadEnv();
-const apiKey = env.GOOGLE_TTS_API_KEY;
-if (!apiKey) {
-  console.error("GOOGLE_TTS_API_KEY が .env に見つかりません");
-  process.exit(1);
-}
+const BASE = process.env.VOICEVOX_URL ?? "http://127.0.0.1:50021";
 
 // ナレーターの声質は動画ごとにランダムに変える(キャラクター設定:ランダム)。
-// ただし読み上げ速度(speakingRate)は聞きやすさ・一貫性のため全ボイス共通で固定する。
-const VOICE_POOL = [
-  "ja-JP-Chirp3-HD-Aoede",
-  "ja-JP-Chirp3-HD-Kore",
-  "ja-JP-Chirp3-HD-Leda",
-  "ja-JP-Chirp3-HD-Autonoe",
-  "ja-JP-Chirp3-HD-Charon",
-  "ja-JP-Chirp3-HD-Fenrir",
-  "ja-JP-Chirp3-HD-Puck",
-  "ja-JP-Chirp3-HD-Algenib",
-];
-const SPEAKING_RATE = 1.15;
+// 各キャラの利用規約(エンジンのspeaker_infoと各公式規約ページ原文)を確認済みの声のみ入れること。
+// 投資系チャンネルで概要欄に情報商材系アフィリエイトを含むため、規約で「情報商材での利用NG」の
+// ずんだもん・四国めたん・九州そらは使わない。青山龍星は企業関与時に事前確認が必要なため除外。
+const VOICE_POOL = ["玄野武宏", "白上虎太郎", "雨晴はう", "冥鳴ひまり"];
 
+// 従来(Google TTS speakingRate 1.15)の実測の読み上げ速さ: 約6.35字/秒。
+// 声ごとに素の速さが違うため、毎回この速さになるようにspeedScaleを自動調整する。
+const TARGET_CHARS_PER_SEC = 6.35;
+const SPEED_MIN = 0.9;
+const SPEED_MAX = 1.6;
+
+function wavDurationSec(buf) {
+  const byteRate = buf.readUInt32LE(28);
+  const dataIdx = buf.indexOf("data", 12, "latin1");
+  return (buf.length - (dataIdx + 8)) / byteRate;
+}
+
+async function api(pathAndQuery, init) {
+  const res = await fetch(`${BASE}${pathAndQuery}`, init);
+  if (!res.ok) {
+    throw new Error(`VOICEVOX API エラー (${res.status}) ${pathAndQuery}: ${await res.text()}`);
+  }
+  return res;
+}
+
+const speakers = await (await api("/speakers")).json();
 const voiceName = VOICE_POOL[Math.floor(Math.random() * VOICE_POOL.length)];
-console.log(`ナレーターボイス: ${voiceName}`);
+const speaker = speakers.find((s) => s.name === voiceName);
+if (!speaker) {
+  throw new Error(`VOICEVOXエンジンに話者「${voiceName}」が見つかりません`);
+}
+const style = speaker.styles.find((st) => st.name === "ノーマル" || st.name === "ふつう") ?? speaker.styles[0];
+console.log(`ナレーターボイス: ${voiceName}(${style.name}, id=${style.id})`);
 
-const scriptPath = path.join(root, "content", "latest-script.json");
-const latestScript = JSON.parse(fs.readFileSync(scriptPath, "utf-8"));
+const latestScript = JSON.parse(
+  fs.readFileSync(path.join(root, "content", "latest-script.json"), "utf-8")
+);
 const segments = latestScript.segments.map((s) => ({ id: s.id, text: s.narration }));
+
+const queries = [];
+for (const segment of segments) {
+  const res = await api(
+    `/audio_query?speaker=${style.id}&text=${encodeURIComponent(segment.text)}`,
+    { method: "POST" }
+  );
+  queries.push(await res.json());
+}
+
+async function synthesize(query, speedScale) {
+  const res = await api(`/synthesis?speaker=${style.id}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ...query, speedScale }),
+  });
+  return Buffer.from(await res.arrayBuffer());
+}
+
+// 1回目: 標準速度で全セグメントの長さを測り、目標の速さになるspeedScaleを決める
+let baseDuration = 0;
+for (const q of queries) {
+  baseDuration += wavDurationSec(await synthesize(q, 1.0));
+}
+const totalChars = segments.reduce((sum, s) => sum + s.text.length, 0);
+const speedScale = Math.min(
+  SPEED_MAX,
+  Math.max(SPEED_MIN, (baseDuration * TARGET_CHARS_PER_SEC) / totalChars)
+);
+console.log(
+  `標準速度の読み上げ: ${baseDuration.toFixed(1)}秒 / ${totalChars}字 → speedScale=${speedScale.toFixed(3)}`
+);
 
 const outDir = path.join(root, "public", "audio");
 fs.mkdirSync(outDir, { recursive: true });
 
-async function synthesize(segment) {
-  const res = await fetch(
-    `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        input: { text: segment.text },
-        voice: { languageCode: "ja-JP", name: voiceName },
-        audioConfig: { audioEncoding: "MP3", speakingRate: SPEAKING_RATE },
-      }),
-    }
-  );
-
-  if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`[${segment.id}] TTS API エラー (${res.status}): ${body}`);
-  }
-
-  const json = await res.json();
-  const buffer = Buffer.from(json.audioContent, "base64");
-  const outPath = path.join(outDir, `${segment.id}.mp3`);
-  fs.writeFileSync(outPath, buffer);
+let finalDuration = 0;
+for (let i = 0; i < segments.length; i++) {
+  const wav = await synthesize(queries[i], speedScale);
+  finalDuration += wavDurationSec(wav);
+  const outPath = path.join(outDir, `${segments[i].id}.wav`);
+  fs.writeFileSync(outPath, wav);
   console.log(`OK: ${outPath}`);
 }
+console.log(
+  `すべてのナレーション音声を生成しました。合計${finalDuration.toFixed(1)}秒(${(totalChars / finalDuration).toFixed(2)}字/秒)`
+);
 
-for (const segment of segments) {
-  await synthesize(segment);
-}
-
-console.log("すべてのナレーション音声を生成しました。");
+// 概要欄に自動で記載するクレジット表記(VOICEVOXの規約で必須)
+fs.writeFileSync(
+  path.join(root, "content", "current-voice-credit.json"),
+  JSON.stringify({ creditLine: `VOICEVOX:${voiceName}` }, null, 2)
+);
