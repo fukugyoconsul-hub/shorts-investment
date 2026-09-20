@@ -52,6 +52,17 @@ jobs:
           echo '${{ secrets.YOUTUBE_TOKEN_JSON }}' > youtube-token.json
           echo '${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}' > service-account.json
 
+      - name: Start VOICEVOX engine
+        # ナレーション音声はVOICEVOXエンジン(Docker)で生成する。起動完了まで待つ。
+        run: |
+          for i in 1 2 3; do docker pull voicevox/voicevox_engine:cpu-latest && break; sleep 10; done
+          docker run -d --name voicevox -p 50021:50021 voicevox/voicevox_engine:cpu-latest
+          for i in $(seq 1 60); do
+            if curl -sf http://127.0.0.1:50021/version; then echo; break; fi
+            sleep 5
+          done
+          curl -sf http://127.0.0.1:50021/version
+
       - name: Sync to latest main before generating
         # workflow_dispatch/scheduleはトリガー時点のmainをcheckoutするため、
         # concurrencyキューで実行が遅延した場合、待機中に別の実行がpushした
