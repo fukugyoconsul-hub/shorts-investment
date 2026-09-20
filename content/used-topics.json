@@ -1216,5 +1216,18 @@
     "videoId": "7ADfs7J4OTE",
     "category": "債券",
     "format": "kaisetsu"
+  },
+  {
+    "title": "CFDの配当相当額とは？権利落ちの仕組み",
+    "topics": [
+      "基礎:CFDの配当相当額の定義",
+      "仕組み:権利落ち日に買いは受取・売りは支払う仕組み",
+      "注意点:配当相当額は株価下落分の補填に過ぎない"
+    ],
+    "date": "2026-09-20",
+    "publishedAt": "2026-09-23T07:00:00.000Z",
+    "videoId": "XfyawFYb_YA",
+    "category": "CFD",
+    "format": "kaisetsu"
   }
 ]
