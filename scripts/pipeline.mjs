@@ -121,7 +121,9 @@ const takenIsoSet = new Set(
 );
 const futureQueuedCount = takenIsoSet.size;
 
-const neededCount = Math.max(0, STOCK_SLOTS - futureQueuedCount);
+// 手動実行時だけ、目標在庫にさらに上乗せして作る本数を指定できる(動作確認・臨時の補填用)
+const EXTRA_VIDEOS = Number(process.env.EXTRA_VIDEOS) || 0;
+const neededCount = Math.max(0, STOCK_SLOTS + EXTRA_VIDEOS - futureQueuedCount);
 const slotsToFill = computeUpcomingSlots(now, Math.min(neededCount, MAX_NEW_PER_RUN), takenIsoSet);
 
 log(

@@ -7,7 +7,11 @@ on:
   # 影響しない。6時間おきに実行することでバッファ切れのリスクをさらに下げる。
   schedule:
     - cron: "13 5,11,17,23 * * *" # 毎日 14:13 / 20:13 / 2:13 / 8:13 JST(投稿枠 8:00/16:00 JSTの前後をカバー)
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      extra_videos:
+        description: "目標在庫にさらに上乗せして作る本数(通常は0。動作確認・臨時の補填用)"
+        default: "0"
 
 permissions:
   contents: write
@@ -71,6 +75,8 @@ jobs:
         run: git pull --ff-only origin main
 
       - name: Run pipeline
+        env:
+          EXTRA_VIDEOS: ${{ inputs.extra_videos }}
         run: node scripts/pipeline.mjs
 
       - name: Commit updated topic history
