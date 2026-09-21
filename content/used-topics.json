@@ -782,7 +782,7 @@
     "format": "kaisetsu"
   },
   {
-    "title": "中央銀行の独立性とは？政府と距離を置く理由",
+    "title": "中央銀行の独立性とは？政府から独立させる理由",
     "topics": [
       "中央銀行の独立性の理由"
     ],
@@ -790,7 +790,10 @@
     "publishedAt": "2026-09-14T23:00:00.000Z",
     "videoId": "zFeVoTXS4hw",
     "category": "中央銀行",
-    "format": "kaisetsu"
+    "format": "kaisetsu",
+    "seoRetriedAt": "2026-09-21T00:23:28.393Z",
+    "seoRetryCount": 1,
+    "viewsAtRetry": 0
   },
   {
     "title": "生命表とは？保険料が上がる仕組み",
@@ -828,7 +831,7 @@
     "format": "qa"
   },
   {
-    "title": "無登録業者とは？高レバレッジ詐欺の手口",
+    "title": "無登録業者とは？詐欺の手口と高レバレッジ勧誘",
     "topics": [
       "登録業者の確認義務/高レバレッジ勧誘の実態/無登録業者利用のリスク"
     ],
@@ -836,7 +839,10 @@
     "publishedAt": "2026-09-13T13:43:19.944Z",
     "videoId": "a4VtwcUj6VA",
     "category": "詐欺",
-    "format": "qa"
+    "format": "qa",
+    "seoRetriedAt": "2026-09-21T00:23:28.393Z",
+    "seoRetryCount": 1,
+    "viewsAtRetry": 0
   },
   {
     "title": "SNS投資詐欺とは？被害額1400億円の手口",
@@ -896,7 +902,7 @@
     "format": "qa"
   },
   {
-    "title": "通貨危機とは？世界の暴落史3選",
+    "title": "通貨危機の歴史3選！テキーラ危機とは",
     "topics": [
       "メキシコ通貨危機とテキーラ危機",
       "アジア通貨危機と韓国ウォン急落",
@@ -906,7 +912,10 @@
     "publishedAt": "2026-09-14T17:43:19.944Z",
     "videoId": "6E960sfLBIQ",
     "category": "経済史",
-    "format": "ranking"
+    "format": "ranking",
+    "seoRetriedAt": "2026-09-21T00:23:28.393Z",
+    "seoRetryCount": 1,
+    "viewsAtRetry": 0
   },
   {
     "title": "ローソク足とは？陽線・陰線の仕組み",
