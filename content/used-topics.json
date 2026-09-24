@@ -1323,5 +1323,18 @@
     "videoId": "jdbX4Y2idzY",
     "category": "労働",
     "format": "qa"
+  },
+  {
+    "title": "ブロックチェーンとは？匿名じゃない衝撃の仕組み",
+    "topics": [
+      "ブロックチェーンの基礎(分散型台帳)",
+      "ハッシュ値で改ざんを検知する仕組み",
+      "取引は匿名ではなく仮名性という注意点"
+    ],
+    "date": "2026-09-24",
+    "publishedAt": "2026-09-27T07:00:00.000Z",
+    "videoId": "q7MPp4JbCrs",
+    "category": "暗号資産",
+    "format": "kaisetsu"
   }
 ]
