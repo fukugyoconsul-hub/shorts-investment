@@ -1349,5 +1349,18 @@
     "videoId": "JuWxXQKNSJ4",
     "category": "経済史",
     "format": "ranking"
+  },
+  {
+    "title": "ADP雇用統計とは？政府統計との違い",
+    "topics": [
+      "ADP雇用統計の基礎知識",
+      "政府発表2日前の先行指標という仕組み",
+      "公式統計と大きくずれることがある注意点"
+    ],
+    "date": "2026-09-25",
+    "publishedAt": "2026-09-28T07:00:00.000Z",
+    "videoId": "_lj5JiSws3I",
+    "category": "経済指標",
+    "format": "kaisetsu"
   }
 ]

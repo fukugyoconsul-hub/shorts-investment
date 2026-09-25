@@ -1,77 +1,76 @@
 {
-  "title": "金融危機とは？歴史に残る3選",
+  "title": "ADP雇用統計とは？政府統計との違い",
   "topics": [
-    "ギリシャ債務危機",
-    "中国株式市場の暴落",
-    "アイスランド金融危機"
+    "ADP雇用統計の基礎知識",
+    "政府発表2日前の先行指標という仕組み",
+    "公式統計と大きくずれることがある注意点"
   ],
-  "descriptionHook": "ギリシャの財政赤字発覚から中国株暴落、アイスランドの銀行破綻まで、世界を揺るがした金融危機の歴史を解説します。",
+  "descriptionHook": "ADP雇用統計は米政府発表より2日早く公表される民間雇用データですが、公式統計と数値が大きくずれることも珍しくありません。",
   "tags": [
-    "経済雑学",
     "投資初心者",
-    "金融危機",
+    "経済指標",
+    "雇用統計",
+    "為替相場",
+    "米国株",
+    "経済ニュース",
     "資産運用",
-    "ギリシャ危機",
-    "中国株暴落",
-    "アイスランド金融危機",
-    "世界経済史",
-    "財政赤字",
+    "ADP雇用統計",
     "金融リテラシー"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「金融危機とは」を配置しつつ「3選」でランキング表現の重複を回避し、tagsには経済雑学・投資初心者・資産運用といった一般キーワードと、ギリシャ危機・中国株暴落・アイスランド金融危機という動画固有の具体キーワードを検索需要順に組み合わせた。",
+  "seoNotes": "タイトル冒頭に検索需要の高い「ADP雇用統計とは」を配置し、tagsには投資初心者・資産運用・経済ニュースといった一般層向けキーワードと、雇用統計・為替相場・ADP雇用統計という指標特化キーワードを組み合わせて幅広い検索意図に対応した。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "銀行資産GDPの10倍",
-        "たった1週間で崩壊した国"
+        "米雇用統計より2日早く",
+        "発表される雇用データ"
       ],
-      "narration": "実は銀行の資産が自国のGDPの10倍に膨れ上がり、たった1週間で崩壊した国があります。世界の金融危機3選。",
-      "pexelsQuery": "stock market crash graph red numbers"
+      "narration": "毎月、政府の雇用統計より2日早く、別の会社が発表する雇用データが市場を先に動かしていることを知っていますか？",
+      "pexelsQuery": "office desk payroll paperwork"
     },
     {
       "id": "rank3",
-      "badge": "第3位",
+      "badge": null,
       "caption": [
-        "財政赤字12.7%発覚",
-        "支援総額2900億ユーロ"
+        "給与計算大手ADP社",
+        "民間雇用者数を毎月集計"
       ],
-      "narration": "実はギリシャ、2009年に財政赤字が国内総生産比12.7%だったと判明。その後3度にわたり総額2900億ユーロ超もの公的支援を受けています。",
-      "pexelsQuery": "Greece flag Athens euro currency economy"
+      "narration": "ADP雇用統計とは、給与計算大手ADP社が毎月まとめる民間部門の雇用者数の増減データで、対象は全米企業の実際の給与支払い記録です。",
+      "pexelsQuery": "business team meeting office"
     },
     {
       "id": "rank2",
-      "badge": "第2位",
+      "badge": null,
       "caption": [
-        "1カ月で株価3割下落",
-        "時価総額320兆円消失"
+        "米雇用統計の2日前に発表",
+        "実データで先行指標に"
       ],
-      "narration": "実は2015年、中国上海総合指数は1年で2倍超に急騰した後、個人投資家主導のそうばがわずか1か月で約3割下落。時価総額にして約320兆円が消えたとされています。",
-      "pexelsQuery": "Shanghai stock exchange trading screen China"
+      "narration": "ADP雇用統計は米雇用統計の発表2日前、毎月第1水曜に公表され、実際の給与計算データという実データに基づくため、市場では雇用統計の先行指標として注目されます。",
+      "pexelsQuery": "new york stock exchange trading floor"
     },
     {
       "id": "rank1",
-      "badge": "第1位",
+      "badge": null,
       "caption": [
-        "主要銀行3行が相次ぎ破綻",
-        "通貨は半値近くに急落"
+        "ADPは政府機関でない",
+        "公式統計と10万人以上差"
       ],
-      "narration": "実はアイスランドでは2008年、銀行資産が国のGDPの約10倍に膨張し、主要銀行3行が1週間のうちに相次ぎ破綻。通貨は対ドルで半値近くまで急落しました。",
-      "pexelsQuery": "Reykjavik Iceland bank building snow"
+      "narration": "実はADPは政府機関ではなく一企業の集計。自社の給与計算サービスを使う企業のみが対象で、公式統計と10万人以上ずれることも珍しくありません。",
+      "pexelsQuery": "financial data comparison charts"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "チャンネル登録お願いします",
-        "コメントで感想を教えて"
+        "チャンネル登録で応援",
+        "あなたの感想をコメントで"
       ],
-      "narration": "この歴史は繰り返すのか、あなたはどう思いますか？ぜひコメントで教えてください。チャンネル登録もお願いします。",
-      "pexelsQuery": "subscribe button youtube like bell"
+      "narration": "経済指標の仕組みを知って投資の知識が深まったらチャンネル登録を。あなたの感想もコメントで教えてください。",
+      "pexelsQuery": "smartphone notification hand"
     }
   ],
-  "category": "経済史",
-  "format": "ranking",
-  "displayGenre": "経済史"
+  "category": "経済指標",
+  "format": "kaisetsu",
+  "displayGenre": "経済指標"
 }
