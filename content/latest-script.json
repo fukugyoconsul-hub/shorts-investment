@@ -1,76 +1,75 @@
 {
-  "title": "ADP雇用統計とは？政府統計との違い",
+  "title": "PCE物価指数とは？FRBが重視する理由",
   "topics": [
-    "ADP雇用統計の基礎知識",
-    "政府発表2日前の先行指標という仕組み",
-    "公式統計と大きくずれることがある注意点"
+    "基礎: PCE(個人消費支出物価指数)の定義とCPIとの位置づけ",
+    "仕組み: 消費構成の随時入れ替えとコアPCE・2%目標の関係",
+    "注意点: CPIとPCEは対象範囲が違い単純比較できない"
   ],
-  "descriptionHook": "ADP雇用統計は米政府発表より2日早く公表される民間雇用データですが、公式統計と数値が大きくずれることも珍しくありません。",
+  "descriptionHook": "FRBが物価目標で最も重視するのはCPIではなくPCE(個人消費支出物価指数)。その仕組みと注意点を解説します。",
   "tags": [
     "投資初心者",
-    "経済指標",
-    "雇用統計",
-    "為替相場",
-    "米国株",
-    "経済ニュース",
+    "経済雑学",
+    "米国経済指標",
     "資産運用",
-    "ADP雇用統計",
-    "金融リテラシー"
+    "PCE",
+    "物価指数",
+    "FRB",
+    "インフレ指標"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「ADP雇用統計とは」を配置し、tagsには投資初心者・資産運用・経済ニュースといった一般層向けキーワードと、雇用統計・為替相場・ADP雇用統計という指標特化キーワードを組み合わせて幅広い検索意図に対応した。",
+  "seoNotes": "タイトル冒頭に検索需要の高い「PCE物価指数とは」を配置し、tagsには投資初心者・経済雑学・米国経済指標といった一般キーワードと、PCE・FRB・物価指数・インフレ指標という専門キーワードを組み合わせて検索網を広げた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "米雇用統計より2日早く",
-        "発表される雇用データ"
+        "CPIより重視される指標",
+        "FRBが見る物価指数とは"
       ],
-      "narration": "毎月、政府の雇用統計より2日早く、別の会社が発表する雇用データが市場を先に動かしていることを知っていますか？",
-      "pexelsQuery": "office desk payroll paperwork"
+      "narration": "物価指標としてCPIが有名ですが、実はFRBが政策判断で最も重視しているのは別の指数だと知っていますか。",
+      "pexelsQuery": "federal reserve building"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "給与計算大手ADP社",
-        "民間雇用者数を毎月集計"
+        "PCE個人消費支出指数",
+        "家計消費全体を集計した指標"
       ],
-      "narration": "ADP雇用統計とは、給与計算大手ADP社が毎月まとめる民間部門の雇用者数の増減データで、対象は全米企業の実際の給与支払い記録です。",
-      "pexelsQuery": "business team meeting office"
+      "narration": "PCEとは個人消費支出物価指数の略で、家計が実際に購入した財やサービス全体の価格変動を集計した、CPIと並ぶ代表的な物価指標です。",
+      "pexelsQuery": "grocery shopping consumer spending"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "米雇用統計の2日前に発表",
-        "実データで先行指標に"
+        "消費構成を随時入れ替え",
+        "コアPCEで2%目標判断"
       ],
-      "narration": "ADP雇用統計は米雇用統計の発表2日前、毎月第1水曜に公表され、実際の給与計算データという実データに基づくため、市場では雇用統計の先行指標として注目されます。",
-      "pexelsQuery": "new york stock exchange trading floor"
+      "narration": "PCEは消費構成を購買動向に応じて随時入れ替える方式のため、生活実態に近い動きを反映し、食品とエネルギーを除くコアPCEをFRBは2%目標の基準としています。",
+      "pexelsQuery": "financial data chart screen"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "ADPは政府機関でない",
-        "公式統計と10万人以上差"
+        "PCEはCPIより低め",
+        "対象範囲が違い比較注意"
       ],
-      "narration": "実はADPは政府機関ではなく一企業の集計。自社の給与計算サービスを使う企業のみが対象で、公式統計と10万人以上ずれることも珍しくありません。",
-      "pexelsQuery": "financial data comparison charts"
+      "narration": "PCEはCPIより低めに出やすく、医療費のうち保険会社が支払う分まで含むなど対象範囲が異なるため、単純比較すると実態を誤解しやすい点に注意が必要です。",
+      "pexelsQuery": "stock market chart analysis"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "チャンネル登録で応援",
-        "あなたの感想をコメントで"
+        "投資助言ではない解説",
+        "チャンネル登録お願い"
       ],
-      "narration": "経済指標の仕組みを知って投資の知識が深まったらチャンネル登録を。あなたの感想もコメントで教えてください。",
-      "pexelsQuery": "smartphone notification hand"
+      "narration": "指標を知るとそうばの見方が変わります。どう思いますか、コメントで教えてください。チャンネル登録もお願いします。",
+      "pexelsQuery": "finance investment background"
     }
   ],
-  "category": "経済指標",
+  "category": "ファンダメンタルズ",
   "format": "kaisetsu",
-  "displayGenre": "経済指標"
+  "displayGenre": "ファンダメンタルズ"
 }

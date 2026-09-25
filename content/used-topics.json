@@ -1362,5 +1362,18 @@
     "videoId": "_lj5JiSws3I",
     "category": "経済指標",
     "format": "kaisetsu"
+  },
+  {
+    "title": "PCE物価指数とは？FRBが重視する理由",
+    "topics": [
+      "基礎: PCE(個人消費支出物価指数)の定義とCPIとの位置づけ",
+      "仕組み: 消費構成の随時入れ替えとコアPCE・2%目標の関係",
+      "注意点: CPIとPCEは対象範囲が違い単純比較できない"
+    ],
+    "date": "2026-09-25",
+    "publishedAt": "2026-09-28T23:00:00.000Z",
+    "videoId": "L5yuHRx4X1A",
+    "category": "ファンダメンタルズ",
+    "format": "kaisetsu"
   }
 ]
