@@ -1,73 +1,84 @@
 {
-  "title": "国民負担率とは？五公五民に迫る事実",
+  "title": "住宅ローン固定金利はなぜ動く？",
   "topics": [
-    "五公五民の意味/国民負担率の仕組み/47.5％という水準"
+    "フラット35の金利決定の仕組み/長期金利急上昇2.94%/日銀の権限は短期金利まで"
   ],
-  "descriptionHook": "江戸時代の重税「五公五民」に迫る日本の国民負担率の実態を解説します。",
+  "descriptionHook": "住宅ローンの固定金利は日銀ではなく国債市場の長期金利で決まる仕組みを解説します。",
   "tags": [
-    "経済雑学",
+    "住宅ローン",
+    "フラット35",
+    "固定金利",
+    "長期金利",
+    "国債利回り",
     "投資初心者",
-    "日本経済",
-    "国民負担率",
-    "五公五民",
-    "社会保険料",
-    "税金の仕組み",
-    "資産運用"
+    "経済雑学",
+    "日銀"
   ],
-  "seoNotes": "タイトル前方に検索需要の見込める「国民負担率とは」「五公五民」を配置し、タグには経済雑学・投資初心者・日本経済といった一般語と、国民負担率・五公五民・社会保険料などの固有キーワードを組み合わせた。",
+  "seoNotes": "タイトル冒頭に検索需要の高い「住宅ローン固定金利」を配置し、タグには「フラット35」「長期金利」「国債利回り」などの固有名詞と「投資初心者」「経済雑学」の一般キーワードを組み合わせた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "江戸時代の重税「五公五民」",
-        "令和の日本に接近中？"
+        "固定金利を決めるのは誰？",
+        "日銀ではない理由とは"
       ],
-      "narration": "江戸時代の農民を苦しめた重税「五公五民」に、令和の日本の税と社会保険料の負担が近づいているって知っていますか？",
-      "pexelsQuery": "edo period japan rice field farmers history"
+      "narration": "住宅ローンで固定金利を選ぶとき、その水準を実は日銀ではなく国債市場が決めているって知っていますか？",
+      "pexelsQuery": "house keys mortgage contract"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "年貢は収穫の5割負担",
-        "農民に残るのも5割のみ"
+        "フラット35は毎月改定",
+        "基準は市場の長期金利"
       ],
-      "narration": "五公五民とは江戸時代の年貢の取り分を示す言葉で、収穫の5割を領主が徴収し、残る5割だけが農民の手元に残る重い税負担を指し、今も重税の例えとして使われます。",
-      "pexelsQuery": "japanese rice harvest traditional farming field"
+      "narration": "代表的な固定金利型住宅ローン「フラット35」の金利は、毎月見直され、長期金利という指標の動きに合わせて金融機関が設定する仕組みになっています。",
+      "pexelsQuery": "bank loan paperwork signing"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "国民負担率という指標",
-        "税と社会保険料の合計"
+        "10年国債利回り2.94%",
+        "1年前は1.60%水準"
       ],
-      "narration": "財務省が毎年発表する国民負担率は、所得に占める税金と社会保険料の合計割合を示す公式統計で、江戸時代の年貢の重さとよく比較される指標として知られています。",
-      "pexelsQuery": "japan finance ministry paperwork calculator tax"
+      "narration": "その長期金利の目安である日本の10年国債りまわりは2026年8月に2.94%まで上昇し、1年前の1.60%やほぼゼロだった数年前から大きく様変わりしています。",
+      "pexelsQuery": "financial chart rising graph"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "国民負担率47.5％",
-        "五公五民とほぼ同水準"
+        "日銀の権限は短期金利まで",
+        "固定金利は国債市場が決定"
       ],
-      "narration": "2022年度に財務省が発表した国民負担率の見通しは47.5％で、これは江戸時代の五公五民とほぼ同じ水準だとしてSNSで大きな話題になりました。",
-      "pexelsQuery": "japanese yen coins calculator finance closeup"
+      "narration": "実は日銀が直接動かせるのは短期の政策金利のみで、固定金利は市場が決める長期金利の産物です。金利のニュースは政策金利と10年国債りまわりを合わせて見るのがコツです。",
+      "pexelsQuery": "central bank building japan"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "チャンネル登録はこちら",
-        "感想はコメントで待ってます"
+        "住宅ローンの仕組みを解説",
+        "チャンネル登録してね"
       ],
-      "narration": "この情報は投資の勧誘や助言ではありません。感想はぜひコメントで、続きはチャンネル登録でお待ちしています。",
-      "pexelsQuery": "japan city skyline sunset finance district"
+      "narration": "仕組みを知れば不動産ニュースの見方が変わります。ぜひチャンネル登録し、感想もコメントで教えてください。",
+      "pexelsQuery": "modern house exterior evening"
     }
   ],
-  "category": "日本経済",
+  "chart": {
+    "seriesId": "IRLTLT01JPM156N",
+    "segment": "rank2",
+    "startYear": 2015,
+    "title": "日本の10年国債利回り"
+  },
+  "newsAngle": "日銀次の利上げの注目は「10月展望レポート」、物価“2％定着”が課題の新局面",
+  "category": "不動産",
   "format": "qa",
-  "displayGenre": "日本経済"
+  "displayGenre": "不動産",
+  "relatedMainVideo": {
+    "id": "YCjXRSQY-UA",
+    "title": "【経済・為替】「円高・円安」を世界一分かりやすく解説します！"
+  }
 }

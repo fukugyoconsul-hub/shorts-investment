@@ -1410,5 +1410,19 @@
     "videoId": "hkbY0vtEZKE",
     "category": "日本経済",
     "format": "qa"
+  },
+  {
+    "title": "住宅ローン固定金利はなぜ動く？",
+    "topics": [
+      "フラット35の金利決定の仕組み/長期金利急上昇2.94%/日銀の権限は短期金利まで"
+    ],
+    "date": "2026-09-27",
+    "publishedAt": "2026-09-30T23:00:00.000Z",
+    "videoId": "xE-lRU8JE2U",
+    "category": "不動産",
+    "format": "qa",
+    "chart": "IRLTLT01JPM156N",
+    "newsAngle": "日銀次の利上げの注目は「10月展望レポート」、物価“2％定着”が課題の新局面",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
