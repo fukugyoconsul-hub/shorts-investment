@@ -67,6 +67,15 @@ jobs:
         if: steps.promo.outcome == 'failure'
         run: node scripts/report-status.mjs エラー "公開済み動画への案内コメントの自動投稿に失敗しました。Actionsタブ(Schedule Watchdog)のログを確認してください。" "(案内コメント投稿失敗)"
 
+      - name: Add videos to series playlists
+        id: series
+        run: node scripts/add-to-series.mjs
+        continue-on-error: true
+
+      - name: Report series playlist failure to sheet
+        if: steps.series.outcome == 'failure'
+        run: node scripts/report-status.mjs エラー "動画のシリーズ(再生リスト)への自動追加に失敗しました。Actionsタブ(Schedule Watchdog)のログを確認してください。" "(再生リスト追加失敗)"
+
       - name: Check latest Weekly Genre Research run
         id: weekly
         env:
