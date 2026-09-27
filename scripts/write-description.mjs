@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { relatedSection } from "./main-video-match.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -26,7 +27,13 @@ const extraTags = (latestScript.tags ?? [])
 
 const hashtags = [...CORE_TAGS, ...extraTags].map((t) => `#${t}`).join(" ");
 
-const description = `${latestScript.descriptionHook}\n\n${template
+// 関連するメインチャンネル動画があれば、冒頭の1文の直後(独立した段落)に誘導を入れる。
+// auto-retry-seo.mjsは冒頭の段落だけを書き換えるので、この段落は残る。
+const related = latestScript.relatedMainVideo
+  ? `${relatedSection(latestScript.relatedMainVideo)}\n\n`
+  : "";
+
+const description = `${latestScript.descriptionHook}\n\n${related}${template
   .replace("{{VOICE_CREDIT}}", voiceCreditLine)
   .replace("{{MUSIC_CREDIT}}", creditLine)
   .replace("{{HASHTAGS}}", hashtags)}`;

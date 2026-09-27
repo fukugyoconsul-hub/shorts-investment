@@ -36,6 +36,9 @@ jobs:
           echo '${{ secrets.YOUTUBE_TOKEN_JSON }}' > youtube-token.json
           echo '${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}' > service-account.json
 
+      - name: Refresh main channel video list (for related-video links)
+        run: node scripts/fetch-main-channel-videos.mjs
+
       - name: Track video performance
         run: node scripts/track-performance.mjs
 
