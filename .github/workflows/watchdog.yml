@@ -58,6 +58,15 @@ jobs:
       - name: Check for overdue unpublished videos
         run: node scripts/check-published.mjs
 
+      - name: Post promo comment on published videos
+        id: promo
+        run: node scripts/post-promo-comment.mjs
+        continue-on-error: true
+
+      - name: Report promo comment failure to sheet
+        if: steps.promo.outcome == 'failure'
+        run: node scripts/report-status.mjs エラー "公開済み動画への案内コメントの自動投稿に失敗しました。Actionsタブ(Schedule Watchdog)のログを確認してください。" "(案内コメント投稿失敗)"
+
       - name: Check latest Weekly Genre Research run
         id: weekly
         env:
