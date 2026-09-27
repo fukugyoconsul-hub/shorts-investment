@@ -1,73 +1,73 @@
 {
-  "title": "日銀ETF買いとは？日本株保有1位の衝撃",
+  "title": "国民負担率とは？五公五民に迫る事実",
   "topics": [
-    "ETF買い入れの経緯/14年間で簿価37兆円/日銀が事実上の筆頭株主に"
+    "五公五民の意味/国民負担率の仕組み/47.5％という水準"
   ],
-  "descriptionHook": "日銀が2010年から続けたETF買い入れの結果、国内株式市場最大級の保有者になった仕組みを解説します。",
+  "descriptionHook": "江戸時代の重税「五公五民」に迫る日本の国民負担率の実態を解説します。",
   "tags": [
-    "投資初心者",
     "経済雑学",
-    "日銀ETF",
-    "金融政策の仕組み",
-    "量的緩和",
-    "日本株",
-    "中央銀行",
-    "マネー知識"
+    "投資初心者",
+    "日本経済",
+    "国民負担率",
+    "五公五民",
+    "社会保険料",
+    "税金の仕組み",
+    "資産運用"
   ],
-  "seoNotes": "タイトル冒頭に検索されやすい「日銀ETF買い」「とは」を配置し、タグは「投資初心者」「経済雑学」など一般層向けキーワードと「日銀ETF」「量的緩和」といった固有キーワードを組み合わせて検索需要を広くカバーした。",
+  "seoNotes": "タイトル前方に検索需要の見込める「国民負担率とは」「五公五民」を配置し、タグには経済雑学・投資初心者・日本経済といった一般語と、国民負担率・五公五民・社会保険料などの固有キーワードを組み合わせた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "中央銀行なのに株を保有",
-        "日銀が日本株を大量保有"
+        "江戸時代の重税「五公五民」",
+        "令和の日本に接近中？"
       ],
-      "narration": "中央銀行のはずの日銀が、実は国内で一番の日本株の買い手になっている、その理由を知っていますか？",
-      "pexelsQuery": "Bank of Japan building tokyo finance"
+      "narration": "江戸時代の農民を苦しめた重税「五公五民」に、令和の日本の税と社会保険料の負担が近づいているって知っていますか？",
+      "pexelsQuery": "edo period japan rice field farmers history"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "量的緩和は国債が基本",
-        "株式購入は世界でも異例"
+        "年貢は収穫の5割負担",
+        "農民に残るのも5割のみ"
       ],
-      "narration": "日銀は本来、国債を買い入れて世の中にお金を流す量的緩和を行う中央銀行であり、上場企業の株式まで大量に買う中央銀行は世界的にもきわめて異例な存在でした。",
-      "pexelsQuery": "central bank monetary policy bonds"
+      "narration": "五公五民とは江戸時代の年貢の取り分を示す言葉で、収穫の5割を領主が徴収し、残る5割だけが農民の手元に残る重い税負担を指し、今も重税の例えとして使われます。",
+      "pexelsQuery": "japanese rice harvest traditional farming field"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "2010年ETF買い入れ開始",
-        "簿価で約37兆円保有"
+        "国民負担率という指標",
+        "税と社会保険料の合計"
       ],
-      "narration": "2010年、日銀は上場投資信託ETFの買い入れを開始し、2024年3月に終了するまでの14年間で簿価にして約37兆円分もの残高を買い集めました。",
-      "pexelsQuery": "stock market ETF trading screen"
+      "narration": "財務省が毎年発表する国民負担率は、所得に占める税金と社会保険料の合計割合を示す公式統計で、江戸時代の年貢の重さとよく比較される指標として知られています。",
+      "pexelsQuery": "japan finance ministry paperwork calculator tax"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "時価で国内株式最大級",
-        "多くの企業で筆頭株主に"
+        "国民負担率47.5％",
+        "五公五民とほぼ同水準"
       ],
-      "narration": "実はこの買い入れの結果、日銀は時価換算で国内株式市場最大級の保有者となり、多くの上場企業で日銀が事実上の筆頭株主になっていたのです。",
-      "pexelsQuery": "stock exchange board japan shares"
+      "narration": "2022年度に財務省が発表した国民負担率の見通しは47.5％で、これは江戸時代の五公五民とほぼ同じ水準だとしてSNSで大きな話題になりました。",
+      "pexelsQuery": "japanese yen coins calculator finance closeup"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "情報提供が目的です",
-        "チャンネル登録お願い"
+        "チャンネル登録はこちら",
+        "感想はコメントで待ってます"
       ],
-      "narration": "仕組みの解説であり投資の勧誘ではありません。あなたはどう思いましたか？コメントとチャンネル登録もお願いします。",
-      "pexelsQuery": "financial district skyline japan"
+      "narration": "この情報は投資の勧誘や助言ではありません。感想はぜひコメントで、続きはチャンネル登録でお待ちしています。",
+      "pexelsQuery": "japan city skyline sunset finance district"
     }
   ],
-  "category": "金融",
+  "category": "日本経済",
   "format": "qa",
-  "displayGenre": "金融"
+  "displayGenre": "日本経済"
 }
