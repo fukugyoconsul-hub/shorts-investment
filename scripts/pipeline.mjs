@@ -169,6 +169,4 @@ for (const slot of slotsToFill) {
   }
 }
 
-runNodeSoft("reply-comments.mjs");
-
 log("========== パイプライン終了 ==========");
