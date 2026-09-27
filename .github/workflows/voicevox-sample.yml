@@ -64,6 +64,7 @@ jobs:
           FORCE_TOPIC_CATEGORY: ${{ inputs.category }}
         run: |
           node scripts/fetch-market-data.mjs
+          node scripts/fetch-news.mjs
           node scripts/generate-script.mjs
           node scripts/match-main-video.mjs || true
           node scripts/generate-tts.mjs

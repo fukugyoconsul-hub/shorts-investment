@@ -10,6 +10,20 @@ function formatValue(v: number, decimals: number, unit: string) {
   return `${text}${unit}`;
 }
 
+// 目盛りをきりのいい値(1・2・2.5・5×10のべき乗の刻み)にする
+function niceTicks(min: number, max: number, count: number) {
+  const rough = (max - min) / count;
+  const pow = Math.pow(10, Math.floor(Math.log10(rough)));
+  const step = [1, 2, 2.5, 5, 10].map((m) => m * pow).find((s) => s >= rough) ?? 10 * pow;
+  const ticks: number[] = [];
+  for (let v = Math.ceil(min / step) * step; v <= max; v += step) ticks.push(Number(v.toPrecision(12)));
+  return { ticks, step };
+}
+
+function tickDecimals(step: number) {
+  return step >= 1 ? 0 : Math.min(4, Math.ceil(-Math.log10(step)));
+}
+
 function formatDate(t: string) {
   const [y, m] = t.split("-");
   return `${y}/${m}`;
@@ -65,7 +79,7 @@ export const ChartPanel: React.FC<{ chart: ChartData; durationInFrames: number; 
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
-  const gridValues = [max - pad, (max + min) / 2, min + pad];
+  const { ticks: gridValues, step: tickStep } = niceTicks(min, max, 4);
 
   return (
     <AbsoluteFill style={{ alignItems: "center", paddingTop: 190, opacity: fadeIn }}>
@@ -91,8 +105,17 @@ export const ChartPanel: React.FC<{ chart: ChartData; durationInFrames: number; 
             return (
               <g key={i}>
                 <line x1={0} x2={PLOT_WIDTH} y1={y} y2={y} stroke="rgba(255,255,255,0.18)" strokeWidth={2} />
-                <text x={0} y={y - 10} fill="#8C99B0" fontSize={26} fontFamily={fontFamily}>
-                  {formatValue(v, decimals, "")}
+                <text
+                  x={0}
+                  y={y - 10}
+                  fill="#8C99B0"
+                  fontSize={26}
+                  fontFamily={fontFamily}
+                  stroke="rgba(8, 12, 24, 0.95)"
+                  strokeWidth={8}
+                  paintOrder="stroke"
+                >
+                  {formatValue(v, tickDecimals(tickStep), "")}
                 </text>
               </g>
             );

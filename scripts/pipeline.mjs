@@ -139,6 +139,7 @@ for (const slot of slotsToFill) {
   fs.writeFileSync(path.join(root, "content", "latest-script.json"), "{}");
   try {
     runNodeSoft("fetch-market-data.mjs");
+    runNodeSoft("fetch-news.mjs");
     await runWithRetry("generate-script.mjs", () => runOnce("generate-script.mjs"));
     runNodeSoft("match-main-video.mjs");
     await runWithRetry("generate-tts.mjs", () => runOnce("generate-tts.mjs"));
