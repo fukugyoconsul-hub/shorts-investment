@@ -97,7 +97,7 @@ export const ChartPanel: React.FC<{ chart: ChartData; durationInFrames: number; 
         <div style={{ fontSize: 52, fontWeight: 700, lineHeight: 1.2 }}>{chart.title}</div>
         <div style={{ fontSize: 30, color: "#B8C4D8", marginTop: 8 }}>
           {chart.label}
-          {unit ? `(${unit})` : ""}
+          {unit ? `　単位: ${unit}` : ""}
         </div>
         <svg width={PLOT_WIDTH} height={PLOT_HEIGHT + 60} style={{ marginTop: 28, overflow: "visible" }}>
           {gridValues.map((v, i) => {
