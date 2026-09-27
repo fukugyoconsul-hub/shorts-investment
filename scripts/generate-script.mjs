@@ -188,6 +188,51 @@ const retentionInstructions =
 - rank3→rank2→rank1にかけて、意外性・インパクトが尻すぼみにならず右肩上がりになるようにする`
     : "";
 
+// 実データ(fetch-market-data.mjsが直前に取得)。台本中の数値を最新の実データに合わせ、
+// 題材に合う指標があれば実データのグラフを1つ表示する(オリジナルの映像素材にするため)。
+const marketDataPath = path.join(root, ".cache", "market-data.json");
+const marketData = fs.existsSync(marketDataPath)
+  ? JSON.parse(fs.readFileSync(marketDataPath, "utf-8"))
+  : null;
+const marketSeries = marketData ? Object.values(marketData.series) : [];
+
+function periodLabel(series, isoDate) {
+  const [y, m] = isoDate.split("-").map(Number);
+  const pts = series.points;
+  const gapDays =
+    pts.length > 1 ? (new Date(pts[pts.length - 1].t) - new Date(pts[pts.length - 2].t)) / 86400000 : 1;
+  if (gapDays > 300) return `${y}年`;
+  if (gapDays > 80) return `${y}年${m}〜${m + 2}月期`;
+  if (gapDays > 25) return `${y}年${m}月`;
+  return isoDate.replace(/^(\d+)-(\d+)-(\d+)$/, (_, a, b, c) => `${a}年${Number(b)}月${Number(c)}日`);
+}
+
+function fmt(series, point) {
+  if (!point) return "-";
+  return `${point.v.toFixed(series.decimals)}${series.unit}(${periodLabel(series, point.t)})`;
+}
+
+const marketDataSection = marketSeries.length
+  ? `
+# 最新の実データ(出典: 米セントルイス連銀FRED、${marketData.fetchedAt.slice(0, 10)}取得)
+${marketSeries
+  .map((s) => {
+    const x = s.summary;
+    return `- ${s.id} ${s.label}: 最新 ${fmt(s, x.latest)} / 1年前 ${fmt(s, x.oneYearAgo)} / 5年前 ${fmt(s, x.fiveYearsAgo)} / 過去10年の最高 ${fmt(s, x.tenYearMax)}・最低 ${fmt(s, x.tenYearMin)}`;
+  })
+  .join("\n")}
+
+# 実データの使い方(重要・正確性に直結)
+- 上記の指標(為替・金利・物価・株価など)の現在の水準や最近の動きに触れる場合は、必ずこの実データの数値・方向(上昇/下落)に一致させること。あなたの記憶にある数値は古い可能性があるため、記憶で「現在」「最近」の数値を書かないこと
+- 過去の出来事の数値を書く場合は、いつの数値かを明記すること
+- 今回のテーマの理解に実データのグラフが役立つ場合に限り、上記の指標から1つ選んでchartに指定すること(役立たない場合はnull)。グラフを表示するセグメントのnarration・captionは、グラフの実際の動きと一致する内容にすること`
+  : "";
+
+const chartSchema = marketSeries.length
+  ? `,
+  "chart": { "seriesId": "上記の実データの指標ID(例: DEXJPUS)", "segment": "グラフを表示するセグメントのid(rank3/rank2/rank1のいずれか)", "startYear": 2005〜2025の数値(グラフの開始年), "title": "グラフの見出し(18字以内)" } または null`
+  : "";
+
 const prompt = `あなたはYouTubeショート動画の台本作家です。FX・投資・金融の教育系チャンネル用に、新しい1本分の台本をJSON形式だけで出力してください。説明文やコードフェンス(\`\`\`)は一切つけず、JSONのみを出力してください。
 
 # チャンネル設定
@@ -215,6 +260,7 @@ ${
 - (視聴維持率対策・常時適用)フックの最初の1文だけで惹きつけること。「〜について紹介します」のような前置きは厳禁で、具体的な数字・意外な事実・断定的な一言から入る。前半で間延びさせず、後半に行くほど情報の意外性・インパクトが強くなる(尻すぼみにならない)構成にする
 - (視聴維持率対策・常時適用)タイトルだけでなく、可能な場面ではnarrationの構成自体も「核心を先に明かさず、少し焦らしてから明かす」形にする(例:「実は〜」のように、結論を保留してから見せる)。ランキング形式であっても、各順位の紹介文の冒頭で結論を言い切らず、一言タメを作ってから核心に入るとよい
 ${retentionInstructions}
+${marketDataSection}
 ${
   trendPattern
     ? `- (今週のトレンド調査より)可能であれば次のパターンを今回の台本に取り入れてみること: 『${trendPattern.pattern}』── ${trendPattern.description}(参考例: ${trendPattern.example})。無理に当てはめて不自然にならない場合のみ採用すること`
@@ -270,7 +316,7 @@ ${
   "descriptionHook": "概要欄の1行目。動画の内容を要約した1文",
   "tags": ["タグ1", "タグ2", "... 具体的なキーワードを8個程度"],
   "seoNotes": "今回のSEO対策の具体的な説明(1〜2文)",
-${segmentsExample}
+${segmentsExample}${chartSchema}
 }`;
 
 function runClaude(promptText) {

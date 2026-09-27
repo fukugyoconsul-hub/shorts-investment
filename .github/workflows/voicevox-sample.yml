@@ -1,16 +1,23 @@
-name: VOICEVOX Sample
+name: Render Test
 
-# VOICEVOX導入の動作確認用の一時的なワークフロー(手動実行のみ)。
-# 台本生成とYouTubeへのアップロードは行わず、リポジトリにある最新台本で動画を1本レンダリングして
-# 成果物(artifact)として保存する。導入完了後に削除する。
+# 動画作成の変更を本番投稿前に確かめるための手動実行専用ワークフロー。
+# 台本生成からレンダリングまでを本番と同じ手順で行い、YouTubeへはアップロードせず、
+# 完成した動画と台本・概要欄を成果物(artifact)として保存する。
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "扱うテーマ(空欄なら通常どおり自動で選ぶ)"
+        default: ""
+      category:
+        description: "テーマのジャンル(topic指定時のみ使用。例: FX)"
+        default: ""
 
 permissions:
   contents: read
 
 jobs:
-  sample:
+  render:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
@@ -23,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
       - name: Install headless Chrome dependencies
         run: |
           sudo apt-get update
@@ -34,6 +44,9 @@ jobs:
       - name: Reconstruct secret files
         run: |
           echo "PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY }}" >> .env
+          echo "CLAUDE_CODE_OAUTH_TOKEN=${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}" >> .env
+          echo '${{ secrets.GOOGLE_CLIENT_SECRET_JSON }}' > client_secret.json
+          echo '${{ secrets.YOUTUBE_TOKEN_JSON }}' > youtube-token.json
 
       - name: Start VOICEVOX engine
         run: |
@@ -45,21 +58,28 @@ jobs:
           done
           curl -sf http://127.0.0.1:50021/version
 
-      - name: Build one video with VOICEVOX narration
+      - name: Build one video (no upload)
+        env:
+          FORCE_TOPIC_TITLE: ${{ inputs.topic }}
+          FORCE_TOPIC_CATEGORY: ${{ inputs.category }}
         run: |
+          node scripts/fetch-market-data.mjs
+          node scripts/generate-script.mjs
+          node scripts/match-main-video.mjs || true
           node scripts/generate-tts.mjs
           node scripts/auto-fetch-bg.mjs
           node scripts/select-bgm.mjs
           node scripts/write-segments.mjs
+          node scripts/write-chart.mjs
           node scripts/write-description.mjs
           npx remotion render ShortsVideo out/final.mp4 --crf=18
-
-      - name: Show credit lines in description
-        run: grep -n "VOICEVOX\|Music:" description.txt
+          cp content/latest-script.json out/ && cp description.txt out/ && cp src/chart.ts out/
 
       - uses: actions/upload-artifact@v4
         with:
-          name: voicevox-video
+          name: render-test
           path: |
             out/final.mp4
-            description.txt
+            out/latest-script.json
+            out/description.txt
+            out/chart.ts

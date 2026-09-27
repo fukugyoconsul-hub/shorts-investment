@@ -138,12 +138,14 @@ for (const slot of slotsToFill) {
   // 読んでしまい、実際とは無関係なタイトル・ジャンルがエラー行に誤表示されてしまう
   fs.writeFileSync(path.join(root, "content", "latest-script.json"), "{}");
   try {
+    runNodeSoft("fetch-market-data.mjs");
     await runWithRetry("generate-script.mjs", () => runOnce("generate-script.mjs"));
     runNodeSoft("match-main-video.mjs");
     await runWithRetry("generate-tts.mjs", () => runOnce("generate-tts.mjs"));
     await runWithRetry("auto-fetch-bg.mjs", () => runOnce("auto-fetch-bg.mjs"));
     await runWithRetry("select-bgm.mjs", () => runOnce("select-bgm.mjs"));
     await runWithRetry("write-segments.mjs", () => runOnce("write-segments.mjs"));
+    await runWithRetry("write-chart.mjs", () => runOnce("write-chart.mjs"));
     await runWithRetry("write-description.mjs", () => runOnce("write-description.mjs"));
     await runWithRetry("remotion render", runRenderOnce);
     await runWithRetry("youtube-upload.mjs", () =>

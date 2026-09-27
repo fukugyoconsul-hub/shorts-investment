@@ -1,0 +1,19 @@
+[
+  { "id": "DEXJPUS", "label": "ドル円為替レート", "unit": "円", "decimals": 2 },
+  { "id": "DEXUSEU", "label": "ユーロドル為替レート", "unit": "ドル", "decimals": 4 },
+  { "id": "FEDFUNDS", "label": "米国の政策金利(FF金利・実効)", "unit": "%", "decimals": 2 },
+  { "id": "CPIAUCSL", "transformation": "pc1", "label": "米国の消費者物価指数(前年比)", "unit": "%", "decimals": 1 },
+  { "id": "UNRATE", "label": "米国の失業率", "unit": "%", "decimals": 1 },
+  { "id": "DGS10", "label": "米国10年国債利回り", "unit": "%", "decimals": 2 },
+  { "id": "GDPC1", "transformation": "pc1", "label": "米国の実質GDP成長率(前年同期比)", "unit": "%", "decimals": 1 },
+  { "id": "IRLTLT01JPM156N", "label": "日本の10年国債利回り(月平均)", "unit": "%", "decimals": 2 },
+  { "id": "IRSTCI01JPM156N", "label": "日本の短期金利(コールレート・月平均)", "unit": "%", "decimals": 3 },
+  { "id": "LRUN64TTJPM156S", "label": "日本の失業率", "unit": "%", "decimals": 1 },
+  { "id": "FPCPITOTLZGJPN", "label": "日本の物価上昇率(年間・前年比)", "unit": "%", "decimals": 1 },
+  { "id": "JPNRGDPEXP", "transformation": "pc1", "label": "日本の実質GDP成長率(前年同期比)", "unit": "%", "decimals": 1 },
+  { "id": "NIKKEI225", "label": "日経平均株価", "unit": "円", "decimals": 0 },
+  { "id": "SP500", "label": "米国株S&P500", "unit": "ポイント", "decimals": 0 },
+  { "id": "DCOILWTICO", "label": "WTI原油価格", "unit": "ドル/バレル", "decimals": 2 },
+  { "id": "VIXCLS", "label": "VIX恐怖指数", "unit": "", "decimals": 1 },
+  { "id": "CBBTCUSD", "label": "ビットコイン価格", "unit": "ドル", "decimals": 0 }
+]

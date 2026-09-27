@@ -14,6 +14,8 @@ import { webReader } from "@remotion/media-parser/web";
 import { loadFont } from "@remotion/google-fonts/NotoSansJP";
 import { segments, SegmentId } from "./segments";
 import { Caption } from "./Caption";
+import { ChartPanel } from "./ChartPanel";
+import { chart } from "./chart";
 
 const { fontFamily } = loadFont();
 
@@ -110,6 +112,9 @@ const ShortsVideoComponent: React.FC<Props> = ({ timings }) => {
                       "linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0) 45%)",
                   }}
                 />
+                {chart && chart.segmentId === timing.id ? (
+                  <ChartPanel chart={chart} durationInFrames={timing.durationInFrames} fontFamily={fontFamily} />
+                ) : null}
                 <Caption badge={seg.badge} lines={seg.caption} fontFamily={fontFamily} />
                 <Sequence from={timing.narrationStartFrame}>
                   <Audio src={staticFile(`audio/${timing.id}.wav`)} />
