@@ -243,6 +243,22 @@ ${newsItems.map((n) => `- ${n.publishedAt.slice(0, 10)} ${n.title}`).join("\n")}
 - 政治的な主張や、特定の政党・政治家・人物への評価はしないこと。将来の決定(利上げ時期など)を予測・断定しないこと`
   : "";
 
+// 週次PDCA(pdca-report.mjs)が決めた改善方針。安全ルールより優先はしない。
+const directivesPath = path.join(root, "content", "pdca-directives.json");
+const pdca = fs.existsSync(directivesPath) ? JSON.parse(fs.readFileSync(directivesPath, "utf-8")) : null;
+const pdcaSection = pdca?.directives?.length
+  ? `
+# 今週の改善方針(実際の再生データの分析結果。${pdca.updatedAt}更新)
+${pdca.directives.map((d) => `- ${d}`).join("\n")}
+- 検証中の仮説: ${pdca.experiment}
+- ただし、下記の安全ルール・禁止事項と矛盾する場合は、必ず安全ルールを優先すること`
+  : "";
+
+const newsSchema = newsItems.length
+  ? `,
+  "newsAngle": "切り口に使ったニュース見出し(そのまま転記。使わなかった場合は null)"`
+  : "";
+
 const chartSchema = marketSeries.length
   ? `,
   "chart": { "seriesId": "上記の実データの指標ID(例: DEXJPUS)", "segment": "グラフを表示するセグメントのid(rank3/rank2/rank1のいずれか)", "startYear": 2005〜2025の数値(グラフの開始年), "title": "グラフの見出し(18字以内)" } または null`
@@ -277,6 +293,7 @@ ${
 ${retentionInstructions}
 ${marketDataSection}
 ${newsSection}
+${pdcaSection}
 
 # チャンネルとしての視点(オリジナリティのため・毎回必須)
 - このチャンネルの切り口は「数字で、お金と相場の常識を確かめる」。よくある思い込み・誤解や素朴な疑問を1つ取り上げ、具体的な数字(上記の実データや公的統計)を根拠に確かめる構成にすること
@@ -338,7 +355,7 @@ ${
   "descriptionHook": "概要欄の1行目。動画の内容を要約した1文",
   "tags": ["タグ1", "タグ2", "... 具体的なキーワードを8個程度"],
   "seoNotes": "今回のSEO対策の具体的な説明(1〜2文)",
-${segmentsExample}${chartSchema}
+${segmentsExample}${chartSchema}${newsSchema}
 }`;
 
 function runClaude(promptText) {

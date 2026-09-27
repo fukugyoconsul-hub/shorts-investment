@@ -76,6 +76,10 @@ usedTopics.push({
   videoId,
   category: latestScript.category,
   format: latestScript.format,
+  // PDCAで施策ごとの効果を比べるための記録
+  chart: latestScript.chart?.seriesId ?? null,
+  newsAngle: latestScript.newsAngle ?? null,
+  relatedMainVideoId: latestScript.relatedMainVideo?.id ?? null,
 });
 fs.writeFileSync(usedTopicsPath, JSON.stringify(usedTopics, null, 2));
 console.log("OK: used-topics.json を更新しました");
