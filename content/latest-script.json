@@ -1,82 +1,85 @@
 {
-  "title": "住宅ローン固定金利はなぜ動く？",
+  "title": "通貨ペアとは？ドル円表示の仕組み",
   "topics": [
-    "フラット35の金利決定の仕組み/長期金利急上昇2.94%/日銀の権限は短期金利まで"
+    "通貨ペアの基礎知識",
+    "ドルストレートとクロス円の仕組み",
+    "円安円高を見分ける注意点"
   ],
-  "descriptionHook": "住宅ローンの固定金利は日銀ではなく国債市場の長期金利で決まる仕組みを解説します。",
+  "descriptionHook": "ドル円の数字が上がると円安なのか円高なのか、通貨ペア表示の仕組みを数字で解説します。",
   "tags": [
-    "住宅ローン",
-    "フラット35",
-    "固定金利",
-    "長期金利",
-    "国債利回り",
     "投資初心者",
     "経済雑学",
-    "日銀"
+    "FX初心者",
+    "資産運用",
+    "通貨ペア",
+    "ドル円",
+    "円安円高",
+    "クロス円",
+    "ドルストレート"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「住宅ローン固定金利」を配置し、タグには「フラット35」「長期金利」「国債利回り」などの固有名詞と「投資初心者」「経済雑学」の一般キーワードを組み合わせた。",
+  "seoNotes": "タイトル冒頭に検索需要の高い「通貨ペアとは」を配置し、タグには投資初心者・経済雑学などの一般キーワードとドル円・クロス円などの固有キーワードを組み合わせた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "固定金利を決めるのは誰？",
-        "日銀ではない理由とは"
+        "ドル円 1年で8円上昇",
+        "上がると円安？円高？"
       ],
-      "narration": "住宅ローンで固定金利を選ぶとき、その水準を実は日銀ではなく国債市場が決めているって知っていますか？",
-      "pexelsQuery": "house keys mortgage contract"
+      "narration": "ドル円は今156円台、1年前は148円でした。実はこの数字が上がるほど円安になる仕組み、正しく言えますか？",
+      "pexelsQuery": "US dollar Japanese yen banknotes closeup"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "フラット35は毎月改定",
-        "基準は市場の長期金利"
+        "通貨ペア表示のルール",
+        "前は基軸 後ろは決済"
       ],
-      "narration": "代表的な固定金利型住宅ローン「フラット35」の金利は、毎月見直され、長期金利という指標の動きに合わせて金融機関が設定する仕組みになっています。",
-      "pexelsQuery": "bank loan paperwork signing"
+      "narration": "通貨ペアとは2つの通貨の組み合わせで、前を基軸通貨、後ろを決済通貨と呼びます。ドル円なら前がドルで後ろが円、1ドルが何円かを示す表示です。",
+      "pexelsQuery": "currency exchange trading screen numbers"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "10年国債利回り2.94%",
-        "1年前は1.60%水準"
+        "ドルストレートとは",
+        "クロス円は間接計算"
       ],
-      "narration": "その長期金利の目安である日本の10年国債りまわりは2026年8月に2.94%まで上昇し、1年前の1.60%やほぼゼロだった数年前から大きく様変わりしています。",
-      "pexelsQuery": "financial chart rising graph"
+      "narration": "かわせには2種類あります。ドルが絡むドル円やユーロドルはドルストレート、絡まないユーロ円などはクロス円で、実は2つのドル取引を掛け合わせて価格を計算しています。",
+      "pexelsQuery": "euro dollar yen currency notes exchange"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "日銀の権限は短期金利まで",
-        "固定金利は国債市場が決定"
+        "数字が上がると円安",
+        "円高ではない理由"
       ],
-      "narration": "実は日銀が直接動かせるのは短期の政策金利のみで、固定金利は市場が決める長期金利の産物です。金利のニュースは政策金利と10年国債りまわりを合わせて見るのがコツです。",
-      "pexelsQuery": "central bank building japan"
+      "narration": "実は「ドル円が上がると円高」と思われがちですが誤りで、前の基軸通貨が上がる表示なので正解は円安です。数字が動いたら、動いた通貨を確認するとニュースが正確に読めます。",
+      "pexelsQuery": "forex chart line going up close up"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "住宅ローンの仕組みを解説",
-        "チャンネル登録してね"
+        "為替の見方をマスター",
+        "チャンネル登録お願いします"
       ],
-      "narration": "仕組みを知れば不動産ニュースの見方が変わります。ぜひチャンネル登録し、感想もコメントで教えてください。",
-      "pexelsQuery": "modern house exterior evening"
+      "narration": "かわせ表示のルールを知ればニュースがもっと分かります。チャンネル登録して、感想をコメントで教えてください。",
+      "pexelsQuery": "smartphone finance app scrolling hand"
     }
   ],
   "chart": {
-    "seriesId": "IRLTLT01JPM156N",
-    "segment": "rank2",
-    "startYear": 2015,
-    "title": "日本の10年国債利回り"
+    "seriesId": "DEXJPUS",
+    "segment": "rank1",
+    "startYear": 2021,
+    "title": "ドル円の推移(5年)"
   },
-  "newsAngle": "日銀次の利上げの注目は「10月展望レポート」、物価“2％定着”が課題の新局面",
-  "category": "不動産",
-  "format": "qa",
-  "displayGenre": "不動産",
+  "newsAngle": null,
+  "category": "FX",
+  "format": "kaisetsu",
+  "displayGenre": "FX",
   "relatedMainVideo": {
     "id": "YCjXRSQY-UA",
     "title": "【経済・為替】「円高・円安」を世界一分かりやすく解説します！"
