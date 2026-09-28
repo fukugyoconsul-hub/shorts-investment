@@ -1440,5 +1440,19 @@
     "chart": "DEXJPUS",
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "元本保証は詐欺のサイン？高利回りの数字の罠",
+    "topics": [
+      "年利の異常な高さは構造的に維持できない/日本の10年国債2.94%という現実の基準/高利回りを見たら基準と比べるのがコツ"
+    ],
+    "date": "2026-09-28",
+    "publishedAt": "2026-10-01T23:00:00.000Z",
+    "videoId": "qcFaOCppzQY",
+    "category": "詐欺",
+    "format": "qa",
+    "chart": "DGS10",
+    "newsAngle": "米長期金利、一時5.27％ 利上げ観測で19年ぶり水準（共同通信）",
+    "relatedMainVideoId": null
   }
 ]

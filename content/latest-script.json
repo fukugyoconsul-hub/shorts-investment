@@ -1,87 +1,82 @@
 {
-  "title": "通貨ペアとは？ドル円表示の仕組み",
+  "title": "元本保証は詐欺のサイン？高利回りの数字の罠",
   "topics": [
-    "通貨ペアの基礎知識",
-    "ドルストレートとクロス円の仕組み",
-    "円安円高を見分ける注意点"
+    "年利の異常な高さは構造的に維持できない/日本の10年国債2.94%という現実の基準/高利回りを見たら基準と比べるのがコツ"
   ],
-  "descriptionHook": "ドル円の数字が上がると円安なのか円高なのか、通貨ペア表示の仕組みを数字で解説します。",
+  "descriptionHook": "年利20%超の高利回り投資話が怪しい理由を、日本の10年国債利回り2.94%などの実データと比べて確かめます。",
   "tags": [
+    "投資詐欺",
     "投資初心者",
+    "高利回り",
+    "詐欺の手口",
     "経済雑学",
-    "FX初心者",
     "資産運用",
-    "通貨ペア",
-    "ドル円",
-    "円安円高",
-    "クロス円",
-    "ドルストレート"
+    "国債利回り",
+    "金融リテラシー",
+    "ポンジスキーム",
+    "詐欺対策"
   ],
-  "seoNotes": "タイトル冒頭に検索需要の高い「通貨ペアとは」を配置し、タグには投資初心者・経済雑学などの一般キーワードとドル円・クロス円などの固有キーワードを組み合わせた。",
+  "seoNotes": "タイトル前方に「投資詐欺」に近い需要の高い「元本保証」「高利回り」を置き、タグには「投資初心者」「資産運用」「経済雑学」など一般的な語と「国債利回り」「詐欺の手口」など固有語を混ぜた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "ドル円 1年で8円上昇",
-        "上がると円安？円高？"
+        "年利30％の投資話",
+        "本当にありえる？"
       ],
-      "narration": "ドル円は今156円台、1年前は148円でした。実はこの数字が上がるほど円安になる仕組み、正しく言えますか？",
-      "pexelsQuery": "US dollar Japanese yen banknotes closeup"
+      "narration": "月利5％、年利にすると約80％。こんな投資話を持ちかけられたら、あなたは基準になる数字を知っていますか？",
+      "pexelsQuery": "smartphone message investment offer"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "通貨ペア表示のルール",
-        "前は基軸 後ろは決済"
+        "日本の10年国債",
+        "利回り2.94％"
       ],
-      "narration": "通貨ペアとは2つの通貨の組み合わせで、前を基軸通貨、後ろを決済通貨と呼びます。ドル円なら前がドルで後ろが円、1ドルが何円かを示す表示です。",
-      "pexelsQuery": "currency exchange trading screen numbers"
+      "narration": "まず物差しです。日本の10年国債の利回りは、2026年8月の月平均で2.94％。国が借りるときの金利が、ここまで上がっています。",
+      "pexelsQuery": "japan government bond finance"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "ドルストレートとは",
-        "クロス円は間接計算"
+        "米国10年国債",
+        "利回り5.17％"
       ],
-      "narration": "かわせには2種類あります。ドルが絡むドル円やユーロドルはドルストレート、絡まないユーロ円などはクロス円で、実は2つのドル取引を掛け合わせて価格を計算しています。",
-      "pexelsQuery": "euro dollar yen currency notes exchange"
+      "narration": "では世界で最も信用される米国の10年国債はというと、2026年9月25日時点で5.17％。過去10年でも最高水準です。ここで、実は大事な事実があります。",
+      "pexelsQuery": "wall street stock exchange"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "数字が上がると円安",
-        "円高ではない理由"
+        "基準の10倍以上は",
+        "構造的に不自然"
       ],
-      "narration": "実は「ドル円が上がると円高」と思われがちですが誤りで、前の基軸通貨が上がる表示なので正解は円安です。数字が動いたら、動いた通貨を確認するとニュースが正確に読めます。",
-      "pexelsQuery": "forex chart line going up close up"
+      "narration": "実は、基準金利の10倍以上の年利を安定して払える運用は、現実にはほぼありません。原資が新規の出資金だと、破綻は時間の問題です。ニュースで金利上昇と聞いたら、勧誘の利回りと比べるのがコツです。",
+      "pexelsQuery": "warning sign caution money"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "為替の見方をマスター",
-        "チャンネル登録お願いします"
+        "高利回りは基準と比較",
+        "情報提供が目的です"
       ],
-      "narration": "かわせ表示のルールを知ればニュースがもっと分かります。チャンネル登録して、感想をコメントで教えてください。",
-      "pexelsQuery": "smartphone finance app scrolling hand"
+      "narration": "チャンネル登録で、お金の常識を数字で確かめましょう。あなたはどう思う？コメントで教えてください。投資の勧誘や助言ではありません。",
+      "pexelsQuery": "calculator notebook finance"
     }
   ],
   "chart": {
-    "seriesId": "DEXJPUS",
-    "segment": "rank1",
-    "startYear": 2021,
-    "title": "ドル円の推移(5年)"
+    "seriesId": "DGS10",
+    "segment": "rank2",
+    "startYear": 2015,
+    "title": "米国10年国債利回り"
   },
-  "newsAngle": null,
-  "category": "FX",
-  "format": "kaisetsu",
-  "displayGenre": "FX",
-  "relatedMainVideo": {
-    "id": "YCjXRSQY-UA",
-    "title": "【経済・為替】「円高・円安」を世界一分かりやすく解説します！"
-  }
+  "newsAngle": "米長期金利、一時5.27％ 利上げ観測で19年ぶり水準（共同通信）",
+  "category": "詐欺",
+  "format": "qa",
+  "displayGenre": "詐欺"
 }
