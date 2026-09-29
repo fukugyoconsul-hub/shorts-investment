@@ -1454,5 +1454,19 @@
     "chart": "DGS10",
     "newsAngle": "米長期金利、一時5.27％ 利上げ観測で19年ぶり水準（共同通信）",
     "relatedMainVideoId": null
+  },
+  {
+    "title": "原油高で金利が上がる理由とは？",
+    "topics": [
+      "原油は1年前の約63ドルから96ドルへ上昇/物価上昇で利下げしにくくなり国債が売られる/原油高は物価と金利の見通しを通じて債券安になり得る"
+    ],
+    "date": "2026-09-29",
+    "publishedAt": "2026-10-02T07:00:00.000Z",
+    "videoId": "GUl__akWFXA",
+    "category": "世界情勢",
+    "format": "qa",
+    "chart": "DCOILWTICO",
+    "newsAngle": "米欧でやまぬ金利上昇、財政懸念に原油高共振 日本にも一段売り圧力",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
