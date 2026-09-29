@@ -1468,5 +1468,21 @@
     "chart": "DCOILWTICO",
     "newsAngle": "米欧でやまぬ金利上昇、財政懸念に原油高共振 日本にも一段売り圧力",
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "決算とは？黒字でも倒産する理由",
+    "topics": [
+      "基礎:決算は株主や債権者に経営状況を報告する義務",
+      "仕組み:損益計算書・貸借対照表・キャッシュフロー計算書の3表",
+      "注意点:黒字でも現金が尽きれば倒産する黒字倒産"
+    ],
+    "date": "2026-09-29",
+    "publishedAt": "2026-10-02T23:00:00.000Z",
+    "videoId": "m75hLOymghs",
+    "category": "決算",
+    "format": "kaisetsu",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "9GvsOVQ10_8"
   }
 ]
