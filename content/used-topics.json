@@ -1484,5 +1484,21 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "9GvsOVQ10_8"
+  },
+  {
+    "title": "譲渡益課税とは？損益通算の仕組み",
+    "topics": [
+      "基礎:株の譲渡益・配当には申告分離課税で20.315%がかかる",
+      "仕組み:売却損と利益を同じ年に通算できる損益通算と繰越控除",
+      "注意点:損失の繰越には確定申告が必要で、NISA口座の損失は通算対象外"
+    ],
+    "date": "2026-09-30",
+    "publishedAt": "2026-10-03T07:00:00.000Z",
+    "videoId": "EHByd5dQVVI",
+    "category": "税金",
+    "format": "kaisetsu",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "Z_8j8vGwBRo"
   }
 ]
