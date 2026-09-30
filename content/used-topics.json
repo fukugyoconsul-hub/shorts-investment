@@ -1500,5 +1500,19 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "Z_8j8vGwBRo"
+  },
+  {
+    "title": "貿易赤字は本当に悪いこと？数字で検証",
+    "topics": [
+      "貿易赤字は赤字＝損と思われがち/原油高で日本の貿易収支が動く仕組み/赤字は国の経営赤字ではなく輸出入の差額という結論"
+    ],
+    "date": "2026-09-30",
+    "publishedAt": "2026-10-03T23:00:00.000Z",
+    "videoId": "WERQImgKn00",
+    "category": "貿易",
+    "format": "qa",
+    "chart": "DCOILWTICO",
+    "newsAngle": "粘着性を増す原油価格の影響力 ～日本の貿易収支の現在地～｜Newsモーニングサテライト（モーサテ）",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
