@@ -1514,5 +1514,21 @@
     "chart": "DCOILWTICO",
     "newsAngle": "粘着性を増す原油価格の影響力 ～日本の貿易収支の現在地～｜Newsモーニングサテライト（モーサテ）",
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "ATRとは？値動きの大きさを測る指標",
+    "topics": [
+      "基礎:ATRは値動きの幅を平均した指標",
+      "仕組み:真の値幅3つのうち最大値を14期間で平均",
+      "注意点:ATRは方向を示さず上昇も急落も数値が上がる"
+    ],
+    "date": "2026-10-01",
+    "publishedAt": "2026-10-04T07:00:00.000Z",
+    "videoId": "JvxwHrXVbds",
+    "category": "テクニカル",
+    "format": "kaisetsu",
+    "chart": null,
+    "newsAngle": "円相場 1円以上値下がり アメリカの長期金利上昇など受け",
+    "relatedMainVideoId": "OTgvxJso05Y"
   }
 ]
