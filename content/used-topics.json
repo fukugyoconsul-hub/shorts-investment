@@ -1530,5 +1530,21 @@
     "chart": null,
     "newsAngle": "円相場 1円以上値下がり アメリカの長期金利上昇など受け",
     "relatedMainVideoId": "OTgvxJso05Y"
+  },
+  {
+    "title": "債券は満期まで持てば安心？金利上昇の落とし穴",
+    "topics": [
+      "基礎:債券は利率が発行時に固定され満期に額面が戻る",
+      "仕組み:金利上昇で既発債が見劣りし途中売却は値下がりする",
+      "注意点:満期保有でも物価上昇で実質価値はめべりする"
+    ],
+    "date": "2026-10-01",
+    "publishedAt": "2026-10-04T23:00:00.000Z",
+    "videoId": "T8ig5qyD7AM",
+    "category": "債券",
+    "format": "kaisetsu",
+    "chart": "DGS10",
+    "newsAngle": "米長期金利が24年ぶり高水準 住宅市場変調、債券売り「悪循環」招く",
+    "relatedMainVideoId": "TccCwwJwlQY"
   }
 ]
