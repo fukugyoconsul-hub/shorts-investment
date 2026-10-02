@@ -1562,5 +1562,19 @@
     "chart": "NIKKEI225",
     "newsAngle": "来週の日経平均見通し（10/5〜10/9）｜7万円が視野に？植田総裁発言・世界的な金利上昇に注目【2026年10月2日】",
     "relatedMainVideoId": "sKOsRveCbos"
+  },
+  {
+    "title": "利上げで物価が下がる仕組みとは？需要を冷やす理由",
+    "topics": [
+      "政策金利が貸出金利や借入コストに連動して変わる/米FF金利0.08%から5.33%への上昇と物価上昇率9.0%/利上げは物価を直接下げず借入を割高にして需要を冷やす"
+    ],
+    "date": "2026-10-02",
+    "publishedAt": "2026-10-05T23:00:00.000Z",
+    "videoId": "p7vetv0eERA",
+    "category": "中央銀行",
+    "format": "qa",
+    "chart": "FEDFUNDS",
+    "newsAngle": null,
+    "relatedMainVideoId": "TccCwwJwlQY"
   }
 ]
