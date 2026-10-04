@@ -1608,5 +1608,21 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "9GvsOVQ10_8"
+  },
+  {
+    "title": "バレルの由来とは？商品雑学3選",
+    "topics": [
+      "3位 原油のバレルは約159リットルの樽が由来",
+      "2位 1979年イラン革命で第二次オイルショックが発生",
+      "1位 2021年の世界的なウッドショックで木材価格が急騰"
+    ],
+    "date": "2026-10-04",
+    "publishedAt": "2026-10-07T07:00:00.000Z",
+    "videoId": "CG-vh5-mVIQ",
+    "category": "コモディティ",
+    "format": "ranking",
+    "chart": "DCOILWTICO",
+    "newsAngle": null,
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
