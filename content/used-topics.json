@@ -1624,5 +1624,21 @@
     "chart": "DCOILWTICO",
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "日経平均の歴史3選！176円から7万円への道",
+    "topics": [
+      "3位 日経平均は1949年の176円21銭が起点",
+      "2位 1989年の最高値38915円は34年2か月更新されなかった",
+      "1位 直近5年で28771円から68309円へ約2.4倍"
+    ],
+    "date": "2026-10-04",
+    "publishedAt": "2026-10-07T23:00:00.000Z",
+    "videoId": "HmNS5CAE0CU",
+    "category": "株式",
+    "format": "ranking",
+    "chart": "NIKKEI225",
+    "newsAngle": "日経7万円トライ、米利上げ観測後退支え ＡＩ株買い継続＝今週の東京株式市場",
+    "relatedMainVideoId": "efGieI7HsrE"
   }
 ]
