@@ -1684,5 +1684,21 @@
     "chart": "CBBTCUSD",
     "newsAngle": null,
     "relatedMainVideoId": "efGieI7HsrE"
+  },
+  {
+    "title": "世界恐慌とバブル崩壊の歴史3選",
+    "topics": [
+      "3位 1637年チューリップ・バブルで球根1個が高級住宅並みに高騰",
+      "2位 1929年ブラックサーズデーから続いたNYダウ約89%下落",
+      "1位 1989年日経平均38915円の最高値と34年2か月かかった更新"
+    ],
+    "date": "2026-10-06",
+    "publishedAt": "2026-10-09T23:00:00.000Z",
+    "videoId": "KMHzCfQMWkI",
+    "category": "経済史",
+    "format": "ranking",
+    "chart": "NIKKEI225",
+    "newsAngle": null,
+    "relatedMainVideoId": "efGieI7HsrE"
   }
 ]
