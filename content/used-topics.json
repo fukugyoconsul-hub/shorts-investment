@@ -1668,5 +1668,21 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "Z_8j8vGwBRo"
+  },
+  {
+    "title": "ビットコイン価格が動く理由とは？",
+    "topics": [
+      "基礎:ビットコインは企業の利益や利払いのような収益の裏付けを持たない",
+      "仕組み:24時間365日取引され休場がなく世界中の売買が価格に反映される",
+      "注意点:価格を支えるのは需給と期待だけで、1年で約31%下落した例もある"
+    ],
+    "date": "2026-10-06",
+    "publishedAt": "2026-10-09T07:00:00.000Z",
+    "videoId": "5o9ynE-1gZA",
+    "category": "暗号資産",
+    "format": "kaisetsu",
+    "chart": "CBBTCUSD",
+    "newsAngle": null,
+    "relatedMainVideoId": "efGieI7HsrE"
   }
 ]
