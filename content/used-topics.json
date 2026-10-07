@@ -1716,5 +1716,21 @@
     "chart": "UNRATE",
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "米10年債利回り5.27％とは？物価と金利の関係",
+    "topics": [
+      "基礎:長期金利は国債の利回りで、政策金利とは別物",
+      "仕組み:物価上昇への警戒で利下げしにくくなり国債が売られ利回りが上がる",
+      "注意点:政策金利が下がっても長期金利は逆に上がることがある"
+    ],
+    "date": "2026-10-07",
+    "publishedAt": "2026-10-10T23:00:00.000Z",
+    "videoId": "fS86CfpBjEw",
+    "category": "ファンダメンタルズ",
+    "format": "kaisetsu",
+    "chart": "DGS10",
+    "newsAngle": "米長期金利一時5.36％台 24年半ぶり水準、物価警戒（共同通信）",
+    "relatedMainVideoId": "TccCwwJwlQY"
   }
 ]
