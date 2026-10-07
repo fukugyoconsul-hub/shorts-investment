@@ -1700,5 +1700,21 @@
     "chart": "NIKKEI225",
     "newsAngle": null,
     "relatedMainVideoId": "efGieI7HsrE"
+  },
+  {
+    "title": "失業率2.4％でも景気は良い？の落とし穴",
+    "topics": [
+      "基礎:失業率は労働力人口に占める失業者の割合",
+      "仕組み:日米で定義が近い統計でも水準が大きく違う",
+      "注意点:失業率の低さは賃金や景気の強さを示さない"
+    ],
+    "date": "2026-10-07",
+    "publishedAt": "2026-10-10T07:00:00.000Z",
+    "videoId": "caxG972lUi0",
+    "category": "経済指標",
+    "format": "kaisetsu",
+    "chart": "UNRATE",
+    "newsAngle": null,
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
