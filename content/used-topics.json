@@ -1748,5 +1748,19 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "BYFUSktNyWM"
+  },
+  {
+    "title": "信用創造とは？銀行が預金を生む仕組み",
+    "topics": [
+      "準備を残して貸し出す仕組み/預金が繰り返し膨らむ信用創造/実は貸出が先で預金が生まれるという結論"
+    ],
+    "date": "2026-10-08",
+    "publishedAt": "2026-10-11T23:00:00.000Z",
+    "videoId": "3tN_KaJOHE4",
+    "category": "金融",
+    "format": "qa",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "TccCwwJwlQY"
   }
 ]
