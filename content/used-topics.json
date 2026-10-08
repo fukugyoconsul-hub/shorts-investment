@@ -1732,5 +1732,21 @@
     "chart": "DGS10",
     "newsAngle": "米長期金利一時5.36％台 24年半ぶり水準、物価警戒（共同通信）",
     "relatedMainVideoId": "TccCwwJwlQY"
+  },
+  {
+    "title": "高額療養費制度とは？医療費の上限の仕組み",
+    "topics": [
+      "基礎:日本は国民皆保険で自己負担は原則3割、月ごとの上限を設ける高額療養費制度がある",
+      "仕組み:上限は所得区分で決まり、医療費100万円でも自己負担は約8万7千円で超過分は払い戻される",
+      "注意点:対象は保険診療のみで、差額ベッド代・入院時の食事代・先進医療の技術料は対象外"
+    ],
+    "date": "2026-10-08",
+    "publishedAt": "2026-10-11T07:00:00.000Z",
+    "videoId": "AiZ68eQpZ6Y",
+    "category": "保険",
+    "format": "kaisetsu",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "BYFUSktNyWM"
   }
 ]
