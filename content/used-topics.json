@@ -1762,5 +1762,19 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "TccCwwJwlQY"
+  },
+  {
+    "title": "円安で値上げが続く理由とは？",
+    "topics": [
+      "エネルギー自給率約13%で燃料はドル建て輸入/食料自給率38%で仕入れ値が円換算で上昇/値上げの背景は輸入コストの円換算膨張だが為替だけでは決まらない"
+    ],
+    "date": "2026-10-09",
+    "publishedAt": "2026-10-12T07:00:00.000Z",
+    "videoId": "JYeFaexMIpw",
+    "category": "日本経済",
+    "format": "qa",
+    "chart": "DEXJPUS",
+    "newsAngle": "国際郵便の料金、平均37%値上げへ 原油高や円安の影響 日本郵便",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
