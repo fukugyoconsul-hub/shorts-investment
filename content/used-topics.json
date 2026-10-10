@@ -1790,5 +1790,21 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "TccCwwJwlQY"
+  },
+  {
+    "title": "FX1万通貨とは？1円動くと損益1万円",
+    "topics": [
+      "基礎:FXの取引量は通貨数で表し、ドル円1万通貨は1円で1万円動く",
+      "仕組み:必要証拠金はレート×通貨数÷レバレッジで決まり、1万通貨なら約6万3千円",
+      "注意点:損益は証拠金ではなく通貨数で決まり、過去10年の値幅は1万通貨で約62万円分"
+    ],
+    "date": "2026-10-10",
+    "publishedAt": "2026-10-13T07:00:00.000Z",
+    "videoId": "-7kV1xiGzBQ",
+    "category": "FX",
+    "format": "kaisetsu",
+    "chart": "DEXJPUS",
+    "newsAngle": "ドル円158円前後の裏で何が起きた？ 米国債に買い手が戻り、原油・AI株にも変化【相場の現在地】2026/10/10",
+    "relatedMainVideoId": "G1nTtW0bSJ8"
   }
 ]
