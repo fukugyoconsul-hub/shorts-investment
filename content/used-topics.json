@@ -1834,5 +1834,21 @@
     "chart": "VIXCLS",
     "newsAngle": "原油「今すぐ確保」の買いに拍車 現物が最高値、先物の5割増し",
     "relatedMainVideoId": "efGieI7HsrE"
+  },
+  {
+    "title": "決算発表とは？好決算でも株価が下がる理由",
+    "topics": [
+      "基礎:上場企業は投資家への情報開示のため3か月ごとに決算を公表する",
+      "仕組み:損益計算書・貸借対照表・キャッシュフロー計算書の3表が示すもの",
+      "注意点:決算は過去の成績表で、株価は予想との差に反応する"
+    ],
+    "date": "2026-10-11",
+    "publishedAt": "2026-10-14T23:00:00.000Z",
+    "videoId": "TMeXu30LKf0",
+    "category": "決算",
+    "format": "kaisetsu",
+    "chart": null,
+    "newsAngle": "【株価指数】IMF・世銀総会＆G20、米CPI、7-9月期決算・・",
+    "relatedMainVideoId": "efGieI7HsrE"
   }
 ]
