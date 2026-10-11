@@ -1820,5 +1820,19 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "_pNd50DvAN4"
+  },
+  {
+    "title": "原油高でもVIXが低い理由とは？",
+    "topics": [
+      "原油が1年で約5割上昇した事実/S&P500は過去10年最高値圏/VIXは株価変動への警戒度でニュースの大きさではない"
+    ],
+    "date": "2026-10-11",
+    "publishedAt": "2026-10-14T07:00:00.000Z",
+    "videoId": "OmVKZhWKWe0",
+    "category": "世界情勢",
+    "format": "qa",
+    "chart": "VIXCLS",
+    "newsAngle": "原油「今すぐ確保」の買いに拍車 現物が最高値、先物の5割増し",
+    "relatedMainVideoId": "efGieI7HsrE"
   }
 ]
