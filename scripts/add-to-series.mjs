@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { google } from "googleapis";
+import { assertCorrectChannel } from "./verify-channel.mjs";
 
 // 動画をジャンルごとのシリーズ(再生リスト)に自動で追加する。企画としての一貫性を示し、連続視聴も促す。
 // 再生リストへの追加はAPIの消費量が大きいため1回あたりの件数を絞り、上限に達したらエラーにせず次回に回す。
@@ -17,6 +18,8 @@ const { installed } = JSON.parse(fs.readFileSync(path.join(root, "client_secret.
 const oauth2Client = new google.auth.OAuth2(installed.client_id, installed.client_secret);
 oauth2Client.setCredentials(JSON.parse(fs.readFileSync(path.join(root, "youtube-token.json"), "utf-8")));
 const youtube = google.youtube({ version: "v3", auth: oauth2Client });
+// 正しいチャンネル(@tac_group)の認証でなければ、何も書き込まずにここで止まる
+await assertCorrectChannel(youtube);
 
 function isQuotaError(err) {
   return err?.errors?.some((e) => e.reason === "quotaExceeded") || /quota/i.test(err?.message ?? "");

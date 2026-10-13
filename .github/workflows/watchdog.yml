@@ -46,6 +46,15 @@ jobs:
       - name: Clean up error rows and re-sort by date
         run: node scripts/cleanup-errors.mjs
 
+      - name: Verify YouTube token belongs to the correct channel
+        id: channel
+        run: node scripts/verify-channel.mjs
+        continue-on-error: true
+
+      - name: Report wrong channel to sheet
+        if: steps.channel.outcome == 'failure'
+        run: node scripts/report-status.mjs エラー "YouTubeの認証トークンが正しいチャンネル(@tac_group)に紐づいていないか、確認に失敗しました。動画の投稿は自動で止まっています。Actionsタブ(Schedule Watchdog)のログを確認し、必要ならYouTubeの再認証を行ってください。" "(投稿先チャンネル確認エラー)"
+
       - name: Check remaining buffer of scheduled videos
         id: buffer
         run: node scripts/check-buffer.mjs

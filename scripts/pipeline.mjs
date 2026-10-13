@@ -109,6 +109,32 @@ function computeUpcomingSlots(now, count, takenIsoSet) {
 
 log("========== パイプライン開始(バッファチェック) ==========");
 
+// 最初に、認証トークンが正しいチャンネル(@tac_group)に紐づいているかを確認する。
+// 違うチャンネルなら何も作らずに止めてシートに報告する(誤チャンネル投稿事故の再発防止)。
+// 通信エラー等の一時的な失敗は数回やり直す。
+{
+  let result;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    result = runOnce("verify-channel.mjs");
+    if (result.status === 0 || result.status === 2) break;
+    await sleep(30000);
+  }
+  if (result.status !== 0) {
+    const reason =
+      result.status === 2
+        ? "認証トークンが正しいチャンネル(@tac_group)に紐づいていないため、動画の作成・投稿を止めました。YouTubeの再認証が必要です"
+        : "投稿先チャンネルの確認に失敗したため、動画の作成・投稿を止めました(次回の実行で再確認します)";
+    log(`${reason}: ${(result.stderr || "").trim()}`);
+    spawnSync(
+      "node",
+      [path.join(root, "scripts", "report-status.mjs"), "エラー", `${reason}。${(result.stderr || "").trim()}`, "(投稿先チャンネル確認エラー)"],
+      { cwd: root, encoding: "utf-8" }
+    );
+    process.exit(1);
+  }
+  log((result.stdout || "").trim());
+}
+
 const usedTopicsPath = path.join(root, "content", "used-topics.json");
 const usedTopics = JSON.parse(fs.readFileSync(usedTopicsPath, "utf-8"));
 const now = new Date();

@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { google } from "googleapis";
+import { assertCorrectChannel } from "./verify-channel.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -38,6 +39,8 @@ const { installed } = JSON.parse(fs.readFileSync(path.join(root, "client_secret.
 const oauth2Client = new google.auth.OAuth2(installed.client_id, installed.client_secret);
 oauth2Client.setCredentials(JSON.parse(fs.readFileSync(path.join(root, "youtube-token.json"), "utf-8")));
 const youtube = google.youtube({ version: "v3", auth: oauth2Client });
+// 正しいチャンネル(@tac_group)の認証でなければ、何も書き込まずにここで止まる
+await assertCorrectChannel(youtube);
 
 const ch = await youtube.channels.list({ part: ["contentDetails"], mine: true });
 const channelId = ch.data.items[0].id;

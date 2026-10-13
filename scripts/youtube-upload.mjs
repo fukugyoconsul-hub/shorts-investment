@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { google } from "googleapis";
+import { assertCorrectChannel } from "./verify-channel.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -13,6 +14,8 @@ const oauth2Client = new google.auth.OAuth2(installed.client_id, installed.clien
 oauth2Client.setCredentials(tokens);
 
 const youtube = google.youtube({ version: "v3", auth: oauth2Client });
+// 正しいチャンネル(@tac_group)の認証でなければ、アップロードせずにここで止まる
+await assertCorrectChannel(youtube);
 
 const latestScript = JSON.parse(
   fs.readFileSync(path.join(root, "content", "latest-script.json"), "utf-8")
