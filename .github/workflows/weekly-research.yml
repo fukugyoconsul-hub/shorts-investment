@@ -42,7 +42,7 @@ jobs:
       - name: Track video performance
         run: node scripts/track-performance.mjs
 
-      - name: Weekly PDCA (goal: a recent video with 10k+ views)
+      - name: Weekly PDCA (goal - a recent video with 10k+ views)
         run: node scripts/pdca-report.mjs
         continue-on-error: true
 
