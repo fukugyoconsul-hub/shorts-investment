@@ -275,6 +275,10 @@ ${formatInstructions}
 # 過去に使ったネタ(絶対に重複させないこと)
 ${usedTitlesList || "(まだありません)"}
 
+# 直近の動画とは主題も書き出しも変えること(重要)
+直近${Math.min(14, usedTopics.length)}本は次のとおり。同じ指標・同じ数字・同じ社会問題を主題にしたり、同じ書き出しのタイトル(例:「物価上昇3.2％で〜」を続ける)にしたりしないこと。視聴者が続けて見たときに「繰り返し」と感じない、別の切り口にすること:
+${usedTopics.slice(-14).map((t) => `- ${t.title}`).join("\n")}
+
 # 今回のジャンル
 ${category.name}: ${category.brief}
 ${
@@ -408,9 +412,50 @@ function normalizePunctuation(value) {
   return value;
 }
 
-console.log(`claude -p で新しい台本を生成中...(ジャンル: ${category.name})`);
-const raw = await runClaude(prompt);
-const script = normalizePunctuation(extractJson(raw));
+// 直近の動画とテーマ・タイトルの書き出しがほぼ同じ動画を続けて出すと、YouTubeの収益化審査で
+// 「繰り返しの多い量産型コンテンツ」と判定されるリスクがあるため、似ていたら別テーマで作り直す。
+// 判定: 定番の言い回し(〜とは・仕組み・理由など)を除いたタイトル同士で、先頭6文字が同じか、
+// 7文字以上の共通部分がある(過去147本で検証し、本当の重複4組だけを検出した基準)。
+const RECENT_WINDOW = 14;
+const GENERIC_TITLE_WORDS = /とは|仕組み|しくみ|理由|が上がる|が下がる|が決まる|が動く|[0-9０-９]選|徹底解説|意外な|衝撃の?|秘密/g;
+function normalizeTitle(s) {
+  return s.replace(GENERIC_TITLE_WORDS, "").replace(/[\s？！?!、。・｜|「」『』()（）〜~:：%％.．,，]/g, "");
+}
+function longestCommonSubstring(a, b) {
+  let best = 0;
+  const dp = Array(b.length + 1).fill(0);
+  for (let i = 1; i <= a.length; i++) {
+    let prev = 0;
+    for (let j = 1; j <= b.length; j++) {
+      const tmp = dp[j];
+      dp[j] = a[i - 1] === b[j - 1] ? prev + 1 : 0;
+      if (dp[j] > best) best = dp[j];
+      prev = tmp;
+    }
+  }
+  return best;
+}
+function findSimilarRecentTitle(title) {
+  const a = normalizeTitle(title);
+  for (const t of usedTopics.slice(-RECENT_WINDOW)) {
+    const b = normalizeTitle(t.title ?? "");
+    if ((a.length >= 6 && a.slice(0, 6) === b.slice(0, 6)) || longestCommonSubstring(a, b) >= 7) return t.title;
+  }
+  return null;
+}
+
+let script;
+let retryNote = "";
+for (let attempt = 1; attempt <= 3; attempt++) {
+  console.log(`claude -p で新しい台本を生成中...(ジャンル: ${category.name}、${attempt}回目)`);
+  const raw = await runClaude(prompt + retryNote);
+  script = normalizePunctuation(extractJson(raw));
+  const similar = findSimilarRecentTitle(script.title);
+  if (!similar) break;
+  console.log(`直近の動画「${similar}」と似ているため作り直します(生成されたタイトル: ${script.title})`);
+  if (attempt === 3) throw new Error(`3回作り直しても直近の動画と似たテーマになりました: ${script.title}`);
+  retryNote += `\n\n# 作り直しの指示(最優先)\n生成したタイトル「${script.title}」は直近の動画「${similar}」とテーマ・書き出しが似ているため不可。主題(扱う指標・数字・社会問題)も、タイトルの書き出しも、直近の動画と重ならない別のネタにすること。`;
+}
 script.category = category.name;
 script.format = category.format;
 script.displayGenre = category.displayGenre ?? category.name;
