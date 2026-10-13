@@ -41,7 +41,7 @@
     "viewsAtRetry": 0
   },
   {
-    "title": "RSI指標の計算式！70と30の意味を解説",
+    "title": "RSIの計算式と70・30の見方を解説！",
     "topics": [
       "RSIは0〜100で示す相対力指数/値上がり幅の合計を値動き幅の合計で割って算出/70・30は目安に過ぎずトレンド次第で超えたまま推移することも"
     ],
@@ -50,8 +50,8 @@
     "videoId": "9OrPAJIIVK0",
     "category": "テクニカル",
     "format": "kaisetsu",
-    "seoRetriedAt": "2026-09-14T01:28:44.799Z",
-    "seoRetryCount": 3,
+    "seoRetriedAt": "2026-10-13T07:19:49.110Z",
+    "seoRetryCount": 4,
     "viewsAtRetry": 5
   },
   {
@@ -121,7 +121,7 @@
     "format": "kaisetsu"
   },
   {
-    "title": "ボリンジャーバンド±2σ95％は誤解？バンドウォーク注意",
+    "title": "ボリンジャーバンド±2σ95％の誤解とバンドウォーク",
     "topics": [
       "ボリンジャーバンドの基礎(移動平均+標準偏差)",
       "±1σ・±2σが示す確率の仕組み",
@@ -132,8 +132,8 @@
     "videoId": "1hqKdFfTW5E",
     "category": "テクニカル",
     "format": "kaisetsu",
-    "seoRetriedAt": "2026-09-14T01:23:30.768Z",
-    "seoRetryCount": 3,
+    "seoRetriedAt": "2026-10-13T07:19:49.110Z",
+    "seoRetryCount": 4,
     "viewsAtRetry": 0
   },
   {
@@ -1070,7 +1070,7 @@
     "format": "kaisetsu"
   },
   {
-    "title": "FRB利上げとは？物価が日本に波及する仕組み",
+    "title": "日米金利差で円安に？FRB利上げの仕組み",
     "topics": [
       "FRBとFF金利の基礎知識",
       "日米金利差が円安を招く仕組み",
@@ -1080,7 +1080,10 @@
     "publishedAt": "2026-09-16T23:00:00.000Z",
     "videoId": "7_f1fUa_CCs",
     "category": "ファンダメンタルズ",
-    "format": "kaisetsu"
+    "format": "kaisetsu",
+    "seoRetriedAt": "2026-10-13T07:19:49.110Z",
+    "seoRetryCount": 1,
+    "viewsAtRetry": 0
   },
   {
     "title": "逆選択とは？保険料が上がる仕組み",
