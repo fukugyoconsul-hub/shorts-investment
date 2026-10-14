@@ -1913,5 +1913,21 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "BYFUSktNyWM"
+  },
+  {
+    "title": "ストキャスティクスとは？%Kと%Dの計算式",
+    "topics": [
+      "基礎:ストキャスティクスは直近の値幅の中で終値の位置を0〜100で示す指標",
+      "仕組み:%Kは終値と最安値の差を値幅で割った値で、%Dはその3日移動平均",
+      "注意点:分母が値幅のため、値幅が狭いと小さな動きでも数値が大きく振れる"
+    ],
+    "date": "2026-10-14",
+    "publishedAt": "2026-10-17T07:00:00.000Z",
+    "videoId": "q4glXBEJSGA",
+    "category": "テクニカル",
+    "format": "kaisetsu",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "OTgvxJso05Y"
   }
 ]
