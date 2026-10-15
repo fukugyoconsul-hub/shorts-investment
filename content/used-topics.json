@@ -1945,5 +1945,21 @@
     "chart": "IRLTLT01JPM156N",
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "CFDのレバレッジ10倍で5％下落するとどうなる？",
+    "topics": [
+      "基礎:CFDは値動きの差額だけを決済する差金決済取引",
+      "仕組み:必要証拠金は取引額÷レバレッジ倍率で決まる",
+      "注意点:証拠金に対する損失率は下落率×レバレッジ倍率になる"
+    ],
+    "date": "2026-10-15",
+    "publishedAt": "2026-10-18T07:00:00.000Z",
+    "videoId": "3FSGOEglvmk",
+    "category": "CFD",
+    "format": "kaisetsu",
+    "chart": null,
+    "newsAngle": "日経平均株価・終値3318円安 6日連続↓きょうは一時3600円以上値下がり AI・半導体関連銘柄が急落 アメリカの金利上昇への警戒感から",
+    "relatedMainVideoId": "sKOsRveCbos"
   }
 ]
