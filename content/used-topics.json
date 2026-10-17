@@ -2007,5 +2007,21 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": null
+  },
+  {
+    "title": "原油100ドル超え！価格急騰の雑学3選",
+    "topics": [
+      "2022年3月 WTIが123.64ドルの10年来高値",
+      "2008年 コメ国際価格が輸出規制で約3倍",
+      "1973年 米国の大豆輸出制限で価格急騰"
+    ],
+    "date": "2026-10-17",
+    "publishedAt": "2026-10-20T07:00:00.000Z",
+    "videoId": "sEM_PFCZVag",
+    "category": "コモディティ",
+    "format": "ranking",
+    "chart": "DCOILWTICO",
+    "newsAngle": "NY原油、1バレル100ドル超える 供給懸念で約1カ月ぶりの高値",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
