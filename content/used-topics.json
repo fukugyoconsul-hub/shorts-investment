@@ -176,7 +176,7 @@
     "format": "kaisetsu"
   },
   {
-    "title": "株式公開買付け(TOB)・増資・株主優待３選！",
+    "title": "TOB・増資・株主優待の仕組みを解説",
     "topics": [
       "株主優待の仕組み",
       "増資と希薄化",
@@ -187,9 +187,9 @@
     "videoId": "PJok-nCt_zE",
     "category": "株式",
     "format": "ranking",
-    "seoRetriedAt": "2026-09-14T01:23:30.768Z",
-    "seoRetryCount": 3,
-    "viewsAtRetry": 53
+    "seoRetriedAt": "2026-10-19T04:11:54.535Z",
+    "seoRetryCount": 4,
+    "viewsAtRetry": 54
   },
   {
     "title": "日経平均とTOPIXの違いとは？株価指数3選",
@@ -498,7 +498,7 @@
     "format": "kaisetsu"
   },
   {
-    "title": "中央銀行はなぜ物価目標2％を掲げるのか",
+    "title": "物価目標2％の理由とは？中央銀行の使命",
     "topics": [
       "中央銀行の共通の使命/物価目標がゼロでない理由/2%目標導入の経緯"
     ],
@@ -506,7 +506,10 @@
     "publishedAt": "2026-08-26T07:00:00.000Z",
     "videoId": "DT0-JvaNWW4",
     "category": "中央銀行",
-    "format": "qa"
+    "format": "qa",
+    "seoRetriedAt": "2026-10-19T04:11:54.535Z",
+    "seoRetryCount": 1,
+    "viewsAtRetry": 1
   },
   {
     "title": "社債とは？格付けと利回りの仕組み",
@@ -1901,7 +1904,7 @@
     "relatedMainVideoId": "YCjXRSQY-UA"
   },
   {
-    "title": "月1万円の固定費削減で10年120万円？家計の仕組み",
+    "title": "固定費の見直し方｜月1万円削減で10年120万円",
     "topics": [
       "家計は固定費と変動費の2種類に分かれる/変動費の節約は毎月の我慢と記録が必要/固定費は一度見直せば効果が毎月自動で続く"
     ],
@@ -1912,7 +1915,10 @@
     "format": "qa",
     "chart": null,
     "newsAngle": null,
-    "relatedMainVideoId": "BYFUSktNyWM"
+    "relatedMainVideoId": "BYFUSktNyWM",
+    "seoRetriedAt": "2026-10-19T04:11:54.535Z",
+    "seoRetryCount": 1,
+    "viewsAtRetry": 0
   },
   {
     "title": "ストキャスティクスとは？%Kと%Dの計算式",
