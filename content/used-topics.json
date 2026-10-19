@@ -2073,5 +2073,21 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": null
+  },
+  {
+    "title": "複利と単利の違いとは？100万円が30年で243万円",
+    "topics": [
+      "基礎:単利は元本にだけ利息がつき、複利は利息にも利息がつく",
+      "仕組み:元本×(1+利率)の年数乗で、年3％・30年なら約243万円(単利は190万円)",
+      "注意点:10年後の差は約4万円で、差の大半は後半に生まれる(数値は仮定)"
+    ],
+    "date": "2026-10-19",
+    "publishedAt": "2026-10-22T07:00:00.000Z",
+    "videoId": "yYNLeH3CSRs",
+    "category": "資産形成",
+    "format": "kaisetsu",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "RpumVzs6cGk"
   }
 ]
