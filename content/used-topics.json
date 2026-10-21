@@ -2135,5 +2135,21 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "GDP過去最大でも暮らしが苦しい理由とは？",
+    "topics": [
+      "基礎:GDPは国内で生み出された付加価値の合計で、金額そのままが名目GDP",
+      "仕組み:物価変動を除いた実質GDPと、その比から出るGDPデフレーター",
+      "注意点:名目GDPは値上がりだけでも増えるため、実質とセットで見る必要がある"
+    ],
+    "date": "2026-10-21",
+    "publishedAt": "2026-10-24T07:00:00.000Z",
+    "videoId": "ARwdQGd59QM",
+    "category": "経済指標",
+    "format": "kaisetsu",
+    "chart": "JPNRGDPEXP",
+    "newsAngle": null,
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
