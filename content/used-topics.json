@@ -2151,5 +2151,21 @@
     "chart": "JPNRGDPEXP",
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "貿易赤字でも経常黒字30兆円の理由とは？",
+    "topics": [
+      "基礎:経常収支は貿易・サービス、第一次所得、第二次所得の3つで構成",
+      "仕組み:貿易赤字でも第一次所得収支の黒字が上回る",
+      "注意点:黒字の多くは現地で再投資され円に戻るとは限らない"
+    ],
+    "date": "2026-10-21",
+    "publishedAt": "2026-10-24T23:00:00.000Z",
+    "videoId": "3X0lPEC50rs",
+    "category": "ファンダメンタルズ",
+    "format": "kaisetsu",
+    "chart": null,
+    "newsAngle": "円は158円台前半、米金利高水準とAI株高がドルの支え－債券は堅調へ",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
