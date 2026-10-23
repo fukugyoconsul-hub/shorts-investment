@@ -2211,5 +2211,19 @@
     "chart": "DEXJPUS",
     "newsAngle": "円相場 値上がり",
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "住宅ローン金利3.05％時代、何が変わる？",
+    "topics": [
+      "長期金利が上がると固定型の住宅ローン金利に響く/政策金利は変動型に連動する/借入額3000万円で返済額の差を数字で確認"
+    ],
+    "date": "2026-10-23",
+    "publishedAt": "2026-10-26T23:00:00.000Z",
+    "videoId": "LkEL46_IwAE",
+    "category": "不動産",
+    "format": "qa",
+    "chart": "IRLTLT01JPM156N",
+    "newsAngle": null,
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
