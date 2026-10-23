@@ -2197,5 +2197,19 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "8Vxg7Xexn94"
+  },
+  {
+    "title": "円安158円で値上げが続く？暮らしへの影響",
+    "topics": [
+      "円安は輸入品の円換算コストを押し上げる/ドル円は1年で150.75円から158.00円へ/為替だけでなく原油高などコスト全体で価格は決まる"
+    ],
+    "date": "2026-10-23",
+    "publishedAt": "2026-10-26T07:00:00.000Z",
+    "videoId": "-cFDznu3Unk",
+    "category": "日本経済",
+    "format": "qa",
+    "chart": "DEXJPUS",
+    "newsAngle": "円相場 値上がり",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
