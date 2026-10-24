@@ -2225,5 +2225,21 @@
     "chart": "IRLTLT01JPM156N",
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "1万円の注文が通らない？FXの証拠金不足とは",
+    "topics": [
+      "基礎:FXの注文は証拠金が足りないと出せない",
+      "仕組み:必要証拠金は取引額÷レバレッジ倍率で決まる",
+      "注意点:有効証拠金は含み損で減り、注文余力が先に尽きる"
+    ],
+    "date": "2026-10-24",
+    "publishedAt": "2026-10-27T07:00:00.000Z",
+    "videoId": "Ogca3xg9Bqc",
+    "category": "FX",
+    "format": "kaisetsu",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "sKOsRveCbos"
   }
 ]
