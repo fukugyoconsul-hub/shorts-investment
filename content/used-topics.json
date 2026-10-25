@@ -2255,5 +2255,19 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "_pNd50DvAN4"
+  },
+  {
+    "title": "原油107ドルで円安158円？市場が動く理由",
+    "topics": [
+      "原油高は輸入コストと物価見通しを通じて金利に波及/円安は金利差と資源高の両面で語られる/ニュースは単独でなく連鎖で見る"
+    ],
+    "date": "2026-10-25",
+    "publishedAt": "2026-10-28T07:00:00.000Z",
+    "videoId": "v7RVx9yDAFU",
+    "category": "世界情勢",
+    "format": "qa",
+    "chart": "DCOILWTICO",
+    "newsAngle": "原油116ドル・FOMC・ビッグテック決算が重なる「運命の一週間」…ウォール街は変動性を警戒",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
