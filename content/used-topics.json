@@ -2269,5 +2269,21 @@
     "chart": "DCOILWTICO",
     "newsAngle": "原油116ドル・FOMC・ビッグテック決算が重なる「運命の一週間」…ウォール街は変動性を警戒",
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "決算とは？純利益100億円でも本業赤字の罠",
+    "topics": [
+      "基礎:上場企業は投資家への情報開示のため決算を公表する",
+      "仕組み:損益計算書・貸借対照表・キャッシュフロー計算書は見る角度が違う",
+      "注意点:純利益には一度きりの特別利益も含まれ、本業の稼ぐ力は営業利益で確かめる"
+    ],
+    "date": "2026-10-25",
+    "publishedAt": "2026-10-28T23:00:00.000Z",
+    "videoId": "Rl3pGAJf8_s",
+    "category": "決算",
+    "format": "kaisetsu",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": null
   }
 ]
