@@ -2285,5 +2285,21 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": null
+  },
+  {
+    "title": "為替介入とは？財務省の財布と外貨準備",
+    "topics": [
+      "基礎:介入は財務大臣が決定し日銀が代理で実行する",
+      "仕組み:外国為替資金特別会計の外貨準備を使い円買い・円売りを行う",
+      "注意点:円買いは元手の外貨に限りがあり制約が円売りと異なる"
+    ],
+    "date": "2026-10-26",
+    "publishedAt": "2026-10-29T07:00:00.000Z",
+    "videoId": "vjXPK2cjMvI",
+    "category": "為替介入",
+    "format": "kaisetsu",
+    "chart": null,
+    "newsAngle": "日銀為替市況 午後５時時点、１５７円１２～１４銭のドル高・円安",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
