@@ -2329,5 +2329,19 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "8Vxg7Xexn94"
+  },
+  {
+    "title": "貿易赤字とは？原油高で円安が進む理由",
+    "topics": [
+      "円を売ってドルを買う輸入の決済構造/原油107ドルが輸入額を押し上げる仕組み/為替は貿易だけでなく金利差など複数要因で決まるという結論"
+    ],
+    "date": "2026-10-27",
+    "publishedAt": "2026-10-30T23:00:00.000Z",
+    "videoId": "yms5Ci0SCZg",
+    "category": "貿易",
+    "format": "qa",
+    "chart": "DCOILWTICO",
+    "newsAngle": "原油価格で説明できる？米国のインフレと「予想外の利上げ」",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
