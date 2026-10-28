@@ -2343,5 +2343,21 @@
     "chart": "DCOILWTICO",
     "newsAngle": "原油価格で説明できる？米国のインフレと「予想外の利上げ」",
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "ガソリン補助金52円の正体とは？物価の仕組み",
+    "topics": [
+      "基礎:物価は商品やサービスの価格の平均水準で、公的統計では消費者物価指数で測る",
+      "仕組み:原油高は輸入コストとして上乗せされ、補助金は店頭価格の上昇を抑える",
+      "注意点:補助金は価格を一時的に抑えるだけで、コスト自体は消えず財源が必要になる"
+    ],
+    "date": "2026-10-28",
+    "publishedAt": "2026-10-31T07:00:00.000Z",
+    "videoId": "ebtiT3eo2ls",
+    "category": "物価",
+    "format": "kaisetsu",
+    "chart": "DCOILWTICO",
+    "newsAngle": "ガソリン補助金52.4円 過去最高に 原油価格の高騰など背景に",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
