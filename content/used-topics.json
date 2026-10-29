@@ -2373,5 +2373,19 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "移動平均乖離率とは？離れたら戻るは本当？",
+    "topics": [
+      "基礎:移動平均乖離率は価格が移動平均線から何％離れているかを示す指標/仕組み:(終値−移動平均)÷移動平均×100で算出/注意点:戻る水準に共通の基準はなく、離れたまま進むこともある"
+    ],
+    "date": "2026-10-29",
+    "publishedAt": "2026-11-01T07:00:00.000Z",
+    "videoId": "uI4L_w_lyFI",
+    "category": "テクニカル",
+    "format": "kaisetsu",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "SyEn0Qf1n7E"
   }
 ]
