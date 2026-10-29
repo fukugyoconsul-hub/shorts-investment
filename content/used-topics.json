@@ -2387,5 +2387,21 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "SyEn0Qf1n7E"
+  },
+  {
+    "title": "債券の利回りとは？価格が下がると上がる訳",
+    "topics": [
+      "基礎:債券は利率と満期が固定された借用証書",
+      "仕組み:価格が下がると同じ利息で利回りが上がる",
+      "注意点:利回り上昇は債券価格の下落そのものである"
+    ],
+    "date": "2026-10-29",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "videoId": "uo6Hd-Irihk",
+    "category": "債券",
+    "format": "kaisetsu",
+    "chart": "DGS10",
+    "newsAngle": null,
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
