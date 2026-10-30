@@ -2403,5 +2403,21 @@
     "chart": "DGS10",
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "CFDのロスカットとは？証拠金が消える仕組み",
+    "topics": [
+      "基礎:CFDは値動きの差額を決済する取引で証拠金を担保に建玉を持つ",
+      "仕組み:必要証拠金は取引額÷レバレッジで決まり、維持率が基準を割るとロスカットになる",
+      "注意点:ロスカットは損失を限定する保証ではなく、急変時は約定がずれ証拠金を超える損失もあり得る"
+    ],
+    "date": "2026-10-30",
+    "publishedAt": "2026-11-02T07:00:00.000Z",
+    "videoId": "SdYX-euKv2c",
+    "category": "CFD",
+    "format": "kaisetsu",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "sKOsRveCbos"
   }
 ]
