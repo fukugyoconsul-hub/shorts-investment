@@ -2497,5 +2497,21 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "8Vxg7Xexn94"
+  },
+  {
+    "title": "外貨預金で元本割れする理由とは？",
+    "topics": [
+      "基礎:外貨預金は円をドルなどに替えて預ける預金で、円預金より金利が高くなりやすい",
+      "仕組み:預入時と満期時のレート差で円での受取額が決まる",
+      "注意点:年数%の金利より為替の振れ幅のほうが大きく、元本割れもあり得る"
+    ],
+    "date": "2026-11-02",
+    "publishedAt": "2026-11-05T07:00:00.000Z",
+    "videoId": "1hy8pvcgy60",
+    "category": "リスク",
+    "format": "kaisetsu",
+    "chart": "DEXJPUS",
+    "newsAngle": "南都銀行（奈良市）定期預金金利引き上げ 預入期間1年で0・1％アップ 日銀政策金利見直しで",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
