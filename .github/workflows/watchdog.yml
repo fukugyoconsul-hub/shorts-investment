@@ -85,6 +85,15 @@ jobs:
         if: steps.series.outcome == 'failure'
         run: node scripts/report-status.mjs エラー "動画のシリーズ(再生リスト)への自動追加に失敗しました。Actionsタブ(Schedule Watchdog)のログを確認してください。" "(再生リスト追加失敗)"
 
+      - name: Fix category, language and irrelevant hashtags on past videos
+        id: fixmeta
+        run: node scripts/fix-past-metadata.mjs
+        continue-on-error: true
+
+      - name: Report past metadata fix failure to sheet
+        if: steps.fixmeta.outcome == 'failure'
+        run: node scripts/report-status.mjs エラー "投稿済み動画のカテゴリ・言語・ハッシュタグの自動修正に失敗しました。Actionsタブ(Schedule Watchdog)のログを確認してください。" "(投稿済み動画の修正失敗)"
+
       - name: Check latest Weekly Genre Research run
         id: weekly
         env:
