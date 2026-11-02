@@ -4,14 +4,13 @@ import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { google } from "googleapis";
 import { assertCorrectChannel } from "./verify-channel.mjs";
+import { buildHashtags } from "./hashtags.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 
 const SPREADSHEET_ID = "1oyuIHE27xiOGppc3QOdP7fA0pNczDI14MTb5wnDQq4c";
 const SHEET_NAME = "TACグループ";
-const CORE_TAGS = ["FX", "テクニカル分析", "ファンダメンタルズ分析", "shorts"];
-const GENERIC_WORDS = new Set([...CORE_TAGS, "投資", "資産運用", "初心者", "マネーリテラシー"]);
 
 // 対象: 投稿から日数が経っているのに再生数が伸び悩んでいる動画
 const TARGET_VIDEO_IDS = ["pC43VX_N26k", "9OrPAJIIVK0", "Eq6FBqh1wgU", "rLIXuasHL-4"];
@@ -148,8 +147,7 @@ ${oldSnippet.title}
   // 概要欄の固定部分(SNSリンク・免責事項・アフィリエイト・BGMクレジット等)はそのまま維持し、
   // 冒頭のhookと末尾のハッシュタグ行だけ差し替える
   const blocks = oldSnippet.description.split("\n\n");
-  const extraTags = (result.tags ?? []).filter((t) => !GENERIC_WORDS.has(t)).slice(0, 5);
-  const hashtags = [...CORE_TAGS, ...extraTags].map((t) => `#${t}`).join(" ");
+  const hashtags = buildHashtags(entry.category, result.tags);
   blocks[0] = result.descriptionHook;
   blocks[blocks.length - 1] = hashtags;
   const newDescription = blocks.join("\n\n");

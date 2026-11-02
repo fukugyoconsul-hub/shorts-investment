@@ -46,7 +46,9 @@ const res = await youtube.videos.insert({
       title: latestScript.title,
       description,
       tags: latestScript.tags,
-      categoryId: "24",
+      categoryId: "27", // 教育
+      defaultLanguage: "ja",
+      defaultAudioLanguage: "ja",
     },
     status: targetPublishAt
       ? {

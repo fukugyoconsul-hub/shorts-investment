@@ -4,6 +4,7 @@ import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { google } from "googleapis";
 import { assertCorrectChannel } from "./verify-channel.mjs";
+import { buildHashtags } from "./hashtags.mjs";
 import { loadExperiment } from "./first-card-test.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -17,8 +18,6 @@ if (loadExperiment().active) {
 
 const SPREADSHEET_ID = "1oyuIHE27xiOGppc3QOdP7fA0pNczDI14MTb5wnDQq4c";
 const SHEET_NAME = "TACグループ";
-const CORE_TAGS = ["FX", "テクニカル分析", "ファンダメンタルズ分析", "shorts"];
-const GENERIC_WORDS = new Set([...CORE_TAGS, "投資", "資産運用", "初心者", "マネーリテラシー"]);
 
 const MIN_AGE_DAYS = 2; // これより新しい動画は判断が早すぎるので対象外(1日2本の高頻度投稿のため短め)
 const MAX_RETRIES_PER_RUN = 3; // 1回の実行での上限(API消費・コストの安全策)
@@ -241,8 +240,7 @@ ${oldSnippet.title}
   }
 
   const blocks = oldSnippet.description.split("\n\n");
-  const extraTags = (result.tags ?? []).filter((t) => !GENERIC_WORDS.has(t)).slice(0, 5);
-  const hashtags = [...CORE_TAGS, ...extraTags].map((t) => `#${t}`).join(" ");
+  const hashtags = buildHashtags(entry.category, result.tags);
   blocks[0] = result.descriptionHook;
   blocks[blocks.length - 1] = hashtags;
   const newDescription = blocks.join("\n\n");
