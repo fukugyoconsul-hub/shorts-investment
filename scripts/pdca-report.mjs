@@ -3,6 +3,7 @@ import path from "node:path";
 import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { google } from "googleapis";
+import { loadExperiment } from "./first-card-test.mjs";
 
 // 週次のPDCA。目標「直近30日以内に投稿した動画が1万回以上再生」に向けて、
 // 実績を集計→前週の施策を検証→次週の改善方針(台本生成に自動で反映)と試す仮説を決め、
@@ -144,10 +145,14 @@ const entry = {
 };
 log.push(entry);
 fs.writeFileSync(logPath, JSON.stringify(log, null, 2) + "\n");
-fs.writeFileSync(
-  directivesPath,
-  JSON.stringify({ updatedAt: entry.date, directives: result.directives ?? [], experiment: result.experiment ?? "" }, null, 2) + "\n"
-);
+// 案1テストの間は分析と記録だけ行い、台本に渡す方針は更新しない(比較を乱さないため)
+const directivesFrozen = loadExperiment().active;
+if (!directivesFrozen) {
+  fs.writeFileSync(
+    directivesPath,
+    JSON.stringify({ updatedAt: entry.date, directives: result.directives ?? [], experiment: result.experiment ?? "" }, null, 2) + "\n"
+  );
+}
 console.log(`検証: ${result.check}\n次週の方針:\n- ${(result.directives ?? []).join("\n- ")}\n仮説: ${result.experiment}`);
 
 // 3. スプレッドシートに記録(タブが無ければ作る)
@@ -184,7 +189,7 @@ await sheets.spreadsheets.values.append({
         entry.bestRecentTitle ?? "-",
         achieved ? "達成" : "未達",
         result.check ?? "",
-        (result.directives ?? []).map((d) => `・${d}`).join("\n"),
+        (directivesFrozen ? "【案1テスト中のため台本には反映しません】\n" : "") + (result.directives ?? []).map((d) => `・${d}`).join("\n"),
         result.experiment ?? "",
       ],
     ],

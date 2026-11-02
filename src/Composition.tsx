@@ -16,6 +16,8 @@ import { segments, SegmentId } from "./segments";
 import { Caption } from "./Caption";
 import { ChartPanel } from "./ChartPanel";
 import { chart } from "./chart";
+import { FirstCard } from "./FirstCard";
+import { firstCardVariant } from "./first-card";
 
 const { fontFamily } = loadFont();
 
@@ -25,6 +27,7 @@ const HEIGHT = 1920;
 const LEAD_IN_SEC = 0.15;
 const TAIL_SEC = 0.45;
 const END_BUFFER_SEC = 1;
+const FIRST_CARD_FRAMES = 2 * FPS;
 
 type SegmentTiming = {
   id: SegmentId;
@@ -115,7 +118,18 @@ const ShortsVideoComponent: React.FC<Props> = ({ timings }) => {
                 {chart && chart.segmentId === timing.id ? (
                   <ChartPanel chart={chart} durationInFrames={timing.durationInFrames} fontFamily={fontFamily} />
                 ) : null}
-                <Caption badge={seg.badge} lines={seg.caption} fontFamily={fontFamily} />
+                {firstCardVariant === "new" && timing.id === "hook" ? (
+                  <>
+                    <Sequence durationInFrames={FIRST_CARD_FRAMES}>
+                      <FirstCard lines={seg.caption} fontFamily={fontFamily} />
+                    </Sequence>
+                    <Sequence from={FIRST_CARD_FRAMES}>
+                      <Caption badge={seg.badge} lines={seg.caption} fontFamily={fontFamily} />
+                    </Sequence>
+                  </>
+                ) : (
+                  <Caption badge={seg.badge} lines={seg.caption} fontFamily={fontFamily} />
+                )}
                 <Sequence from={timing.narrationStartFrame}>
                   <Audio src={staticFile(`audio/${timing.id}.wav`)} />
                 </Sequence>

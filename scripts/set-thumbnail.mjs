@@ -19,6 +19,9 @@ if (!latestEntry || !latestEntry.videoId) {
 }
 
 const thumbnailPath = path.join(root, "out", "thumbnail.jpeg");
+// サムネイルは案1テストの対象外。新型は冒頭2秒(60コマ)より後から切り出し、旧型と同じ見た目にする
+const latestScript = JSON.parse(fs.readFileSync(path.join(root, "content", "latest-script.json"), "utf-8"));
+const thumbnailFrame = latestScript.firstCardVariant === "new" ? 85 : 25;
 
 console.log("サムネイル画像を生成中...");
 const render = spawnSync(
@@ -28,7 +31,7 @@ const render = spawnSync(
     "still",
     "ShortsVideo",
     "out/thumbnail.jpeg",
-    "--frame=25",
+    `--frame=${thumbnailFrame}`,
     "--image-format=jpeg",
     "--jpeg-quality=85",
   ],

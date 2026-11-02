@@ -80,6 +80,7 @@ usedTopics.push({
   category: latestScript.category,
   format: latestScript.format,
   // PDCAで施策ごとの効果を比べるための記録
+  firstCardVariant: latestScript.firstCardVariant ?? null,
   chart: latestScript.chart?.seriesId ?? null,
   newsAngle: latestScript.newsAngle ?? null,
   relatedMainVideoId: latestScript.relatedMainVideo?.id ?? null,

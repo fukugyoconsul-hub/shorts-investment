@@ -1,0 +1,9 @@
+{
+  "id": "first-card-2026-11",
+  "description": "案1: 冒頭2秒だけテーマを上部に大きく出す。active の間は週次PDCAの台本方針の更新とタイトル等の自動書き直しを止める",
+  "active": true,
+  "startedAt": "2026-11-03",
+  "targetPerArm": 15,
+  "minAgeDays": 7,
+  "criteria": { "engagedRatePointsAtLeast": 5, "threeDayViewsRatioAtLeast": 1.5 }
+}

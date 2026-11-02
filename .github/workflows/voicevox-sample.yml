@@ -12,6 +12,9 @@ on:
       category:
         description: "テーマのジャンル(topic指定時のみ使用。例: FX)"
         default: ""
+      first_card:
+        description: "冒頭の型(new / old。案1テストの確認用)"
+        default: "new"
 
 permissions:
   contents: read
@@ -62,6 +65,7 @@ jobs:
         env:
           FORCE_TOPIC_TITLE: ${{ inputs.topic }}
           FORCE_TOPIC_CATEGORY: ${{ inputs.category }}
+          FIRST_CARD_FORCE: ${{ inputs.first_card }}
         run: |
           node scripts/fetch-market-data.mjs
           node scripts/fetch-news.mjs
@@ -72,6 +76,7 @@ jobs:
           node scripts/select-bgm.mjs
           node scripts/write-segments.mjs
           node scripts/write-chart.mjs
+          node scripts/write-first-card.mjs
           node scripts/write-description.mjs
           npx remotion render ShortsVideo out/final.mp4 --crf=18
           cp content/latest-script.json out/ && cp description.txt out/ && cp src/chart.ts out/

@@ -173,6 +173,9 @@ for (const slot of slotsToFill) {
     await runWithRetry("select-bgm.mjs", () => runOnce("select-bgm.mjs"));
     await runWithRetry("write-segments.mjs", () => runOnce("write-segments.mjs"));
     await runWithRetry("write-chart.mjs", () => runOnce("write-chart.mjs"));
+    await runWithRetry("write-first-card.mjs", () =>
+      runOnce("write-first-card.mjs", { TARGET_PUBLISH_AT: slotIso })
+    );
     await runWithRetry("write-description.mjs", () => runOnce("write-description.mjs"));
     await runWithRetry("remotion render", runRenderOnce);
     await runWithRetry("youtube-upload.mjs", () =>

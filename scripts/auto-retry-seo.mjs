@@ -4,9 +4,16 @@ import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { google } from "googleapis";
 import { assertCorrectChannel } from "./verify-channel.mjs";
+import { loadExperiment } from "./first-card-test.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
+
+// 案1テストの間は、投稿済み動画のタイトル等を書き換えない(比較を乱さないため)
+if (loadExperiment().active) {
+  console.log("案1テスト中のため、タイトル等の自動書き直しを止めています");
+  process.exit(0);
+}
 
 const SPREADSHEET_ID = "1oyuIHE27xiOGppc3QOdP7fA0pNczDI14MTb5wnDQq4c";
 const SHEET_NAME = "TACグループ";
