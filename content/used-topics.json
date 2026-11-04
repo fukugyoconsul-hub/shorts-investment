@@ -2577,5 +2577,20 @@
     "chart": "VIXCLS",
     "newsAngle": null,
     "relatedMainVideoId": null
+  },
+  {
+    "title": "実質金利とは？金利3.88％の落とし穴",
+    "topics": [
+      "名目金利と実質金利の2種類/実質金利は名目金利から物価上昇率を引いて求める/米FF金利3.88％でも物価3.7％なら実質は約0.2ポイント"
+    ],
+    "date": "2026-11-04",
+    "publishedAt": "2026-11-07T23:00:00.000Z",
+    "videoId": "aoGZmeOsNVs",
+    "category": "金融用語",
+    "format": "qa",
+    "firstCardVariant": "new",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
