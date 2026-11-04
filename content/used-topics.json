@@ -2560,5 +2560,22 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "Z_8j8vGwBRo"
+  },
+  {
+    "title": "分散投資で値動きは本当に減る？",
+    "topics": [
+      "基礎:分散投資は値動きの異なる資産に分けて持つ考え方",
+      "仕組み:値動きが逆方向なら全体の振れ幅が小さくなる",
+      "注意点:暴落時は資産が同時に下がり、分散は損失を防ぐ保証ではない"
+    ],
+    "date": "2026-11-04",
+    "publishedAt": "2026-11-07T07:00:00.000Z",
+    "videoId": "17XxP7cirRU",
+    "category": "資産形成",
+    "format": "kaisetsu",
+    "firstCardVariant": "new",
+    "chart": "VIXCLS",
+    "newsAngle": null,
+    "relatedMainVideoId": null
   }
 ]
