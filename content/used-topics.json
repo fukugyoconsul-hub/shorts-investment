@@ -2592,5 +2592,22 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "暗号資産の税金とは？最大55％の理由",
+    "topics": [
+      "基礎:暗号資産の利益は原則雑所得で総合課税の対象",
+      "仕組み:累進課税で所得税5〜45％と住民税約10％、最大55％",
+      "注意点:円に換えなくても交換や買い物で課税され、損失は繰越できない"
+    ],
+    "date": "2026-11-05",
+    "publishedAt": "2026-11-08T07:00:00.000Z",
+    "videoId": "I7TMRb5NMdQ",
+    "category": "暗号資産",
+    "format": "kaisetsu",
+    "firstCardVariant": "old",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "Z_8j8vGwBRo"
   }
 ]
