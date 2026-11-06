@@ -2626,5 +2626,22 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "efGieI7HsrE"
+  },
+  {
+    "title": "日銀短観とは？景気を企業に聞く調査",
+    "topics": [
+      "基礎:日銀短観は年4回、全国の約1万社に行う企業アンケート",
+      "仕組み:業況判断DIは「良い」の割合から「悪い」の割合を引いて求める",
+      "注意点:DIがプラスでも「悪い」企業は残り、数字は実績でなく経営者の実感"
+    ],
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-09T07:00:00.000Z",
+    "videoId": "yiCH0vOk0Jw",
+    "category": "経済指標",
+    "format": "kaisetsu",
+    "firstCardVariant": "old",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
