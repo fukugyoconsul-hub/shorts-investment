@@ -2643,5 +2643,22 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "コアCPIとは？食品とエネルギーを除く理由",
+    "topics": [
+      "基礎:CPIは消費者物価の変化を測る指標で、食品とエネルギーを含む総合指数が基本",
+      "仕組み:コアCPIは値動きの激しい食品とエネルギーを除いた指数",
+      "注意点:除外は軽視ではなく基調を見るための工夫で、総合とコアの両方を見る必要がある"
+    ],
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-09T23:00:00.000Z",
+    "videoId": "6ZrYJ4yTNCw",
+    "category": "ファンダメンタルズ",
+    "format": "kaisetsu",
+    "firstCardVariant": "old",
+    "chart": "CPIAUCSL",
+    "newsAngle": "中間選挙で市場が動揺、FRB利上げの「緊急度」はむしろ低下も",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
