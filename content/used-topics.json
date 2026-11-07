@@ -2660,5 +2660,22 @@
     "chart": "CPIAUCSL",
     "newsAngle": "中間選挙で市場が動揺、FRB利上げの「緊急度」はむしろ低下も",
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "掛け捨て保険は損？保険の仕組み",
+    "topics": [
+      "基礎:保険は多数が保険料を出し合い事故にあった人へ支払う助け合い",
+      "仕組み:収支相等の原則で保険料と保険金が釣り合い、掛け捨ては保険料が低めになりやすい",
+      "注意点:戻ってくる返戻金の元も自分が払った保険料で、保険料と返戻金はセットで見る"
+    ],
+    "date": "2026-11-07",
+    "publishedAt": "2026-11-10T07:00:00.000Z",
+    "videoId": "BAQdqcfTd1s",
+    "category": "保険",
+    "format": "kaisetsu",
+    "firstCardVariant": "new",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "cDHLbyTW1jA"
   }
 ]
