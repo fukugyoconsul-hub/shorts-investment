@@ -2677,5 +2677,20 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "cDHLbyTW1jA"
+  },
+  {
+    "title": "コールレートとは？日銀が決める金利",
+    "topics": [
+      "銀行同士が貸し借りするコール市場の基礎/日銀の誘導目標とコールレートの推移/日銀が直接決めるのは超短期金利だけという結論"
+    ],
+    "date": "2026-11-07",
+    "publishedAt": "2026-11-10T23:00:00.000Z",
+    "videoId": "gH4w8zHhpU4",
+    "category": "金融",
+    "format": "qa",
+    "firstCardVariant": "old",
+    "chart": "IRSTCI01JPM156N",
+    "newsAngle": "ドル円、来週は160円攻防か 米CPIとAI株安の綱引き、日銀12月利上げ観測も焦点",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
