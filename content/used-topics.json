@@ -2737,5 +2737,22 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "クレジットカード決済の流れ｜店に入る額は？",
+    "topics": [
+      "基礎:カード払いはカード会社が店へ代金を立て替える仕組み",
+      "仕組み:与信の承認で売上が確定し、請求は締め日後にまとめて引き落とされる",
+      "注意点:店に入るのは加盟店手数料を引いた額で、入金も後日"
+    ],
+    "date": "2026-11-09",
+    "publishedAt": "2026-11-12T23:00:00.000Z",
+    "videoId": "aFbCy6f4AMQ",
+    "category": "決済",
+    "format": "kaisetsu",
+    "firstCardVariant": "new",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "7irPcAiDI4w"
   }
 ]
