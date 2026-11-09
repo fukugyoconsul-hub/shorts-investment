@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-09",
+  "experiment": "first-card-2026-11",
+  "verdict": "本数不足(判定待ち)",
+  "engagedRateDiffPoints": null,
+  "threeDayViewsRatio": null,
+  "engagedMet": false,
+  "viewsMet": false,
+  "newArm": {
+    "count": 0,
+    "feedEngagedRateMedian": null,
+    "threeDayViewsMedian": null,
+    "totalViews": 0,
+    "subscribersGained": 0,
+    "subscribersPer1000Views": null,
+    "avgViewPercentageMedian": null
+  },
+  "oldArm": {
+    "count": 0,
+    "feedEngagedRateMedian": null,
+    "threeDayViewsMedian": null,
+    "totalViews": 0,
+    "subscribersGained": 0,
+    "subscribersPer1000Views": null,
+    "avgViewPercentageMedian": null
+  },
+  "tooNew": 7,
+  "videos": []
+}
