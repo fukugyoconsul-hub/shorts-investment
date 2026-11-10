@@ -2754,5 +2754,22 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "7irPcAiDI4w"
+  },
+  {
+    "title": "FXの窓とは？週末に値が飛ぶ理由",
+    "topics": [
+      "基礎:外国為替市場は平日ほぼ24時間取引され土日は閉まる",
+      "仕組み:月曜の再開時の価格が金曜終値と離れた空白が窓",
+      "注意点:逆指値は窓を飛び越え、指定価格より不利な価格で約定することがある"
+    ],
+    "date": "2026-11-10",
+    "publishedAt": "2026-11-13T07:00:00.000Z",
+    "videoId": "ipbWX170oxU",
+    "category": "FX",
+    "format": "kaisetsu",
+    "firstCardVariant": "old",
+    "chart": null,
+    "newsAngle": "2026-11-10 欧州為替：ドル・円は158円台、欧州株は強含み",
+    "relatedMainVideoId": null
   }
 ]
