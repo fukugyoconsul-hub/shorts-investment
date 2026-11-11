@@ -2801,5 +2801,22 @@
     "chart": "DGS10",
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "決算とは？黒字でも倒産する理由",
+    "topics": [
+      "基礎:決算は投資家や債権者に経営状況を報告する制度",
+      "仕組み:損益計算書・貸借対照表・キャッシュフロー計算書の3表",
+      "注意点:黒字でも現金が尽きれば倒産し、決算だけで全体は判断できない"
+    ],
+    "date": "2026-11-11",
+    "publishedAt": "2026-11-14T23:00:00.000Z",
+    "videoId": "0xuX7tOEz-A",
+    "category": "決算",
+    "format": "kaisetsu",
+    "firstCardVariant": "old",
+    "chart": null,
+    "newsAngle": "車決算「円安の恩恵」で増益・黒字転換、販売競争力は低下…中東情勢の緊迫長期化が懸念材料に",
+    "relatedMainVideoId": "sKOsRveCbos"
   }
 ]
