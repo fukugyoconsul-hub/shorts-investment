@@ -2835,5 +2835,20 @@
     "chart": null,
     "newsAngle": "【ドル/円、今夜の見通し】ドル/円、160円突破後のターゲットは？…再び為替介入が警戒されるのか＿2026/11/12",
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "物価上昇率が下がれば値段も下がる？",
+    "topics": [
+      "インフレ率は水準でなく前年からの変化率/上昇率が鈍っても値段は上がり続ける/値段が戻るのは前年比マイナスのデフレのとき"
+    ],
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-15T23:00:00.000Z",
+    "videoId": "UFRlP3Nkwjo",
+    "category": "インフレ",
+    "format": "qa",
+    "firstCardVariant": "new",
+    "chart": "CPIAUCSL",
+    "newsAngle": "アメリカの物価高が止まらない！ インフレ率4％に加速、FRBが「大幅利上げ」に踏み切る可能性（ニューズウィーク日本版）",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
