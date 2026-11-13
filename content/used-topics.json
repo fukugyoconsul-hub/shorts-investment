@@ -2850,5 +2850,22 @@
     "chart": "CPIAUCSL",
     "newsAngle": "アメリカの物価高が止まらない！ インフレ率4％に加速、FRBが「大幅利上げ」に踏み切る可能性（ニューズウィーク日本版）",
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "NISAでも米国株配当に税金？",
+    "topics": [
+      "基礎:国内株の配当は課税口座で20.315％、NISAなら日本の税は非課税",
+      "仕組み:米国株の配当は現地で原則10％が先に引かれる",
+      "注意点:NISA口座でも米国の10％は引かれる"
+    ],
+    "date": "2026-11-13",
+    "publishedAt": "2026-11-16T07:00:00.000Z",
+    "videoId": "5FY8a_zyvvw",
+    "category": "税金",
+    "format": "kaisetsu",
+    "firstCardVariant": "old",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "8Vxg7Xexn94"
   }
 ]
