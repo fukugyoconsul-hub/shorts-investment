@@ -2882,5 +2882,22 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "物価とは？100円の価値が下がる仕組み",
+    "topics": [
+      "基礎:物価は商品やサービスの価格の平均水準で、貨幣価値は物価と逆に動く",
+      "仕組み:消費者物価指数は基準年を100として平均的な買い物かごの値段を比べる",
+      "注意点:物価の上昇率は平均値であり、自分の生活の実感とずれることがある"
+    ],
+    "date": "2026-11-14",
+    "publishedAt": "2026-11-17T07:00:00.000Z",
+    "videoId": "wr8KZGuNIyQ",
+    "category": "物価",
+    "format": "kaisetsu",
+    "firstCardVariant": "new",
+    "chart": "FPCPITOTLZGJPN",
+    "newsAngle": null,
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
