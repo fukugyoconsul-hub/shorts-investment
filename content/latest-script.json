@@ -1,82 +1,81 @@
 {
-  "title": "エンゲル係数29％は貧しい証拠？",
+  "title": "EMAとは？SMAとの違いと計算式",
   "topics": [
-    "エンゲル係数は消費支出に占める食料費の割合/食料は削りにくく低所得ほど割合が高い/上昇は物価高でも分母の減少でも起きるので要因を分けて見る"
+    "基礎:移動平均線には単純平均のSMAと直近重視のEMAがある/仕組み:EMA=今日の終値×α+前日EMA×(1-α)、α=2÷(期間+1)/注意点:EMAは古い価格の影響が薄く残り続ける"
   ],
-  "descriptionHook": "エンゲル係数とは何か、家計調査で食費の割合が約3割になると生活が苦しいと言われる理由を、数字でわかりやすく解説します。",
+  "descriptionHook": "移動平均線のEMAとSMAの違いを、計算式と重みづけの仕組みから初心者向けに解説します。",
   "tags": [
-    "エンゲル係数",
-    "家計調査",
-    "家計管理",
-    "食費",
-    "節約",
-    "経済雑学",
+    "移動平均線",
     "投資初心者",
-    "物価高",
-    "生活費",
-    "家計簿"
+    "テクニカル分析入門",
+    "チャートの見方",
+    "EMA",
+    "指数平滑移動平均",
+    "SMA",
+    "経済雑学",
+    "資産運用"
   ],
-  "seoNotes": "タイトル前方に検索されやすい「エンゲル係数」を置き、数字は29％の1つ、問いも1つに絞った。タグには「家計調査」「食費」「節約」「経済雑学」「投資初心者」など一般的な語を混ぜ、需要の大きい順に並べた。",
+  "seoNotes": "タイトルの先頭に検索されやすい「EMA」と「SMA」を置き、「移動平均線」「投資初心者」「チャートの見方」など専門知識がなくても検索される一般的な語をタグの上位に配置した。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "食費が支出の3割に迫る",
-        "苦しいサインと言われる訳"
+        "同じ12日の移動平均線",
+        "なぜ形が違うのか？"
       ],
-      "narration": "家計調査で食費の割合が3割に迫ると、なぜ生活が苦しいサインと言われるのか、知っていますか？",
-      "pexelsQuery": "grocery shopping supermarket"
+      "narration": "同じ12日の移動平均線なのに、チャートに引くと形が違う？その原因は、実は計算の重みづけに隠れています。",
+      "pexelsQuery": "stock chart lines screen"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "エンゲル係数とは",
-        "食料費÷消費支出"
+        "移動平均線は2種類",
+        "SMAとEMA"
       ],
-      "narration": "その指標がエンゲル係数で、消費支出のうち食料費が占める割合のことです。二人以上世帯では、2000年ごろは2割強でしたが、2023年は29.0％まで上がりました。",
-      "pexelsQuery": "household budget calculator"
+      "narration": "移動平均線には、単純平均のSMAと、直近の価格を重く見る指数平滑移動平均のEMAがあります。SMAは期間内の終値をすべて同じ重みで平均します。",
+      "pexelsQuery": "financial chart analysis"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "食料は削りにくい支出",
-        "低所得ほど割合が高い"
+        "EMA=終値×α+前日EMA×(1-α)",
+        "α=2÷(期間+1)"
       ],
-      "narration": "実は食料は、削りにくい支出です。収入が増えても食べる量は大きく変わらないため、所得が低い家計ほど、この割合は高くなりやすいとされています。",
-      "pexelsQuery": "family dinner table"
+      "narration": "EMAは、今日の終値×α+前日のEMA×(1-α)で計算します。αは2÷(期間+1)で、12日なら約0.15、直近の終値に約15％の重みが置かれます。",
+      "pexelsQuery": "calculator numbers finance"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "上昇＝貧しいとは限らない",
-        "物価高でも分母減でも上がる"
+        "EMAは古い価格を",
+        "完全には忘れない"
       ],
-      "narration": "では上昇は貧しくなった証拠なのか。実は食料の値上がりでも、他の支出が減っても上がります。係数が上がったと聞いたら、物価と支出のどちらが動いたかも一緒に見るのがコツです。",
-      "pexelsQuery": "price tags grocery shelves"
+      "narration": "実は、EMAは古い価格を完全には忘れません。SMAは期間外の値が消えますが、EMAは影響が薄く残ります。ニュースで移動平均線と聞いたら、SMAかEMAかも確かめるのがコツです。",
+      "pexelsQuery": "trading screen candlestick"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "チャンネル登録で",
-        "お金の常識を数字で確認"
+        "あくまで情報提供です",
+        "チャンネル登録をどうぞ"
       ],
-      "narration": "情報提供が目的で、投資の勧誘ではありません。役に立ったらチャンネル登録を。あなたの家の食費は何割？コメントで教えてください。",
-      "pexelsQuery": "calm city sunset"
+      "narration": "あくまで情報提供で、投資の勧誘ではありません。チャンネル登録と、あなたの感想のコメントもお待ちしています。",
+      "pexelsQuery": "city skyline business night"
     }
   ],
   "chart": null,
   "newsAngle": null,
-  "category": "家計",
-  "format": "qa",
-  "displayGenre": "家計",
+  "category": "テクニカル",
+  "format": "kaisetsu",
+  "displayGenre": "テクニカル",
   "relatedMainVideo": {
-    "id": "YCjXRSQY-UA",
-    "title": "【経済・為替】「円高・円安」を世界一分かりやすく解説します！"
+    "id": "Gd0uIJF8Ku4",
+    "title": "移動平均線とは？FX初心者向けに1分で解説なのだ"
   },
-  "firstCardVariant": "new"
+  "firstCardVariant": "old"
 }

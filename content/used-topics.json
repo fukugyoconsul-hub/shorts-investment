@@ -2914,5 +2914,20 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "EMAとは？SMAとの違いと計算式",
+    "topics": [
+      "基礎:移動平均線には単純平均のSMAと直近重視のEMAがある/仕組み:EMA=今日の終値×α+前日EMA×(1-α)、α=2÷(期間+1)/注意点:EMAは古い価格の影響が薄く残り続ける"
+    ],
+    "date": "2026-11-15",
+    "publishedAt": "2026-11-18T07:00:00.000Z",
+    "videoId": "0mxb-bc3k10",
+    "category": "テクニカル",
+    "format": "kaisetsu",
+    "firstCardVariant": "old",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "Gd0uIJF8Ku4"
   }
 ]
