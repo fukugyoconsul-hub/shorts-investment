@@ -1,81 +1,88 @@
 {
-  "title": "EMAとは？SMAとの違いと計算式",
+  "title": "債券の価格はなぜ金利で下がる？",
   "topics": [
-    "基礎:移動平均線には単純平均のSMAと直近重視のEMAがある/仕組み:EMA=今日の終値×α+前日EMA×(1-α)、α=2÷(期間+1)/注意点:EMAは古い価格の影響が薄く残り続ける"
+    "基礎:債券は利率と満期が決まった借用証書で、満期に額面が戻る",
+    "仕組み:市場金利が上がると既発債は見劣りして価格が下がる",
+    "注意点:満期まで持てば額面は戻るが、途中売却は損益が出る"
   ],
-  "descriptionHook": "移動平均線のEMAとSMAの違いを、計算式と重みづけの仕組みから初心者向けに解説します。",
+  "descriptionHook": "日本の10年国債利回りが3.05％に上昇した背景を、債券価格と金利の逆の関係から解説します。",
   "tags": [
-    "移動平均線",
+    "債券",
+    "国債",
+    "金利上昇",
     "投資初心者",
-    "テクニカル分析入門",
-    "チャートの見方",
-    "EMA",
-    "指数平滑移動平均",
-    "SMA",
     "経済雑学",
+    "債券価格",
+    "長期金利",
+    "国債利回り",
     "資産運用"
   ],
-  "seoNotes": "タイトルの先頭に検索されやすい「EMA」と「SMA」を置き、「移動平均線」「投資初心者」「チャートの見方」など専門知識がなくても検索される一般的な語をタグの上位に配置した。",
+  "seoNotes": "「債券」「金利」を含む検索されやすい問いかけ形のタイトルを前方に置き、「投資初心者」「経済雑学」「資産運用」などの一般的なタグと「長期金利」「国債利回り」などの具体語を組み合わせた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "同じ12日の移動平均線",
-        "なぜ形が違うのか？"
+        "金利が上がると",
+        "債券は値下がり？"
       ],
-      "narration": "同じ12日の移動平均線なのに、チャートに引くと形が違う？その原因は、実は計算の重みづけに隠れています。",
-      "pexelsQuery": "stock chart lines screen"
+      "narration": "日本の10年国債の利回りは、1年前の1.65％から3.05％へ上がりました。実は、金利が上がると債券は値下がりします。なぜでしょうか。",
+      "pexelsQuery": "stock market graph"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "移動平均線は2種類",
-        "SMAとEMA"
+        "債券は借用証書",
+        "利率と満期が固定"
       ],
-      "narration": "移動平均線には、単純平均のSMAと、直近の価格を重く見る指数平滑移動平均のEMAがあります。SMAは期間内の終値をすべて同じ重みで平均します。",
-      "pexelsQuery": "financial chart analysis"
+      "narration": "債券は国や企業がお金を借りるときに出す借用証書です。発行時に利率と満期が決まり、満期には額面の金額が戻ってきます。",
+      "pexelsQuery": "bond certificate documents"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "EMA=終値×α+前日EMA×(1-α)",
-        "α=2÷(期間+1)"
+        "市場金利が上昇",
+        "既発債は見劣り"
       ],
-      "narration": "EMAは、今日の終値×α+前日のEMA×(1-α)で計算します。αは2÷(期間+1)で、12日なら約0.15、直近の終値に約15％の重みが置かれます。",
-      "pexelsQuery": "calculator numbers finance"
+      "narration": "たとえば利率1％の債券を持っているとします。新しく出る債券が3％なら、1％の古い債券は魅力が落ち、途中で売るときの価格は下がります。",
+      "pexelsQuery": "interest rate finance chart"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "EMAは古い価格を",
-        "完全には忘れない"
+        "利回り上昇＝",
+        "債券価格の下落"
       ],
-      "narration": "実は、EMAは古い価格を完全には忘れません。SMAは期間外の値が消えますが、EMAは影響が薄く残ります。ニュースで移動平均線と聞いたら、SMAかEMAかも確かめるのがコツです。",
-      "pexelsQuery": "trading screen candlestick"
+      "narration": "ニュースで長期金利が上がったと聞くのは、債券の価格が下がったのと同じ意味です。満期まで持てば額面は戻りますが、途中売却では損益が出ます。金利の上昇を見たら、価格の下落も一緒に考えるのがコツです。",
+      "pexelsQuery": "businessman looking at falling chart"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
-        "あくまで情報提供です",
-        "チャンネル登録をどうぞ"
+        "金利と債券価格",
+        "逆に動く関係"
       ],
-      "narration": "あくまで情報提供で、投資の勧誘ではありません。チャンネル登録と、あなたの感想のコメントもお待ちしています。",
-      "pexelsQuery": "city skyline business night"
+      "narration": "金利と債券価格は逆に動きます。情報提供が目的で、投資の勧誘ではありません。チャンネル登録と、コメントもぜひお願いします。",
+      "pexelsQuery": "calm city skyline"
     }
   ],
-  "chart": null,
-  "newsAngle": null,
-  "category": "テクニカル",
-  "format": "kaisetsu",
-  "displayGenre": "テクニカル",
-  "relatedMainVideo": {
-    "id": "Gd0uIJF8Ku4",
-    "title": "移動平均線とは？FX初心者向けに1分で解説なのだ"
+  "chart": {
+    "seriesId": "IRLTLT01JPM156N",
+    "segment": "rank2",
+    "startYear": 2016,
+    "title": "日本の10年国債利回り"
   },
-  "firstCardVariant": "old"
+  "newsAngle": "円は対ドル159円台後半、介入警戒が支え－債券下落へ",
+  "category": "債券",
+  "format": "kaisetsu",
+  "displayGenre": "債券",
+  "relatedMainVideo": {
+    "id": "cDHLbyTW1jA",
+    "title": "【第1回】投資・投機の違いや空売りの仕組みについて徹底解説！"
+  },
+  "firstCardVariant": "new"
 }

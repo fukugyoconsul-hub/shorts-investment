@@ -2929,5 +2929,22 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "Gd0uIJF8Ku4"
+  },
+  {
+    "title": "債券の価格はなぜ金利で下がる？",
+    "topics": [
+      "基礎:債券は利率と満期が決まった借用証書で、満期に額面が戻る",
+      "仕組み:市場金利が上がると既発債は見劣りして価格が下がる",
+      "注意点:満期まで持てば額面は戻るが、途中売却は損益が出る"
+    ],
+    "date": "2026-11-15",
+    "publishedAt": "2026-11-18T23:00:00.000Z",
+    "videoId": "CUNyN7TWtfI",
+    "category": "債券",
+    "format": "kaisetsu",
+    "firstCardVariant": "new",
+    "chart": "IRLTLT01JPM156N",
+    "newsAngle": "円は対ドル159円台後半、介入警戒が支え－債券下落へ",
+    "relatedMainVideoId": "cDHLbyTW1jA"
   }
 ]
