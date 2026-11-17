@@ -2980,5 +2980,22 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "efGieI7HsrE"
+  },
+  {
+    "title": "CFDのスプレッドとは？買った瞬間のマイナス",
+    "topics": [
+      "基礎:CFDは買値と売値の2つの価格が同時に提示され、その差がスプレッド",
+      "仕組み:買った直後は売値で評価されるため、差の分だけマイナスから始まる",
+      "注意点:スプレッドは固定ではなく、指標発表時や取引時間外に広がることがあり、金利調整額も加わる"
+    ],
+    "date": "2026-11-17",
+    "publishedAt": "2026-11-20T07:00:00.000Z",
+    "videoId": "UpL43DwVGBQ",
+    "category": "CFD",
+    "format": "kaisetsu",
+    "firstCardVariant": "new",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "sKOsRveCbos"
   }
 ]
