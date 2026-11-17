@@ -2997,5 +2997,20 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "sKOsRveCbos"
+  },
+  {
+    "title": "預金金利が上がる仕組みとは？",
+    "topics": [
+      "政策金利は銀行同士の短期金利/預金・ローン金利は数か月遅れで連動/中央銀行が直接決めるのは超短期金利だけ"
+    ],
+    "date": "2026-11-17",
+    "publishedAt": "2026-11-20T23:00:00.000Z",
+    "videoId": "NthSwHghfog",
+    "category": "中央銀行",
+    "format": "qa",
+    "firstCardVariant": "old",
+    "chart": "IRSTCI01JPM156N",
+    "newsAngle": null,
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
