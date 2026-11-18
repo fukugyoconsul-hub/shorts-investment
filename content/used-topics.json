@@ -3012,5 +3012,22 @@
     "chart": "IRSTCI01JPM156N",
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "国民年金は40年払って満額？",
+    "topics": [
+      "基礎:国民年金の満額は20〜60歳の480か月納付で年約83万円(2025年度)",
+      "仕組み:年金額は納付月数に比例し、受給には最低10年の加入期間が必要",
+      "注意点:全額免除の期間も年金額に2分の1反映され、追納は10年以内、未納は0"
+    ],
+    "date": "2026-11-18",
+    "publishedAt": "2026-11-21T07:00:00.000Z",
+    "videoId": "VhN-Ds2WVdg",
+    "category": "年金",
+    "format": "kaisetsu",
+    "firstCardVariant": "new",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "sKOsRveCbos"
   }
 ]
