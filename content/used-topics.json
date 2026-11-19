@@ -3046,5 +3046,22 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "EIY2Pt88D7Q"
+  },
+  {
+    "title": "金・原油・銀の価格雑学3選",
+    "topics": [
+      "3位 1944〜1971年、金は1オンス35ドルで固定されていた",
+      "2位 銀は金属で最も電気を通しやすく、工業用需要も大きい",
+      "1位 2020年4月20日、WTI原油が史上初のマイナス37ドルをつけた"
+    ],
+    "date": "2026-11-19",
+    "publishedAt": "2026-11-22T07:00:00.000Z",
+    "videoId": "EjXa_z434uc",
+    "category": "コモディティ",
+    "format": "ranking",
+    "firstCardVariant": "old",
+    "chart": "DCOILWTICO",
+    "newsAngle": null,
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
