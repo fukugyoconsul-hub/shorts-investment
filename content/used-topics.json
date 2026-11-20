@@ -3080,5 +3080,22 @@
     "chart": null,
     "newsAngle": "ダウ平均株価が5万ドル割れ 終値としては約5か月ぶり",
     "relatedMainVideoId": "EIY2Pt88D7Q"
+  },
+  {
+    "title": "リスクの種類とは？値動き以外の落とし穴",
+    "topics": [
+      "基礎:投資のリスクは値動きの振れ幅で、価格変動・信用・流動性・為替・金利など複数の種類がある",
+      "仕組み:ドル円は1年で154.40円から159.93円へ動き、為替リスクは外貨資産の円換算額を変える",
+      "注意点:リスクは値動きだけでなく、売れない流動性リスクや発行体の信用リスクも別に存在する"
+    ],
+    "date": "2026-11-20",
+    "publishedAt": "2026-11-23T07:00:00.000Z",
+    "videoId": "aP-U8C-MOlw",
+    "category": "リスク",
+    "format": "kaisetsu",
+    "firstCardVariant": "old",
+    "chart": "DEXJPUS",
+    "newsAngle": "ドル円、一時１５８．８１レベル、安値更新 米１０年債利回り５％割れ＝ロンドン為替 -",
+    "relatedMainVideoId": "sKOsRveCbos"
   }
 ]
