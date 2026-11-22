@@ -3161,5 +3161,20 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "8Vxg7Xexn94"
+  },
+  {
+    "title": "円安は円の価値が下がること？",
+    "topics": [
+      "円安は円の価値が下がること/1ドル113.90円から159.93円へ5年の変化/円安とは円で見たドルの値段が上がること"
+    ],
+    "date": "2026-11-22",
+    "publishedAt": "2026-11-25T23:00:00.000Z",
+    "videoId": "VJCFVvhf8r8",
+    "category": "金融用語",
+    "format": "qa",
+    "firstCardVariant": "old",
+    "chart": "DEXJPUS",
+    "newsAngle": "2026-11-22 東京為替見通し＝ドル円、日米株価下落を受けたリスク回避の円買いが継続か(トレーダーズ・ウェブ)",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
