@@ -3144,5 +3144,22 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": null
+  },
+  {
+    "title": "積立投資とは？平均価格より安く買える理由",
+    "topics": [
+      "基礎:積立投資は毎回同じ金額で買い続ける方法で、高い月は少なく安い月は多く買う",
+      "仕組み:価格100・50・100で毎回1万円なら計400口、平均買値75で価格の単純平均約83より低い",
+      "注意点:平均化は損を防ぐ仕組みではなく、下がり続ければ損が出て上がり続けるなら一括のほうが口数は増える"
+    ],
+    "date": "2026-11-22",
+    "publishedAt": "2026-11-25T07:00:00.000Z",
+    "videoId": "3_iWb6ZBoLY",
+    "category": "資産形成",
+    "format": "kaisetsu",
+    "firstCardVariant": "old",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "8Vxg7Xexn94"
   }
 ]
