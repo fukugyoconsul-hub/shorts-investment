@@ -1,129 +1,129 @@
 {
   "株式": {
-    "totalViews": 4777,
-    "videoCount": 13,
+    "totalViews": 4931,
+    "videoCount": 14,
     "format": "ranking",
-    "avgViews": 367,
+    "avgViews": 352,
     "avgRetentionPercentage": 40.5
   },
   "世界情勢": {
-    "totalViews": 2026,
+    "totalViews": 2029,
     "videoCount": 9,
     "format": "qa",
     "avgViews": 225,
-    "avgRetentionPercentage": 35.2
+    "avgRetentionPercentage": 45.6
   },
   "FX": {
-    "totalViews": 1912,
+    "totalViews": 1918,
     "videoCount": 12,
     "format": "kaisetsu",
-    "avgViews": 159,
-    "avgRetentionPercentage": 62.4
+    "avgViews": 160,
+    "avgRetentionPercentage": 63.1
   },
   "テクニカル": {
-    "totalViews": 667,
+    "totalViews": 835,
     "videoCount": 10,
     "format": "kaisetsu",
-    "avgViews": 67,
-    "avgRetentionPercentage": 54.5
+    "avgViews": 84,
+    "avgRetentionPercentage": 84.8
   },
   "金融": {
-    "totalViews": 1138,
+    "totalViews": 1145,
     "videoCount": 8,
     "format": "qa",
-    "avgViews": 142,
-    "avgRetentionPercentage": 54.2
+    "avgViews": 143,
+    "avgRetentionPercentage": 54.4
   },
   "コモディティ": {
-    "totalViews": 3242,
-    "videoCount": 11,
+    "totalViews": 3438,
+    "videoCount": 12,
     "format": "ranking",
-    "avgViews": 295,
-    "avgRetentionPercentage": 55.3
+    "avgViews": 287,
+    "avgRetentionPercentage": 53.7
   },
   "ファンダメンタルズ": {
-    "totalViews": 897,
+    "totalViews": 899,
     "videoCount": 9,
     "format": "kaisetsu",
     "avgViews": 100,
-    "avgRetentionPercentage": 41.5
+    "avgRetentionPercentage": 41.7
   },
   "CFD": {
-    "totalViews": 1543,
-    "videoCount": 9,
-    "format": "kaisetsu",
-    "avgViews": 171,
-    "avgRetentionPercentage": 54.4
-  },
-  "債券": {
-    "totalViews": 3781,
+    "totalViews": 1781,
     "videoCount": 10,
     "format": "kaisetsu",
-    "avgViews": 378,
+    "avgViews": 178,
+    "avgRetentionPercentage": 53.6
+  },
+  "債券": {
+    "totalViews": 4009,
+    "videoCount": 10,
+    "format": "kaisetsu",
+    "avgViews": 401,
     "avgRetentionPercentage": 67.5
   },
   "不動産": {
-    "totalViews": 2922,
+    "totalViews": 2926,
     "videoCount": 8,
     "format": "qa",
-    "avgViews": 365,
-    "avgRetentionPercentage": 52.9
+    "avgViews": 366,
+    "avgRetentionPercentage": 51
   },
   "経済史": {
-    "totalViews": 1617,
+    "totalViews": 1627,
     "videoCount": 10,
     "format": "ranking",
-    "avgViews": 162,
-    "avgRetentionPercentage": 37.7
+    "avgViews": 163,
+    "avgRetentionPercentage": 37.9
   },
   "暗号資産": {
-    "totalViews": 843,
+    "totalViews": 846,
     "videoCount": 7,
     "format": "kaisetsu",
-    "avgViews": 120,
-    "avgRetentionPercentage": 68.2
+    "avgViews": 121,
+    "avgRetentionPercentage": 68.1
   },
   "日本経済": {
-    "totalViews": 5157,
+    "totalViews": 5159,
     "videoCount": 8,
     "format": "qa",
     "avgViews": 645,
-    "avgRetentionPercentage": 67
+    "avgRetentionPercentage": 64.9
   },
   "保険": {
-    "totalViews": 1232,
+    "totalViews": 1235,
     "videoCount": 8,
     "format": "kaisetsu",
     "avgViews": 154,
-    "avgRetentionPercentage": 129.1
+    "avgRetentionPercentage": 129
   },
   "年金": {
-    "totalViews": 1275,
-    "videoCount": 7,
+    "totalViews": 2210,
+    "videoCount": 8,
     "format": "kaisetsu",
-    "avgViews": 182,
-    "avgRetentionPercentage": 50.1
+    "avgViews": 276,
+    "avgRetentionPercentage": 45.4
   },
   "行動経済学": {
-    "totalViews": 3323,
-    "videoCount": 7,
+    "totalViews": 3324,
+    "videoCount": 8,
     "format": "qa",
-    "avgViews": 475,
+    "avgViews": 416,
     "avgRetentionPercentage": 53.3
   },
   "税金": {
-    "totalViews": 526,
+    "totalViews": 677,
     "videoCount": 7,
     "format": "kaisetsu",
-    "avgViews": 75,
-    "avgRetentionPercentage": 48.1
+    "avgViews": 97,
+    "avgRetentionPercentage": 48.7
   },
   "中央銀行": {
-    "totalViews": 2391,
-    "videoCount": 9,
+    "totalViews": 2526,
+    "videoCount": 10,
     "format": "qa",
-    "avgViews": 266,
-    "avgRetentionPercentage": 64.4
+    "avgViews": 253,
+    "avgRetentionPercentage": 64.6
   },
   "経済指標": {
     "totalViews": 1894,
@@ -133,108 +133,122 @@
     "avgRetentionPercentage": 72.1
   },
   "詐欺": {
-    "totalViews": 1942,
+    "totalViews": 1941,
     "videoCount": 8,
     "format": "qa",
     "avgViews": 243,
-    "avgRetentionPercentage": 76.3
+    "avgRetentionPercentage": 94.1
   },
   "決算": {
-    "totalViews": 734,
+    "totalViews": 732,
     "videoCount": 5,
     "format": "kaisetsu",
-    "avgViews": 147,
-    "avgRetentionPercentage": 39.6
+    "avgViews": 146,
+    "avgRetentionPercentage": 41.5
   },
   "貿易": {
-    "totalViews": 1418,
+    "totalViews": 1624,
     "videoCount": 5,
     "format": "qa",
-    "avgViews": 284,
-    "avgRetentionPercentage": 51
+    "avgViews": 325,
+    "avgRetentionPercentage": 50.5
   },
   "起業": {
-    "totalViews": 2038,
-    "videoCount": 4,
+    "totalViews": 2979,
+    "videoCount": 5,
     "format": "ranking",
-    "avgViews": 510,
+    "avgViews": 596,
     "avgRetentionPercentage": 52.2
   },
   "労働": {
     "totalViews": 193,
-    "videoCount": 4,
+    "videoCount": 5,
     "format": "qa",
-    "avgViews": 48,
+    "avgViews": 39,
     "avgRetentionPercentage": 37.8
   },
   "物価": {
-    "totalViews": 288,
+    "totalViews": 963,
     "videoCount": 3,
     "format": "kaisetsu",
-    "avgViews": 96,
-    "avgRetentionPercentage": 35.8
+    "avgViews": 321,
+    "avgRetentionPercentage": 55.8
   },
   "家計": {
-    "totalViews": 2,
+    "totalViews": 434,
     "videoCount": 3,
     "format": "qa",
-    "avgViews": 1,
-    "avgRetentionPercentage": 0.8
+    "avgViews": 145,
+    "avgRetentionPercentage": 13.3
   },
   "資産形成": {
-    "totalViews": 733,
-    "videoCount": 2,
+    "totalViews": 734,
+    "videoCount": 3,
     "format": "kaisetsu",
-    "avgViews": 367,
+    "avgViews": 245,
     "avgRetentionPercentage": 51.1
   },
   "金融用語": {
-    "totalViews": 1005,
-    "videoCount": 2,
+    "totalViews": 1015,
+    "videoCount": 3,
     "format": "qa",
-    "avgViews": 503,
-    "avgRetentionPercentage": 58.5
+    "avgViews": 338,
+    "avgRetentionPercentage": 67.6
   },
   "為替介入": {
-    "totalViews": 451,
+    "totalViews": 637,
     "videoCount": 2,
     "format": "kaisetsu",
-    "avgViews": 226,
-    "avgRetentionPercentage": 56.4
+    "avgViews": 319,
+    "avgRetentionPercentage": 54.2
   },
   "インフレ": {
-    "totalViews": 193,
+    "totalViews": 353,
     "videoCount": 2,
     "format": "qa",
-    "avgViews": 97,
-    "avgRetentionPercentage": 39
+    "avgViews": 177,
+    "avgRetentionPercentage": 41.3
   },
   "リスク": {
-    "totalViews": 92,
-    "videoCount": 1,
+    "totalViews": 95,
+    "videoCount": 2,
     "format": "kaisetsu",
-    "avgViews": 92,
-    "avgRetentionPercentage": 33.1
+    "avgViews": 48,
+    "avgRetentionPercentage": 50.5
   },
   "通貨": {
-    "totalViews": 560,
-    "videoCount": 1,
+    "totalViews": 562,
+    "videoCount": 2,
     "format": "ranking",
-    "avgViews": 560,
-    "avgRetentionPercentage": 33.2
+    "avgViews": 281,
+    "avgRetentionPercentage": 33.3
   },
   "人口": {
-    "totalViews": 278,
+    "totalViews": 281,
     "videoCount": 1,
     "format": "qa",
-    "avgViews": 278,
-    "avgRetentionPercentage": 95.6
+    "avgViews": 281,
+    "avgRetentionPercentage": 95.8
   },
   "決済": {
-    "totalViews": 811,
+    "totalViews": 813,
     "videoCount": 1,
     "format": "kaisetsu",
-    "avgViews": 811,
-    "avgRetentionPercentage": 52.1
+    "avgViews": 813,
+    "avgRetentionPercentage": 50.9
+  },
+  "もしも": {
+    "totalViews": 931,
+    "videoCount": 1,
+    "format": "simulation",
+    "avgViews": 931,
+    "avgRetentionPercentage": null
+  },
+  "相場格言": {
+    "totalViews": 472,
+    "videoCount": 1,
+    "format": "kaisetsu",
+    "avgViews": 472,
+    "avgRetentionPercentage": 58.5
   }
 }
