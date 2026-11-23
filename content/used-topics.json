@@ -3193,5 +3193,22 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "sKOsRveCbos"
+  },
+  {
+    "title": "単利と複利の差とは？72の法則",
+    "topics": [
+      "基礎:単利は元本のみ・複利は利息にも利息がつく",
+      "仕組み:72÷金利%で元本が2倍になる年数の目安",
+      "注意点:72の法則は近似で、金利は固定ではなくインフレも差し引く必要がある"
+    ],
+    "date": "2026-11-23",
+    "publishedAt": "2026-11-26T23:00:00.000Z",
+    "videoId": "uqlad-vENYs",
+    "category": "金利",
+    "format": "kaisetsu",
+    "firstCardVariant": "old",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
