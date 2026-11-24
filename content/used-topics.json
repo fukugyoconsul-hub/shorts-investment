@@ -3210,5 +3210,22 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "ビットコインの半減期とは？",
+    "topics": [
+      "基礎:ビットコインは新規発行量があらかじめ決まっている暗号資産",
+      "仕組み:約4年ごとに新規発行の報酬が半分になる",
+      "注意点:半減期は供給を減らす仕組みであり、価格が上がる保証ではない"
+    ],
+    "date": "2026-11-24",
+    "publishedAt": "2026-11-27T07:00:00.000Z",
+    "videoId": "foNR6_bKZYU",
+    "category": "暗号資産",
+    "format": "kaisetsu",
+    "firstCardVariant": "new",
+    "chart": "CBBTCUSD",
+    "newsAngle": null,
+    "relatedMainVideoId": "efGieI7HsrE"
   }
 ]
