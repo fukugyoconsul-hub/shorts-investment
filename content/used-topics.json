@@ -3227,5 +3227,22 @@
     "chart": "CBBTCUSD",
     "newsAngle": null,
     "relatedMainVideoId": "efGieI7HsrE"
+  },
+  {
+    "title": "リーマン・ショック3選｜暴落の歴史",
+    "topics": [
+      "3位 1987年ブラックマンデーでNYダウが1日で22.6%下落",
+      "2位 2000年ITバブル崩壊でナスダックが最大約78%下落",
+      "1位 2008年リーマン・ショックでNYダウが約2年で約33%下落"
+    ],
+    "date": "2026-11-24",
+    "publishedAt": "2026-11-27T23:00:00.000Z",
+    "videoId": "m5KAh4AXz3k",
+    "category": "経済史",
+    "format": "ranking",
+    "firstCardVariant": "new",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "efGieI7HsrE"
   }
 ]
