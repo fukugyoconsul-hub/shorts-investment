@@ -3261,5 +3261,22 @@
     "chart": null,
     "newsAngle": null,
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "米国債利回り4.91％とは？",
+    "topics": [
+      "基礎:米10年債利回りは国債の利回りで、住宅ローンや株の評価の基準になる",
+      "仕組み:政策金利は短期、10年債利回りは市場の売買で決まり、物価への警戒で上がる",
+      "注意点:政策金利が下がっても長期金利は上がることがあり、1年で4.04％から4.91％へ上昇した"
+    ],
+    "date": "2026-11-25",
+    "publishedAt": "2026-11-28T23:00:00.000Z",
+    "videoId": "jH12iE39O_E",
+    "category": "ファンダメンタルズ",
+    "format": "kaisetsu",
+    "firstCardVariant": "old",
+    "chart": "DGS10",
+    "newsAngle": "米インフレ再加速 FRBの利上げ観測強まる 10月PCE物価指数 3カ月連続で伸び拡大（テレビ朝日系（ANN））",
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
