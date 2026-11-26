@@ -3278,5 +3278,22 @@
     "chart": "DGS10",
     "newsAngle": "米インフレ再加速 FRBの利上げ観測強まる 10月PCE物価指数 3カ月連続で伸び拡大（テレビ朝日系（ANN））",
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "保険料はどう決まる？大数の法則の話",
+    "topics": [
+      "基礎:保険は多数が保険料を出し合い事故にあった人へ支払う仕組み",
+      "仕組み:大数の法則で事故の発生割合が安定し保険料を算出できる",
+      "注意点:1人の事故は予測できず、保険料は集団の平均で決まる"
+    ],
+    "date": "2026-11-26",
+    "publishedAt": "2026-11-29T07:00:00.000Z",
+    "videoId": "GLXNPdq0dmA",
+    "category": "保険",
+    "format": "kaisetsu",
+    "firstCardVariant": "new",
+    "chart": null,
+    "newsAngle": null,
+    "relatedMainVideoId": "cDHLbyTW1jA"
   }
 ]
