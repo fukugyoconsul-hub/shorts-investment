@@ -1,82 +1,88 @@
 {
-  "title": "量的引き締めとは？国債を売らない理由",
+  "title": "円安159円で値上げが続く理由とは？",
   "topics": [
-    "量的緩和の逆が量的引き締め/FRBは2022年6月に月475億ドルから開始/売らずに満期償還で減らす仕組み"
+    "円建てで見た輸入コストの上昇/ドル円は1年で157円台から158円台へ/円安は自給率の低い日本の物価に波及する"
   ],
-  "descriptionHook": "量的引き締め(QT)とは何か、中央銀行が国債を売らずに保有残高を減らす仕組みを、FRBの実例で解説します。",
+  "descriptionHook": "ドル円159円台の円安で、なぜ食品やガソリンなど身近な値段が上がるのか、輸入コストの仕組みを統計で解説します。",
   "tags": [
-    "量的引き締め",
+    "円安",
+    "値上げ",
+    "物価高",
     "投資初心者",
     "経済雑学",
-    "金融政策",
-    "中央銀行",
-    "FRB",
-    "国債",
-    "量的緩和",
-    "資産運用",
-    "バランスシート縮小"
+    "ドル円",
+    "輸入物価",
+    "日本経済",
+    "インフレ",
+    "為替レート"
   ],
-  "seoNotes": "タイトル先頭に検索されやすい「量的引き締めとは？」を置き、タグには「投資初心者」「経済雑学」「金融政策」などの一般的な語と「FRB」「国債」「バランスシート縮小」を組み合わせた。",
+  "seoNotes": "タイトル前方に検索されやすい「円安」「159円」を置き、タグには「投資初心者」「経済雑学」などの一般語と「輸入物価」「ドル円」などの具体語を組み合わせました。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "量的引き締めで",
-        "国債を売っている？"
+        "ドル円159円台",
+        "値上げが続く理由"
       ],
-      "narration": "量的引き締めで、中央銀行は国債を売っていると思っていませんか？実は、売らずに減らしているって知っていますか？",
-      "pexelsQuery": "central bank building"
+      "narration": "ドル円が159円台でも、円安のせいで値上げが続くと言われるのはなぜか、知っていますか？",
+      "pexelsQuery": "supermarket shelves prices",
+      "badge_note": null
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "量的緩和の逆",
-        "資金を吸収する政策"
+        "ドル円1年で",
+        "157円台から158円台へ"
       ],
-      "narration": "まず、量的緩和は中央銀行が国債を買って、市場に資金を流す政策です。その逆の量的引き締めは、持っている国債を減らして資金を吸収します。",
-      "pexelsQuery": "money printing finance"
+      "narration": "ドル円は1年前の157.41円から、最新の158.76円まで動きました。数字の差は小さく見えますが、実は輸入品の代金に直結する数字です。",
+      "pexelsQuery": "yen dollar exchange rate board"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "FRBは2022年6月開始",
-        "上限475億→950億ドル"
+        "輸入品はドル建て",
+        "円換算で割高に"
       ],
-      "narration": "米FRBは2022年6月に引き締めを始め、月の削減上限は当初475億ドル、9月から950億ドルへ引き上げました。ただ、その手段は意外なものです。",
-      "pexelsQuery": "federal reserve washington"
+      "narration": "日本はエネルギーの多くを輸入に頼り、原油もドルで買います。同じ1ドルの品物でも、円安になるほど支払う円が増えていくのです。",
+      "pexelsQuery": "cargo ship oil tanker port"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "主な方法は満期償還",
-        "再投資せず残高が減る"
+        "値上げの正体は",
+        "円換算のコスト増"
       ],
-      "narration": "主な方法は、満期が来た国債の償還金を再投資しないこと。売らなくても保有残高は自然に減ります。ニュースで引き締めと聞いたら、売却か償還かも一緒に見るのがコツです。",
-      "pexelsQuery": "bond documents finance"
+      "narration": "実は、値上げの正体は円の価値が下がり、輸入コストが円で膨らむことです。ニュースで円安と聞いたら、輸入品の比率も一緒に見るのがコツです。",
+      "pexelsQuery": "price tag increase shopping"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
         "チャンネル登録で",
-        "金融の仕組みを学ぼう"
+        "数字で常識を確認"
       ],
-      "narration": "投資の勧誘ではなく情報提供です。ためになったらチャンネル登録を。あなたの疑問もコメントで教えてください。",
-      "pexelsQuery": "city skyline finance"
+      "narration": "情報提供が目的で、投資の勧誘ではありません。チャンネル登録とコメントで、あなたの気づきも教えてください。",
+      "pexelsQuery": "calm city night skyline"
     }
   ],
-  "chart": null,
-  "newsAngle": null,
-  "category": "金融",
-  "format": "qa",
-  "displayGenre": "金融",
-  "relatedMainVideo": {
-    "id": "TccCwwJwlQY",
-    "title": "量的金融緩和政策・テーパリングを世界一分かりやすく解説します！【ファンダメンタルズ分析】"
+  "chart": {
+    "seriesId": "DEXJPUS",
+    "segment": "rank3",
+    "startYear": 2021,
+    "title": "ドル円の推移"
   },
-  "firstCardVariant": "new"
+  "newsAngle": "ドル円は159円台前半で底堅い展開、株高と米金利上昇が支え",
+  "category": "日本経済",
+  "format": "qa",
+  "displayGenre": "日本経済",
+  "relatedMainVideo": {
+    "id": "YCjXRSQY-UA",
+    "title": "【経済・為替】「円高・円安」を世界一分かりやすく解説します！"
+  },
+  "firstCardVariant": "old"
 }
