@@ -1,88 +1,86 @@
 {
-  "title": "円安159円で値上げが続く理由とは？",
+  "title": "住宅ローン変動金利は何で決まる？",
   "topics": [
-    "円建てで見た輸入コストの上昇/ドル円は1年で157円台から158円台へ/円安は自給率の低い日本の物価に波及する"
+    "変動金利は政策金利に連動/固定金利は長期金利に連動/金利のタイプで連動先が違うという結論"
   ],
-  "descriptionHook": "ドル円159円台の円安で、なぜ食品やガソリンなど身近な値段が上がるのか、輸入コストの仕組みを統計で解説します。",
+  "descriptionHook": "住宅ローンの変動金利と固定金利が、政策金利と長期金利のどちらに連動するかを数字で確かめます。",
   "tags": [
-    "円安",
-    "値上げ",
-    "物価高",
-    "投資初心者",
+    "住宅ローン",
+    "住宅ローン金利",
+    "変動金利",
+    "固定金利",
+    "政策金利",
+    "長期金利",
     "経済雑学",
-    "ドル円",
-    "輸入物価",
-    "日本経済",
-    "インフレ",
-    "為替レート"
+    "投資初心者",
+    "金融リテラシー"
   ],
-  "seoNotes": "タイトル前方に検索されやすい「円安」「159円」を置き、タグには「投資初心者」「経済雑学」などの一般語と「輸入物価」「ドル円」などの具体語を組み合わせました。",
+  "seoNotes": "タイトル前方に「住宅ローン」「変動金利」を置いて検索意図に合わせ、タグには住宅ローン金利・政策金利・長期金利と、経済雑学・投資初心者の一般語を混ぜた。",
   "segments": [
     {
       "id": "hook",
       "badge": null,
       "caption": [
-        "ドル円159円台",
-        "値上げが続く理由"
+        "住宅ローン変動金利",
+        "何に連動して動く？"
       ],
-      "narration": "ドル円が159円台でも、円安のせいで値上げが続くと言われるのはなぜか、知っていますか？",
-      "pexelsQuery": "supermarket shelves prices",
-      "badge_note": null
+      "narration": "住宅ローンの変動金利が、実は日銀の決める金利に連動していると、知っていますか？",
+      "pexelsQuery": "house loan calculator"
     },
     {
       "id": "rank3",
       "badge": null,
       "caption": [
-        "ドル円1年で",
-        "157円台から158円台へ"
+        "日本の短期金利",
+        "1年で0.477→1.227％"
       ],
-      "narration": "ドル円は1年前の157.41円から、最新の158.76円まで動きました。数字の差は小さく見えますが、実は輸入品の代金に直結する数字です。",
-      "pexelsQuery": "yen dollar exchange rate board"
+      "narration": "日本の短期金利、コールレートは、2025年10月の0.477％から2026年10月には1.227％へ上がりました。では、この短期金利はどこに影響するのでしょうか。",
+      "pexelsQuery": "bank building japan"
     },
     {
       "id": "rank2",
       "badge": null,
       "caption": [
-        "輸入品はドル建て",
-        "円換算で割高に"
+        "10年国債利回り",
+        "1.66→2.75％"
       ],
-      "narration": "日本はエネルギーの多くを輸入に頼り、原油もドルで買います。同じ1ドルの品物でも、円安になるほど支払う円が増えていくのです。",
-      "pexelsQuery": "cargo ship oil tanker port"
+      "narration": "一方、日本の10年国債利回りも、同じ期間に1.66％から2.75％へ上昇しました。ただし、こちらは日銀が直接決める金利ではありません。",
+      "pexelsQuery": "stock market chart rising"
     },
     {
       "id": "rank1",
       "badge": null,
       "caption": [
-        "値上げの正体は",
-        "円換算のコスト増"
+        "変動は短期金利に連動",
+        "固定は長期金利に連動"
       ],
-      "narration": "実は、値上げの正体は円の価値が下がり、輸入コストが円で膨らむことです。ニュースで円安と聞いたら、輸入品の比率も一緒に見るのがコツです。",
-      "pexelsQuery": "price tag increase shopping"
+      "narration": "実は、変動型は短期の政策金利に、固定型は市場で決まる長期金利に連動します。同じ住宅ローンでも連動先が違うのです。金利のニュースは、短期か長期かを見分けるのがコツです。",
+      "pexelsQuery": "family new house keys"
     },
     {
       "id": "outro",
       "badge": null,
       "caption": [
         "チャンネル登録で",
-        "数字で常識を確認"
+        "金利ニュースが読める"
       ],
-      "narration": "情報提供が目的で、投資の勧誘ではありません。チャンネル登録とコメントで、あなたの気づきも教えてください。",
-      "pexelsQuery": "calm city night skyline"
+      "narration": "情報提供が目的で、投資の勧誘ではありません。気になる点はコメントで教えてください。チャンネル登録もお願いします。",
+      "pexelsQuery": "calm city skyline sunset"
     }
   ],
   "chart": {
-    "seriesId": "DEXJPUS",
-    "segment": "rank3",
-    "startYear": 2021,
-    "title": "ドル円の推移"
+    "seriesId": "IRLTLT01JPM156N",
+    "segment": "rank2",
+    "startYear": 2015,
+    "title": "日本の10年国債利回り"
   },
-  "newsAngle": "ドル円は159円台前半で底堅い展開、株高と米金利上昇が支え",
-  "category": "日本経済",
+  "newsAngle": null,
+  "category": "不動産",
   "format": "qa",
-  "displayGenre": "日本経済",
+  "displayGenre": "不動産",
   "relatedMainVideo": {
     "id": "YCjXRSQY-UA",
     "title": "【経済・為替】「円高・円安」を世界一分かりやすく解説します！"
   },
-  "firstCardVariant": "old"
+  "firstCardVariant": "new"
 }

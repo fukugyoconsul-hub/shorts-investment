@@ -3325,5 +3325,20 @@
     "chart": "DEXJPUS",
     "newsAngle": "ドル円は159円台前半で底堅い展開、株高と米金利上昇が支え",
     "relatedMainVideoId": "YCjXRSQY-UA"
+  },
+  {
+    "title": "住宅ローン変動金利は何で決まる？",
+    "topics": [
+      "変動金利は政策金利に連動/固定金利は長期金利に連動/金利のタイプで連動先が違うという結論"
+    ],
+    "date": "2026-11-27",
+    "publishedAt": "2026-11-30T23:00:00.000Z",
+    "videoId": "NFO6axprngA",
+    "category": "不動産",
+    "format": "qa",
+    "firstCardVariant": "new",
+    "chart": "IRLTLT01JPM156N",
+    "newsAngle": null,
+    "relatedMainVideoId": "YCjXRSQY-UA"
   }
 ]
